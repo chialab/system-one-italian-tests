@@ -17,7 +17,7 @@ The test cases were written by hand. They do not measure accuracy on real traffi
 | **Latency on a laptop** | ✅ About 0.5–1 s per request | Almost 4 times faster than Winnow-12B on the same machine (see [Timings](#timings)). |
 | **Italian vs English** | ✅ No accuracy gap | Same accuracy. Italian is about 25% slower because it uses more tokens. |
 
-**Suggested way to use it.** Route with a `choice` and accept p ≥ ~0.5; Kev's probabilities are flatter than Winnow's, so a 0.8 threshold would reject many correct answers. Escalation works with a `noul`, but do not rely on it alone for safety: it missed a suicidal hint that Winnow-12B caught. Unlike the other models tested, its urgency `score` is meaningful on clear-cut cases.
+**Suggested way to use it.** Route with a `choice` and accept p ≥ ~0.5. Kev's probabilities are flatter than Winnow's: it spreads probability across the options even when it picks the right one (0.82 on average for the chosen agent, against 0.98 for Winnow). A 0.8 threshold would therefore reject many correct answers (89 of 231). Escalation works with a `noul`, but do not rely on it alone for safety: it missed a suicidal hint that Winnow-12B caught. Unlike the other models tested, its urgency `score` is meaningful on clear-cut cases.
 
 ## Raw reports
 

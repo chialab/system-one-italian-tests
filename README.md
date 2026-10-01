@@ -9,6 +9,15 @@ A System One model answers typed questions about a piece of text (`choice`, `nou
 
 ## Results by model
 
+
+**TL;DR**
+
+- **Winnow-12B** is the most accurate and the most confident. It is also the slowest: 2–4 s on this laptop.
+- **Kev-4B** is almost as accurate and about 4 times faster, but its probabilities are flatter and it missed more safety signals.
+  - *Flatter* means Kev spreads its probability across the options even when it picks the right one. The chosen agent gets 0.82 on average, against 0.98 for Winnow. Kev is often right but rarely sure, so a 0.8 threshold would reject 89 of its 231 correct answers; use about 0.5 instead.
+  - It flagged 8 of 11 emergencies against Winnow's 10. It missed a suicidal hint and a 9-year-old left alone at closing time, both of which Winnow caught.
+- **Laya** is very fast but not usable for Italian out of the box. Its authors say so themselves: they present the shipped checkpoints "as a fast base to specialise, not as a zero-shot decision engine". They recommend [fine-tuning on your own labels](https://github.com/NandhaKishorM/laya#fine-tune-for-better-accuracy). On their own typed-decisions benchmark fine-tuning raises accuracy from 0.36 to 0.77. These tests use Laya without fine-tuning.
+
 Each tested model has its own folder under `results/`, with a README (verdicts, detailed results, configuration, timings, how to reproduce) and the raw reports.
 
 All models were run on the same MacBook Pro (M3 Pro, 36 GB), one at a time, with no other model server running.
@@ -28,12 +37,6 @@ Routing latency is the median of one suite request with two `choice` questions o
 | Winnow-12B | 238 accepted, 1 wrong | 233 accepted, 0 wrong |
 | Kev-4B | 212 accepted, 2 wrong | 142 accepted, 0 wrong |
 | Laya 0.3.22 | 167 accepted, 55 wrong | 112 accepted, 33 wrong |
-
-**In short:**
-
-- **Winnow-12B** is the most accurate and the most confident. It is also the slowest: 2–4 s on this laptop.
-- **Kev-4B** is almost as accurate and about 4 times faster, but its probabilities are flatter and it missed more safety signals.
-- **Laya** is very fast but not usable for Italian out of the box.
 
 ## Test suites
 

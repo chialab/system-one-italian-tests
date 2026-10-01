@@ -4,7 +4,7 @@ Results of the System One Italian tests for **[Laya](https://github.com/NandhaKi
 
 ## Summary
 
-The test cases were written by hand. They do not measure accuracy on real traffic (see [Caveats](../../README.md#caveats)). Laya was used out of the box, without fine-tuning; its authors present the shipped checkpoints as "a fast base to specialise".
+The test cases were written by hand. They do not measure accuracy on real traffic (see [Caveats](../../README.md#caveats)). Laya was used out of the box, without fine-tuning, even though its authors recommend fine-tuning (see [Fine-tuning is the intended use](#fine-tuning-is-the-intended-use)).
 
 | Use | Verdict | Evidence |
 |---|---|---|
@@ -20,6 +20,29 @@ The test cases were written by hand. They do not measure accuracy on real traffi
 | **Latency** | ✅ Very fast | About 57 ms per request in Italian and 105 ms in English on this laptop, after warm-up. |
 
 **Bottom line.** Out of the box, Laya does not handle these Italian routing and escalation tasks. It is 20–60 times faster than Winnow-12B on the same machine. That speed only pays off if it is fine-tuned on the target labels, which these tests do not cover.
+
+### How sure is Laya when it answers?
+
+For every request a model splits 100% of its probability across the options. A model is *sharp* when it gives almost everything to the option it picks, and *flat* when it spreads the probability around. Sharpness is only useful if it follows correctness: high when right, low when wrong.
+
+| Mean probability of the chosen option (base suite) | When right | When wrong |
+|---|---|---|
+| Laya, Italian | 0.82 | 0.68 |
+| Laya, English | 0.73 | 0.40 |
+| Kev-4B, for comparison | 0.82 | 0.33–0.50 |
+| Winnow-12B, for comparison | 0.98 | – (no errors) |
+
+- **In Italian, Laya is sharp even when it is wrong.** Many of its errors have p ≥ 0.9 (e.g. "il televisore è arrivato con lo schermo rotto" goes to `security_fraud` with 0.98), so a confidence threshold cannot filter them out. Over all 240 decisions, accepting only p ≥ 0.8 still lets 33 wrong answers through.
+- **In English, Laya is flatter, and its probability is more honest.** Its errors sit around 0.40, well below its correct answers, so a threshold there does separate good and bad answers.
+
+### Fine-tuning is the intended use
+
+Laya's authors present the shipped checkpoints "as a fast base to specialise, not as a zero-shot decision engine" ([Honest limits](https://github.com/NandhaKishorM/laya#honest-limits)). They recommend fine-tuning on your own labels:
+
+- [Fine-tune for better accuracy](https://github.com/NandhaKishorM/laya#fine-tune-for-better-accuracy) and the [Fine-Tuning](https://github.com/NandhaKishorM/laya#fine-tuning) section of the Laya README;
+- a [Kaggle notebook](https://github.com/NandhaKishorM/laya/blob/main/notebooks/laya_finetune_typed_decisions_2xT4_kaggle.ipynb) that builds the dataset, trains, fits calibration temperatures, evaluates and pushes the result to the Hub, on Kaggle's free 2× T4 GPUs.
+
+On their own typed-decisions benchmark, fine-tuning raises accuracy from 0.36 (base checkpoint) to 0.77. A fine-tuned Laya on Italian routing and escalation labels has not been tested here. It would be the fair comparison against Winnow and Kev, and it is the natural next step if 50–100 ms latency matters.
 
 ## Raw reports
 
