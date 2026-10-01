@@ -1,0 +1,967 @@
+{
+ "summary": {
+  "it": {
+   "route_long": 12,
+   "route_long_rev": 12,
+   "order_flips": 1,
+   "route_short": 11,
+   "noul_top": 12,
+   "score_round_ok": 10,
+   "median_ms": 7410
+  },
+  "en": {
+   "route_long": 12,
+   "route_long_rev": 12,
+   "order_flips": 1,
+   "route_short": 12,
+   "noul_top": 12,
+   "score_round_ok": 7,
+   "median_ms": 6541
+  }
+ },
+ "results": {
+  "it": [
+   {
+    "i": 1,
+    "exp": [
+     "TRAD"
+    ],
+    "ms": 8045,
+    "route_long": {
+     "top": "TRAD",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.997,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.053,
+     "TRAD": 0.996,
+     "BIB": 0.012,
+     "BAN": 0.016,
+     "FO": 0.884
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD",
+     "FO"
+    ],
+    "score": 1.0,
+    "score_exp": 1
+   },
+   {
+    "i": 2,
+    "exp": [
+     "MED"
+    ],
+    "ms": 7625,
+    "route_long": {
+     "top": "MED",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "MED",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "MED",
+     "p": 0.992,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.989,
+     "TRAD": 0.136,
+     "BIB": 0.003,
+     "BAN": 0.004,
+     "FO": 0.401
+    },
+    "noul_top": {
+     "top": "MED",
+     "ok": true
+    },
+    "noul_yes": [
+     "MED"
+    ],
+    "score": 1.05,
+    "score_exp": 1
+   },
+   {
+    "i": 3,
+    "exp": [
+     "BIB"
+    ],
+    "ms": 7532,
+    "route_long": {
+     "top": "BIB",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BIB",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BIB",
+     "p": 0.994,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.029,
+     "TRAD": 0.011,
+     "BIB": 0.956,
+     "BAN": 0.001,
+     "FO": 0.848
+    },
+    "noul_top": {
+     "top": "BIB",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB",
+     "FO"
+    ],
+    "score": 0.99,
+    "score_exp": 1
+   },
+   {
+    "i": 4,
+    "exp": [
+     "BAN"
+    ],
+    "ms": 7409,
+    "route_long": {
+     "top": "BAN",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.993,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.005,
+     "TRAD": 0.031,
+     "BIB": 0.156,
+     "BAN": 0.998,
+     "FO": 0.961
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "BAN",
+     "FO"
+    ],
+    "score": 0.98,
+    "score_exp": 1
+   },
+   {
+    "i": 5,
+    "exp": [
+     "FO"
+    ],
+    "ms": 7766,
+    "route_long": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.998,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.034,
+     "TRAD": 0.095,
+     "BIB": 0.683,
+     "BAN": 0.004,
+     "FO": 0.989
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB",
+     "FO"
+    ],
+    "score": 0.11,
+    "score_exp": 0
+   },
+   {
+    "i": 6,
+    "exp": [
+     "FO"
+    ],
+    "ms": 7527,
+    "route_long": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.998,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.048,
+     "TRAD": 0.016,
+     "BIB": 0.107,
+     "BAN": 0.014,
+     "FO": 0.99
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "FO"
+    ],
+    "score": 0.11,
+    "score_exp": 0
+   },
+   {
+    "i": 7,
+    "exp": [
+     "MED",
+     "TRAD"
+    ],
+    "ms": 7409,
+    "route_long": {
+     "top": "TRAD",
+     "p": 0.883,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "MED",
+     "p": 0.854,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.717,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.996,
+     "TRAD": 0.989,
+     "BIB": 0.039,
+     "BAN": 0.012,
+     "FO": 0.944
+    },
+    "noul_top": {
+     "top": "MED",
+     "ok": true
+    },
+    "noul_yes": [
+     "MED",
+     "TRAD",
+     "FO"
+    ],
+    "score": 0.89,
+    "score_exp": 2
+   },
+   {
+    "i": 8,
+    "exp": [
+     "BAN",
+     "TRAD"
+    ],
+    "ms": 7396,
+    "route_long": {
+     "top": "BAN",
+     "p": 0.978,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 0.989,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.965,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.186,
+     "TRAD": 0.869,
+     "BIB": 0.043,
+     "BAN": 0.975,
+     "FO": 0.417
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD",
+     "BAN"
+    ],
+    "score": 1.58,
+    "score_exp": 2
+   },
+   {
+    "i": 9,
+    "exp": [
+     "BAN",
+     "BIB"
+    ],
+    "ms": 7410,
+    "route_long": {
+     "top": "BIB",
+     "p": 0.943,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BIB",
+     "p": 0.731,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.902,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.014,
+     "TRAD": 0.026,
+     "BIB": 0.937,
+     "BAN": 0.542,
+     "FO": 0.358
+    },
+    "noul_top": {
+     "top": "BIB",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB",
+     "BAN"
+    ],
+    "score": 1.07,
+    "score_exp": 2
+   },
+   {
+    "i": 10,
+    "exp": [
+     "BAN"
+    ],
+    "ms": 7396,
+    "route_long": {
+     "top": "BAN",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.986,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.007,
+     "TRAD": 0.337,
+     "BIB": 0.118,
+     "BAN": 0.992,
+     "FO": 0.964
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "BAN",
+     "FO"
+    ],
+    "score": 0.96,
+    "score_exp": 1
+   },
+   {
+    "i": 11,
+    "exp": [
+     "FO"
+    ],
+    "ms": 7394,
+    "route_long": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "MED",
+     "p": 0.482,
+     "ok": false
+    },
+    "noul": {
+     "MED": 0.093,
+     "TRAD": 0.014,
+     "BIB": 0.521,
+     "BAN": 0.026,
+     "FO": 0.968
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB",
+     "FO"
+    ],
+    "score": 0.16,
+    "score_exp": 0
+   },
+   {
+    "i": 12,
+    "exp": [
+     "TRAD"
+    ],
+    "ms": 7406,
+    "route_long": {
+     "top": "TRAD",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.995,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.076,
+     "TRAD": 0.996,
+     "BIB": 0.005,
+     "BAN": 0.003,
+     "FO": 0.086
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD"
+    ],
+    "score": 0.81,
+    "score_exp": 1
+   }
+  ],
+  "en": [
+   {
+    "i": 1,
+    "exp": [
+     "TRAD"
+    ],
+    "ms": 6536,
+    "route_long": {
+     "top": "TRAD",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.998,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.127,
+     "TRAD": 0.99,
+     "BIB": 0.027,
+     "BAN": 0.005,
+     "FO": 0.609
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD",
+     "FO"
+    ],
+    "score": 0.99,
+    "score_exp": 1
+   },
+   {
+    "i": 2,
+    "exp": [
+     "MED"
+    ],
+    "ms": 6537,
+    "route_long": {
+     "top": "MED",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "MED",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "MED",
+     "p": 0.991,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.995,
+     "TRAD": 0.268,
+     "BIB": 0.002,
+     "BAN": 0.027,
+     "FO": 0.844
+    },
+    "noul_top": {
+     "top": "MED",
+     "ok": true
+    },
+    "noul_yes": [
+     "MED",
+     "FO"
+    ],
+    "score": 0.94,
+    "score_exp": 1
+   },
+   {
+    "i": 3,
+    "exp": [
+     "BIB"
+    ],
+    "ms": 6541,
+    "route_long": {
+     "top": "BIB",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BIB",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BIB",
+     "p": 0.994,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.381,
+     "TRAD": 0.009,
+     "BIB": 0.98,
+     "BAN": 0.002,
+     "FO": 0.322
+    },
+    "noul_top": {
+     "top": "BIB",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB"
+    ],
+    "score": 1.02,
+    "score_exp": 1
+   },
+   {
+    "i": 4,
+    "exp": [
+     "BAN"
+    ],
+    "ms": 6537,
+    "route_long": {
+     "top": "BAN",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.998,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.019,
+     "TRAD": 0.015,
+     "BIB": 0.37,
+     "BAN": 0.996,
+     "FO": 0.923
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "BAN",
+     "FO"
+    ],
+    "score": 0.93,
+    "score_exp": 1
+   },
+   {
+    "i": 5,
+    "exp": [
+     "FO"
+    ],
+    "ms": 6540,
+    "route_long": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.993,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.016,
+     "TRAD": 0.012,
+     "BIB": 0.008,
+     "BAN": 0.004,
+     "FO": 0.971
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "FO"
+    ],
+    "score": 0.55,
+    "score_exp": 0
+   },
+   {
+    "i": 6,
+    "exp": [
+     "FO"
+    ],
+    "ms": 6542,
+    "route_long": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.984,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.039,
+     "TRAD": 0.015,
+     "BIB": 0.019,
+     "BAN": 0.01,
+     "FO": 0.633
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "FO"
+    ],
+    "score": 0.67,
+    "score_exp": 0
+   },
+   {
+    "i": 7,
+    "exp": [
+     "MED",
+     "TRAD"
+    ],
+    "ms": 6550,
+    "route_long": {
+     "top": "TRAD",
+     "p": 0.737,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "MED",
+     "p": 0.926,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.977,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.995,
+     "TRAD": 0.995,
+     "BIB": 0.01,
+     "BAN": 0.266,
+     "FO": 0.97
+    },
+    "noul_top": {
+     "top": "MED",
+     "ok": true
+    },
+    "noul_yes": [
+     "MED",
+     "TRAD",
+     "FO"
+    ],
+    "score": 0.96,
+    "score_exp": 2
+   },
+   {
+    "i": 8,
+    "exp": [
+     "BAN",
+     "TRAD"
+    ],
+    "ms": 6536,
+    "route_long": {
+     "top": "BAN",
+     "p": 0.962,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 0.978,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.963,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.108,
+     "TRAD": 0.026,
+     "BIB": 0.314,
+     "BAN": 0.985,
+     "FO": 0.254
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "BAN"
+    ],
+    "score": 1.17,
+    "score_exp": 2
+   },
+   {
+    "i": 9,
+    "exp": [
+     "BAN",
+     "BIB"
+    ],
+    "ms": 6545,
+    "route_long": {
+     "top": "BIB",
+     "p": 0.981,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BIB",
+     "p": 0.902,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.762,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.028,
+     "TRAD": 0.009,
+     "BIB": 0.974,
+     "BAN": 0.961,
+     "FO": 0.754
+    },
+    "noul_top": {
+     "top": "BIB",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB",
+     "BAN",
+     "FO"
+    ],
+    "score": 1.4,
+    "score_exp": 2
+   },
+   {
+    "i": 10,
+    "exp": [
+     "BAN"
+    ],
+    "ms": 6546,
+    "route_long": {
+     "top": "BAN",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.988,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.328,
+     "TRAD": 0.227,
+     "BIB": 0.022,
+     "BAN": 0.962,
+     "FO": 0.961
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "BAN",
+     "FO"
+    ],
+    "score": 0.91,
+    "score_exp": 1
+   },
+   {
+    "i": 11,
+    "exp": [
+     "FO"
+    ],
+    "ms": 6540,
+    "route_long": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.965,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.648,
+     "TRAD": 0.023,
+     "BIB": 0.531,
+     "BAN": 0.01,
+     "FO": 0.96
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "MED",
+     "BIB",
+     "FO"
+    ],
+    "score": 0.31,
+    "score_exp": 0
+   },
+   {
+    "i": 12,
+    "exp": [
+     "TRAD"
+    ],
+    "ms": 6543,
+    "route_long": {
+     "top": "TRAD",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.997,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.859,
+     "TRAD": 0.994,
+     "BIB": 0.004,
+     "BAN": 0.002,
+     "FO": 0.074
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": true
+    },
+    "noul_yes": [
+     "MED",
+     "TRAD"
+    ],
+    "score": 0.92,
+    "score_exp": 1
+   }
+  ]
+ }
+}
