@@ -5,6 +5,7 @@ import urllib.request
 
 URL = sys.argv[1] if len(sys.argv) > 1 else 'http://127.0.0.1:8091/v1/systemone'
 OUT = sys.argv[2] if len(sys.argv) > 2 else 'routing_results.json'
+MODEL = sys.argv[3] if len(sys.argv) > 3 else 'Winnow-12B'
 
 AG = ['MED', 'TRAD', 'BIB', 'BAN', 'FO']
 EXP = [['TRAD'], ['MED'], ['BIB'], ['BAN'], ['FO'], ['FO'], ['MED', 'TRAD'], ['BAN', 'TRAD'], ['BAN', 'BIB'], ['BAN'], ['FO'], ['TRAD']]
@@ -112,7 +113,7 @@ def run_lang(lang):
 		}
 		for a in AG:
 			questions['noul_' + a] = {'type': 'noul', 'instructions': c['noul_q'][a]}
-		res, ms = post({'model': 'Winnow-12B', 'state': state, 'questions': questions})
+		res, ms = post({'model': MODEL, 'state': state, 'questions': questions})
 		A = res['answers']
 		row = {'i': i + 1, 'exp': EXP[i], 'ms': round(ms)}
 		for q in ('route_long', 'route_long_rev', 'route_short'):

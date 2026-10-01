@@ -7,7 +7,7 @@
    "route_short": 11,
    "noul_top": 12,
    "score_round_ok": 10,
-   "median_ms": 7410
+   "median_ms": 7399
   },
   "en": {
    "route_long": 12,
@@ -16,7 +16,7 @@
    "route_short": 12,
    "noul_top": 12,
    "score_round_ok": 7,
-   "median_ms": 6541
+   "median_ms": 6543
   }
  },
  "results": {
@@ -26,7 +26,7 @@
     "exp": [
      "TRAD"
     ],
-    "ms": 8045,
+    "ms": 7405,
     "route_long": {
      "top": "TRAD",
      "p": 1.0,
@@ -65,7 +65,7 @@
     "exp": [
      "MED"
     ],
-    "ms": 7625,
+    "ms": 7400,
     "route_long": {
      "top": "MED",
      "p": 1.0,
@@ -103,7 +103,7 @@
     "exp": [
      "BIB"
     ],
-    "ms": 7532,
+    "ms": 7407,
     "route_long": {
      "top": "BIB",
      "p": 1.0,
@@ -142,7 +142,7 @@
     "exp": [
      "BAN"
     ],
-    "ms": 7409,
+    "ms": 7398,
     "route_long": {
      "top": "BAN",
      "p": 1.0,
@@ -181,7 +181,7 @@
     "exp": [
      "FO"
     ],
-    "ms": 7766,
+    "ms": 7395,
     "route_long": {
      "top": "FO",
      "p": 1.0,
@@ -220,7 +220,7 @@
     "exp": [
      "FO"
     ],
-    "ms": 7527,
+    "ms": 7396,
     "route_long": {
      "top": "FO",
      "p": 1.0,
@@ -259,7 +259,7 @@
      "MED",
      "TRAD"
     ],
-    "ms": 7409,
+    "ms": 7406,
     "route_long": {
      "top": "TRAD",
      "p": 0.883,
@@ -300,7 +300,7 @@
      "BAN",
      "TRAD"
     ],
-    "ms": 7396,
+    "ms": 7397,
     "route_long": {
      "top": "BAN",
      "p": 0.978,
@@ -340,7 +340,7 @@
      "BAN",
      "BIB"
     ],
-    "ms": 7410,
+    "ms": 7400,
     "route_long": {
      "top": "BIB",
      "p": 0.943,
@@ -379,7 +379,7 @@
     "exp": [
      "BAN"
     ],
-    "ms": 7396,
+    "ms": 7388,
     "route_long": {
      "top": "BAN",
      "p": 0.999,
@@ -418,7 +418,7 @@
     "exp": [
      "FO"
     ],
-    "ms": 7394,
+    "ms": 7396,
     "route_long": {
      "top": "FO",
      "p": 1.0,
@@ -457,7 +457,7 @@
     "exp": [
      "TRAD"
     ],
-    "ms": 7406,
+    "ms": 7399,
     "route_long": {
      "top": "TRAD",
      "p": 0.999,
@@ -497,7 +497,7 @@
     "exp": [
      "TRAD"
     ],
-    "ms": 6536,
+    "ms": 6541,
     "route_long": {
      "top": "TRAD",
      "p": 1.0,
@@ -536,7 +536,7 @@
     "exp": [
      "MED"
     ],
-    "ms": 6537,
+    "ms": 6541,
     "route_long": {
      "top": "MED",
      "p": 1.0,
@@ -575,7 +575,7 @@
     "exp": [
      "BIB"
     ],
-    "ms": 6541,
+    "ms": 6550,
     "route_long": {
      "top": "BIB",
      "p": 1.0,
@@ -613,7 +613,7 @@
     "exp": [
      "BAN"
     ],
-    "ms": 6537,
+    "ms": 6539,
     "route_long": {
      "top": "BAN",
      "p": 1.0,
@@ -652,7 +652,7 @@
     "exp": [
      "FO"
     ],
-    "ms": 6540,
+    "ms": 6539,
     "route_long": {
      "top": "FO",
      "p": 1.0,
@@ -690,7 +690,7 @@
     "exp": [
      "FO"
     ],
-    "ms": 6542,
+    "ms": 6543,
     "route_long": {
      "top": "FO",
      "p": 1.0,
@@ -729,7 +729,7 @@
      "MED",
      "TRAD"
     ],
-    "ms": 6550,
+    "ms": 6553,
     "route_long": {
      "top": "TRAD",
      "p": 0.737,
@@ -770,7 +770,7 @@
      "BAN",
      "TRAD"
     ],
-    "ms": 6536,
+    "ms": 6546,
     "route_long": {
      "top": "BAN",
      "p": 0.962,
@@ -809,7 +809,7 @@
      "BAN",
      "BIB"
     ],
-    "ms": 6545,
+    "ms": 6548,
     "route_long": {
      "top": "BIB",
      "p": 0.981,
@@ -849,7 +849,7 @@
     "exp": [
      "BAN"
     ],
-    "ms": 6546,
+    "ms": 6550,
     "route_long": {
      "top": "BAN",
      "p": 1.0,
@@ -928,7 +928,7 @@
     "exp": [
      "TRAD"
     ],
-    "ms": 6543,
+    "ms": 6542,
     "route_long": {
      "top": "TRAD",
      "p": 1.0,

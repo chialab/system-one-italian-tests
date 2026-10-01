@@ -15,7 +15,7 @@ The test cases were written by hand. They do not measure accuracy on real traffi
 | **Graded urgency** (`score` 0/1/2) | ❌ Not usable | Any case that needs a human gets about 2 ("urgent"), so non-urgent and urgent cannot be told apart. |
 | **Robustness to option order** | ⚠️ Mostly | Correct in 236/240 runs with the options reversed. On ambiguous or vague requests the top answer can flip (13 of 240). |
 | **Latency on a laptop** | ⚠️ 1–4 s per request | Fine for one routing decision per conversation, too slow for per-step agent loops on this machine (see [Timings](#timings)). |
-| **Italian vs English** | ✅ No accuracy gap | Same accuracy. Italian routing is about 33% slower because it uses about 36% more tokens for the same text (see [Italian vs English](#italian-vs-english)). |
+| **Italian vs English** | ✅ No accuracy gap | Same accuracy. Italian routing is about 30% slower because it uses about 36% more tokens for the same text (see [Italian vs English](#italian-vs-english)). |
 
 **Suggested way to use it.** Route with a `choice` that gives a one-sentence description for each agent. Accept answers with p ≥ ~0.8; below that, ask the user to clarify or fall back to an LLM or a human. Handle escalation with two separate `noul` questions, "needs a human?" and "risk to safety or health?", and do not use a `score` for urgency.
 
@@ -86,7 +86,7 @@ On the same 12 cases, the released [CLM-8B](https://github.com/Contrastive-LM/CL
 | Server | [`EldanRing/winnow-inference`](https://github.com/EldanRing/winnow-inference) at commit `77d1458`. llama.cpp pinned at `911f6cd` with the repo's 4 patches, Metal build. |
 | Launch | `python3 scripts/serve.py --profile apple-silicon --text-only --context 8192` |
 | Effective settings | 8K context, f16 KV cache, 1 decision branch, exclusive memory, letter-logit "selected" head, temperature 1, no vision projector. Endpoint on `127.0.0.1:8091`. |
-| Machine | MacBook Pro, Apple M3 Pro (6 performance + 6 efficiency cores), 36 GB unified memory, macOS 26.6.2 |
+| Machine | MacBook Pro, Apple M3 Pro (6 performance + 6 efficiency cores), 36 GB unified memory, macOS 26.6.2. No other model server running during the tests. |
 | Client | Python 3 standard library, one request at a time (concurrency 1) |
 
 ## How to reproduce
@@ -100,20 +100,20 @@ python3 scripts/serve.py --profile apple-silicon --text-only --context 8192
 The setup script needs `cmake` and `openssl@3`, downloads about 12 GB and builds llama.cpp. Once the server is up, run from the root of this repo:
 
 ```bash
-python3 suite_run.py --data suite_data --langs it,en --tag winnow-12b-q8_0
-python3 suite_run.py --data suite_data_hard --langs it --tag winnow-12b-q8_0
-python3 pilot_12_cases.py http://127.0.0.1:8091/v1/systemone results/winnow-12b-q8_0/pilot_12_cases_it-en.json
+./run_all.sh http://127.0.0.1:8091/v1/systemone Winnow-12B winnow-12b-q8_0
 ```
+
+`run_all.sh` runs the base suite, the hard suite, the pilot and the latency measurement, and writes every report into the model's folder.
 
 ## Timings
 
-All timings were measured on the laptop above, at concurrency 1, end to end through HTTP. **They reflect this machine, not the model's ceiling.** The Winnow model card reports runs on an RTX 5070 Ti, and the hosted Jev API reports 70–500 ms per request.
+All timings were measured on the laptop above, at concurrency 1, end to end through HTTP, with no other model server running. A first run with another idle model server loaded gave the same medians within 2%. **They reflect this machine, not the model's ceiling.** The Winnow model card reports runs on an RTX 5070 Ti, and the hosted Jev API reports 70–500 ms per request.
 
 | Request | Median |
 |---|---|
 | One routing `choice`, 5 agents with long (~60-word) descriptions | 2.7 s |
 | One routing `choice`, 5 agents with key-only labels | 0.9 s |
-| Suite routing request: 2 `choice` questions (normal + reversed), 8–9 one-sentence descriptions | 3.6 s IT / 2.7 s EN |
+| Suite routing request: 2 `choice` questions (normal + reversed), 8–9 one-sentence descriptions | 3.5 s IT / 2.7 s EN |
 | Escalation request: 4 questions on a short conversation | 2.1–2.2 s |
 | Pilot request: 9 questions | 7.4 s IT / 6.5 s EN |
 
@@ -133,8 +133,8 @@ The tokenizer splits Italian into more tokens than English for the same amount o
 | Routing: request text | 17 tok | 15 tok | +13% |
 | Routing: question | 27 tok | 23 tok | +17% |
 | Routing: option descriptions, per `choice` | 251 tok (1,000 chars) | 184 tok (971 chars) | +36% tokens, +3% chars |
-| **Routing: median time** (2 `choice`) | **3.6 s** | **2.7 s** | **+33%** |
+| **Routing: median time** (2 `choice`) | **3.5 s** | **2.7 s** | **+31%** |
 | Escalation: conversation | 37 tok | 34 tok | +9% |
-| **Escalation: median time** (4 questions) | **2.2 s** | **2.1 s** | **+5%** |
+| **Escalation: median time** (4 questions) | **2.2 s** | **2.1 s** | **+6%** |
 
 Option descriptions are most of a routing request, so the language gap shows there. In escalation the conversation is a small part of the input and the questions are short, so the gap almost disappears. Token counts come from the server's `/tokenize` endpoint (`python3 token_count.py`).

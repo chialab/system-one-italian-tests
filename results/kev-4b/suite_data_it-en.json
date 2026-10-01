@@ -1,0 +1,4324 @@
+{
+ "summary": {
+  "routing": {
+   "sportello/it": {
+    "n": 32,
+    "ok": 32,
+    "ok_rev": 32,
+    "flips": 2,
+    "median_ms": 1024
+   },
+   "sportello/en": {
+    "n": 32,
+    "ok": 32,
+    "ok_rev": 32,
+    "flips": 1,
+    "median_ms": 930
+   },
+   "ecommerce/it": {
+    "n": 20,
+    "ok": 20,
+    "ok_rev": 20,
+    "flips": 0,
+    "median_ms": 933
+   },
+   "ecommerce/en": {
+    "n": 20,
+    "ok": 19,
+    "ok_rev": 20,
+    "flips": 1,
+    "median_ms": 726
+   },
+   "azienda/it": {
+    "n": 22,
+    "ok": 22,
+    "ok_rev": 22,
+    "flips": 1,
+    "median_ms": 929
+   },
+   "azienda/en": {
+    "n": 22,
+    "ok": 22,
+    "ok_rev": 22,
+    "flips": 2,
+    "median_ms": 738
+   },
+   "coding/it": {
+    "n": 16,
+    "ok": 14,
+    "ok_rev": 14,
+    "flips": 2,
+    "median_ms": 744
+   },
+   "coding/en": {
+    "n": 16,
+    "ok": 15,
+    "ok_rev": 15,
+    "flips": 0,
+    "median_ms": 626
+   },
+   "ALL/it": {
+    "n": 90,
+    "ok": 88,
+    "ok_rev": 88,
+    "flips": 5,
+    "mean_p_right": 0.818,
+    "mean_p_wrong": 0.335
+   },
+   "ALL/en": {
+    "n": 90,
+    "ok": 88,
+    "ok_rev": 89,
+    "flips": 4,
+    "mean_p_right": 0.836,
+    "mean_p_wrong": 0.499
+   }
+  },
+  "escalation": {
+   "it": {
+    "n_scored": 40,
+    "n_borderline": 0,
+    "noul_ok": 39,
+    "noul_missed": 1,
+    "noul_false_alarm": 0,
+    "noul_auroc": 1.0,
+    "choice_ok": 40,
+    "choice_missed": 0,
+    "choice_false_alarm": 0,
+    "choice_auroc": 1.0,
+    "risk_ok": 38,
+    "risk_n": 40,
+    "risk_missed": 1,
+    "risk_false_alarm": 1,
+    "urgency_exact": 35,
+    "median_ms": 565
+   },
+   "en": {
+    "n_scored": 40,
+    "n_borderline": 0,
+    "noul_ok": 40,
+    "noul_missed": 0,
+    "noul_false_alarm": 0,
+    "noul_auroc": 1.0,
+    "choice_ok": 40,
+    "choice_missed": 0,
+    "choice_false_alarm": 0,
+    "choice_auroc": 1.0,
+    "risk_ok": 40,
+    "risk_n": 40,
+    "risk_missed": 0,
+    "risk_false_alarm": 0,
+    "urgency_exact": 34,
+    "median_ms": 485
+   }
+  }
+ },
+ "routing": [
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 1,
+   "text": "Mi serve la traduzione in inglese del mio contratto di lavoro entro venerdì.",
+   "accepted": [
+    "TRAD"
+   ],
+   "pred": "TRAD",
+   "p": 0.895,
+   "ok": true,
+   "pred_rev": "TRAD",
+   "p_rev": 0.916,
+   "ok_rev": true,
+   "ms": 1114
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 2,
+   "text": "Durante il colloquio con i servizi sociali una madre marocchina si è offesa per alcune domande sulla famiglia e vuole andarsene.",
+   "accepted": [
+    "MED"
+   ],
+   "pred": "MED",
+   "p": 0.864,
+   "ok": true,
+   "pred_rev": "MED",
+   "p_rev": 0.838,
+   "ok_rev": true,
+   "ms": 1091
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 3,
+   "text": "Sto scrivendo la tesi sulla storia del movimento operaio a Torino: mi servono le fonti principali formattate in APA.",
+   "accepted": [
+    "BIB"
+   ],
+   "pred": "BIB",
+   "p": 0.938,
+   "ok": true,
+   "pred_rev": "BIB",
+   "p_rev": 0.931,
+   "ok_rev": true,
+   "ms": 1018
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 4,
+   "text": "C'è un bando regionale per le startup femminili? Vorrei sapere requisiti e scadenza.",
+   "accepted": [
+    "BAN"
+   ],
+   "pred": "BAN",
+   "p": 0.875,
+   "ok": true,
+   "pred_rev": "BAN",
+   "p_rev": 0.871,
+   "ok_rev": true,
+   "ms": 1025
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 5,
+   "text": "A che ora siete aperti domani? Vorrei prendere un appuntamento.",
+   "accepted": [
+    "FO"
+   ],
+   "pred": "FO",
+   "p": 0.91,
+   "ok": true,
+   "pred_rev": "FO",
+   "p_rev": 0.809,
+   "ok_rev": true,
+   "ms": 1022
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 6,
+   "text": "Buongiorno, non so bene a chi rivolgermi, mi può aiutare?",
+   "accepted": [
+    "FO"
+   ],
+   "pred": "FO",
+   "p": 0.906,
+   "ok": true,
+   "pred_rev": "FO",
+   "p_rev": 0.931,
+   "ok_rev": true,
+   "ms": 1025
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 7,
+   "text": "Un signore arrivato dal Pakistan ha ricevuto una lettera della questura in italiano, non la capisce ed è molto agitato perché teme di essere espulso.",
+   "accepted": [
+    "MED",
+    "TRAD",
+    "LEG"
+   ],
+   "pred": "MED",
+   "p": 0.391,
+   "ok": true,
+   "pred_rev": "LEG",
+   "p_rev": 0.394,
+   "ok_rev": true,
+   "ms": 1035
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 8,
+   "text": "Dobbiamo presentare il progetto al bando europeo Erasmus+ e la proposta va scritta in inglese.",
+   "accepted": [
+    "BAN",
+    "TRAD"
+   ],
+   "pred": "BAN",
+   "p": 0.724,
+   "ok": true,
+   "pred_rev": "BAN",
+   "p_rev": 0.828,
+   "ok_rev": true,
+   "ms": 1028
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 9,
+   "text": "Per la domanda al bando PRIN mi serve una sezione sullo stato dell'arte con riferimenti bibliografici aggiornati.",
+   "accepted": [
+    "BAN",
+    "BIB"
+   ],
+   "pred": "BIB",
+   "p": 0.807,
+   "ok": true,
+   "pred_rev": "BIB",
+   "p_rev": 0.607,
+   "ok_rev": true,
+   "ms": 1027
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 10,
+   "text": "Sono un traduttore freelance e vorrei sapere se esistono finanziamenti pubblici per aprire la partita IVA.",
+   "accepted": [
+    "BAN"
+   ],
+   "pred": "BAN",
+   "p": 0.736,
+   "ok": true,
+   "pred_rev": "BAN",
+   "p_rev": 0.665,
+   "ok_rev": true,
+   "ms": 1009
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 11,
+   "text": "Vorrei prenotare la sala per la presentazione del libro sulla mediazione culturale.",
+   "accepted": [
+    "FO"
+   ],
+   "pred": "FO",
+   "p": 0.801,
+   "ok": true,
+   "pred_rev": "FO",
+   "p_rev": 0.708,
+   "ok_rev": true,
+   "ms": 1020
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 12,
+   "text": "Può tradurmi in arabo questa frase per il cartello dell'ingresso: 'Gli uffici sono chiusi il sabato'?",
+   "accepted": [
+    "TRAD"
+   ],
+   "pred": "TRAD",
+   "p": 0.829,
+   "ok": true,
+   "pred_rev": "TRAD",
+   "p_rev": 0.703,
+   "ok_rev": true,
+   "ms": 1025
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 13,
+   "text": "Mi è scaduto il permesso di soggiorno da due settimane: cosa rischio e come lo rinnovo?",
+   "accepted": [
+    "LEG"
+   ],
+   "pred": "LEG",
+   "p": 0.782,
+   "ok": true,
+   "pred_rev": "LEG",
+   "p_rev": 0.688,
+   "ok_rev": true,
+   "ms": 1019
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 14,
+   "text": "Vorrei rifare il curriculum e capire come presentarmi a un colloquio in un'azienda italiana.",
+   "accepted": [
+    "LAV"
+   ],
+   "pred": "LAV",
+   "p": 0.949,
+   "ok": true,
+   "pred_rev": "LAV",
+   "p_rev": 0.956,
+   "ok_rev": true,
+   "ms": 1017
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 15,
+   "text": "Non riesco ad attivare lo SPID, l'app mi dà sempre errore al riconoscimento.",
+   "accepted": [
+    "DIG"
+   ],
+   "pred": "DIG",
+   "p": 0.949,
+   "ok": true,
+   "pred_rev": "DIG",
+   "p_rev": 0.927,
+   "ok_rev": true,
+   "ms": 1022
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 16,
+   "text": "Mia moglie vive ancora in Tunisia: come posso farla venire qui con me?",
+   "accepted": [
+    "LEG"
+   ],
+   "pred": "LEG",
+   "p": 0.874,
+   "ok": true,
+   "pred_rev": "LEG",
+   "p_rev": 0.799,
+   "ok_rev": true,
+   "ms": 1017
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 17,
+   "text": "Ho bisogno di una traduzione giurata del diploma per iscrivermi all'università.",
+   "accepted": [
+    "TRAD"
+   ],
+   "pred": "TRAD",
+   "p": 0.839,
+   "ok": true,
+   "pred_rev": "TRAD",
+   "p_rev": 0.805,
+   "ok_rev": true,
+   "ms": 1024
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 18,
+   "text": "Il mio datore di lavoro dice che senza un contratto a tempo indeterminato non posso rinnovare il permesso, è vero?",
+   "accepted": [
+    "LEG"
+   ],
+   "pred": "LEG",
+   "p": 0.668,
+   "ok": true,
+   "pred_rev": "LEG",
+   "p_rev": 0.527,
+   "ok_rev": true,
+   "ms": 1025
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 19,
+   "text": "Cerco un tirocinio retribuito nel settore della ristorazione.",
+   "accepted": [
+    "LAV"
+   ],
+   "pred": "LAV",
+   "p": 0.874,
+   "ok": true,
+   "pred_rev": "LAV",
+   "p_rev": 0.862,
+   "ok_rev": true,
+   "ms": 1020
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 20,
+   "text": "Come faccio a mandare una PEC al Comune? Non ho mai usato la posta certificata.",
+   "accepted": [
+    "DIG"
+   ],
+   "pred": "DIG",
+   "p": 0.887,
+   "ok": true,
+   "pred_rev": "DIG",
+   "p_rev": 0.873,
+   "ok_rev": true,
+   "ms": 1020
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 21,
+   "text": "Mio figlio a scuola viene escluso dai compagni e la maestra dice che è colpa delle nostre abitudini religiose.",
+   "accepted": [
+    "MED"
+   ],
+   "pred": "MED",
+   "p": 0.858,
+   "ok": true,
+   "pred_rev": "MED",
+   "p_rev": 0.815,
+   "ok_rev": true,
+   "ms": 1028
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 22,
+   "text": "Mi serve una lista di studi recenti sull'integrazione dei minori stranieri nelle scuole italiane.",
+   "accepted": [
+    "BIB"
+   ],
+   "pred": "BIB",
+   "p": 0.804,
+   "ok": true,
+   "pred_rev": "BIB",
+   "p_rev": 0.773,
+   "ok_rev": true,
+   "ms": 1021
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 23,
+   "text": "Esistono contributi per chi vuole aprire una piccola sartoria?",
+   "accepted": [
+    "BAN"
+   ],
+   "pred": "BAN",
+   "p": 0.861,
+   "ok": true,
+   "pred_rev": "BAN",
+   "p_rev": 0.896,
+   "ok_rev": true,
+   "ms": 1019
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 24,
+   "text": "Dove si trova il vostro ufficio e c'è un parcheggio vicino?",
+   "accepted": [
+    "FO"
+   ],
+   "pred": "FO",
+   "p": 0.955,
+   "ok": true,
+   "pred_rev": "FO",
+   "p_rev": 0.955,
+   "ok_rev": true,
+   "ms": 1022
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 25,
+   "text": "Ho trovato lavoro ma il contratto è in italiano e non capisco alcune clausole: me lo potete tradurre in francese?",
+   "accepted": [
+    "TRAD"
+   ],
+   "pred": "TRAD",
+   "p": 0.812,
+   "ok": true,
+   "pred_rev": "TRAD",
+   "p_rev": 0.852,
+   "ok_rev": true,
+   "ms": 1025
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 26,
+   "text": "Per la cittadinanza mi chiedono la certificazione B1 di italiano: è obbligatoria anche per me che sono sposata con un italiano?",
+   "accepted": [
+    "LEG"
+   ],
+   "pred": "LEG",
+   "p": 0.569,
+   "ok": true,
+   "pred_rev": "LEG",
+   "p_rev": 0.633,
+   "ok_rev": true,
+   "ms": 1030
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 27,
+   "text": "Vorrei iscrivermi al centro per l'impiego ma il sito non mi fa caricare i documenti.",
+   "accepted": [
+    "DIG",
+    "LAV"
+   ],
+   "pred": "DIG",
+   "p": 0.422,
+   "ok": true,
+   "pred_rev": "LAV",
+   "p_rev": 0.403,
+   "ok_rev": true,
+   "ms": 1025
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 28,
+   "text": "Durante un colloquio di lavoro il selezionatore ha fatto commenti sul mio velo e mi sono sentita a disagio: come devo comportarmi?",
+   "accepted": [
+    "MED",
+    "LEG",
+    "LAV"
+   ],
+   "pred": "LAV",
+   "p": 0.587,
+   "ok": true,
+   "pred_rev": "LAV",
+   "p_rev": 0.729,
+   "ok_rev": true,
+   "ms": 1025
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 29,
+   "text": "Sto preparando un progetto per un'associazione di donne migranti e cerco un finanziamento da una fondazione.",
+   "accepted": [
+    "BAN"
+   ],
+   "pred": "BAN",
+   "p": 0.909,
+   "ok": true,
+   "pred_rev": "BAN",
+   "p_rev": 0.912,
+   "ok_rev": true,
+   "ms": 1024
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 30,
+   "text": "Che documenti devo portare all'appuntamento di giovedì?",
+   "accepted": [
+    "FO"
+   ],
+   "pred": "FO",
+   "p": 0.905,
+   "ok": true,
+   "pred_rev": "FO",
+   "p_rev": 0.922,
+   "ok_rev": true,
+   "ms": 987
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 31,
+   "text": "Il computer della sala studio non si accende.",
+   "accepted": [
+    "DIG"
+   ],
+   "pred": "DIG",
+   "p": 0.854,
+   "ok": true,
+   "pred_rev": "DIG",
+   "p_rev": 0.851,
+   "ok_rev": true,
+   "ms": 988
+  },
+  {
+   "domain": "sportello",
+   "lang": "it",
+   "i": 32,
+   "text": "Mi servono articoli accademici sul mercato del lavoro dei rifugiati per un convegno.",
+   "accepted": [
+    "BIB"
+   ],
+   "pred": "BIB",
+   "p": 0.82,
+   "ok": true,
+   "pred_rev": "BIB",
+   "p_rev": 0.844,
+   "ok_rev": true,
+   "ms": 1021
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 1,
+   "text": "I need my employment contract translated into English by Friday.",
+   "accepted": [
+    "TRAD"
+   ],
+   "pred": "TRAD",
+   "p": 0.955,
+   "ok": true,
+   "pred_rev": "TRAD",
+   "p_rev": 0.931,
+   "ok_rev": true,
+   "ms": 937
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 2,
+   "text": "During the interview with social services, a Moroccan mother was offended by some questions about her family and wants to leave.",
+   "accepted": [
+    "MED"
+   ],
+   "pred": "MED",
+   "p": 0.786,
+   "ok": true,
+   "pred_rev": "MED",
+   "p_rev": 0.686,
+   "ok_rev": true,
+   "ms": 930
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 3,
+   "text": "I'm writing my thesis on the history of the labour movement in Turin: I need the main sources formatted in APA.",
+   "accepted": [
+    "BIB"
+   ],
+   "pred": "BIB",
+   "p": 0.96,
+   "ok": true,
+   "pred_rev": "BIB",
+   "p_rev": 0.933,
+   "ok_rev": true,
+   "ms": 932
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 4,
+   "text": "Is there a regional grant for women-led startups? I'd like to know the requirements and the deadline.",
+   "accepted": [
+    "BAN"
+   ],
+   "pred": "BAN",
+   "p": 0.925,
+   "ok": true,
+   "pred_rev": "BAN",
+   "p_rev": 0.909,
+   "ok_rev": true,
+   "ms": 933
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 5,
+   "text": "What time are you open tomorrow? I'd like to book an appointment.",
+   "accepted": [
+    "FO"
+   ],
+   "pred": "FO",
+   "p": 0.911,
+   "ok": true,
+   "pred_rev": "FO",
+   "p_rev": 0.845,
+   "ok_rev": true,
+   "ms": 928
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 6,
+   "text": "Good morning, I'm not sure who to ask, can you help me?",
+   "accepted": [
+    "FO"
+   ],
+   "pred": "FO",
+   "p": 0.932,
+   "ok": true,
+   "pred_rev": "FO",
+   "p_rev": 0.868,
+   "ok_rev": true,
+   "ms": 930
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 7,
+   "text": "A man who arrived from Pakistan received a letter from the police immigration office in Italian, he doesn't understand it and is very anxious because he fears being deported.",
+   "accepted": [
+    "MED",
+    "TRAD",
+    "LEG"
+   ],
+   "pred": "LEG",
+   "p": 0.416,
+   "ok": true,
+   "pred_rev": "LEG",
+   "p_rev": 0.682,
+   "ok_rev": true,
+   "ms": 938
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 8,
+   "text": "We have to submit our project to the European Erasmus+ call and the proposal must be written in English.",
+   "accepted": [
+    "BAN",
+    "TRAD"
+   ],
+   "pred": "BAN",
+   "p": 0.75,
+   "ok": true,
+   "pred_rev": "BAN",
+   "p_rev": 0.828,
+   "ok_rev": true,
+   "ms": 930
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 9,
+   "text": "For my PRIN grant application I need a state-of-the-art section with up-to-date bibliographic references.",
+   "accepted": [
+    "BAN",
+    "BIB"
+   ],
+   "pred": "BIB",
+   "p": 0.819,
+   "ok": true,
+   "pred_rev": "BIB",
+   "p_rev": 0.548,
+   "ok_rev": true,
+   "ms": 935
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 10,
+   "text": "I'm a freelance translator and I'd like to know whether there is public funding for setting up as self-employed.",
+   "accepted": [
+    "BAN"
+   ],
+   "pred": "BAN",
+   "p": 0.869,
+   "ok": true,
+   "pred_rev": "BAN",
+   "p_rev": 0.82,
+   "ok_rev": true,
+   "ms": 929
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 11,
+   "text": "I'd like to book the room for the presentation of the book on cultural mediation.",
+   "accepted": [
+    "FO"
+   ],
+   "pred": "FO",
+   "p": 0.726,
+   "ok": true,
+   "pred_rev": "FO",
+   "p_rev": 0.642,
+   "ok_rev": true,
+   "ms": 929
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 12,
+   "text": "Can you translate this sentence into Arabic for the sign at the entrance: 'The offices are closed on Saturdays'?",
+   "accepted": [
+    "TRAD"
+   ],
+   "pred": "TRAD",
+   "p": 0.872,
+   "ok": true,
+   "pred_rev": "TRAD",
+   "p_rev": 0.747,
+   "ok_rev": true,
+   "ms": 932
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 13,
+   "text": "My residence permit expired two weeks ago: what do I risk and how do I renew it?",
+   "accepted": [
+    "LEG"
+   ],
+   "pred": "LEG",
+   "p": 0.83,
+   "ok": true,
+   "pred_rev": "LEG",
+   "p_rev": 0.659,
+   "ok_rev": true,
+   "ms": 934
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 14,
+   "text": "I'd like to redo my CV and understand how to present myself at an interview with an Italian company.",
+   "accepted": [
+    "LAV"
+   ],
+   "pred": "LAV",
+   "p": 0.912,
+   "ok": true,
+   "pred_rev": "LAV",
+   "p_rev": 0.915,
+   "ok_rev": true,
+   "ms": 928
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 15,
+   "text": "I can't activate my digital ID, the app always gives me an error at the identity check.",
+   "accepted": [
+    "DIG"
+   ],
+   "pred": "DIG",
+   "p": 0.944,
+   "ok": true,
+   "pred_rev": "DIG",
+   "p_rev": 0.872,
+   "ok_rev": true,
+   "ms": 928
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 16,
+   "text": "My wife still lives in Tunisia: how can I bring her here to live with me?",
+   "accepted": [
+    "LEG"
+   ],
+   "pred": "LEG",
+   "p": 0.923,
+   "ok": true,
+   "pred_rev": "LEG",
+   "p_rev": 0.849,
+   "ok_rev": true,
+   "ms": 925
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 17,
+   "text": "I need a sworn translation of my diploma to enrol at university.",
+   "accepted": [
+    "TRAD"
+   ],
+   "pred": "TRAD",
+   "p": 0.917,
+   "ok": true,
+   "pred_rev": "TRAD",
+   "p_rev": 0.908,
+   "ok_rev": true,
+   "ms": 925
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 18,
+   "text": "My employer says I can't renew my permit without a permanent contract, is that true?",
+   "accepted": [
+    "LEG"
+   ],
+   "pred": "LEG",
+   "p": 0.887,
+   "ok": true,
+   "pred_rev": "LEG",
+   "p_rev": 0.72,
+   "ok_rev": true,
+   "ms": 926
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 19,
+   "text": "I'm looking for a paid internship in the restaurant sector.",
+   "accepted": [
+    "LAV"
+   ],
+   "pred": "LAV",
+   "p": 0.91,
+   "ok": true,
+   "pred_rev": "LAV",
+   "p_rev": 0.797,
+   "ok_rev": true,
+   "ms": 894
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 20,
+   "text": "How do I send a certified email to the town hall? I've never used certified email.",
+   "accepted": [
+    "DIG"
+   ],
+   "pred": "DIG",
+   "p": 0.883,
+   "ok": true,
+   "pred_rev": "DIG",
+   "p_rev": 0.804,
+   "ok_rev": true,
+   "ms": 930
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 21,
+   "text": "My son is being excluded by his classmates at school and the teacher says it's because of our religious habits.",
+   "accepted": [
+    "MED"
+   ],
+   "pred": "MED",
+   "p": 0.89,
+   "ok": true,
+   "pred_rev": "MED",
+   "p_rev": 0.797,
+   "ok_rev": true,
+   "ms": 933
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 22,
+   "text": "I need a list of recent studies on the integration of foreign minors in Italian schools.",
+   "accepted": [
+    "BIB"
+   ],
+   "pred": "BIB",
+   "p": 0.846,
+   "ok": true,
+   "pred_rev": "BIB",
+   "p_rev": 0.83,
+   "ok_rev": true,
+   "ms": 924
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 23,
+   "text": "Is there any funding for someone who wants to open a small tailor's shop?",
+   "accepted": [
+    "BAN"
+   ],
+   "pred": "BAN",
+   "p": 0.924,
+   "ok": true,
+   "pred_rev": "BAN",
+   "p_rev": 0.893,
+   "ok_rev": true,
+   "ms": 925
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 24,
+   "text": "Where is your office and is there parking nearby?",
+   "accepted": [
+    "FO"
+   ],
+   "pred": "FO",
+   "p": 0.961,
+   "ok": true,
+   "pred_rev": "FO",
+   "p_rev": 0.967,
+   "ok_rev": true,
+   "ms": 893
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 25,
+   "text": "I found a job but the contract is in Italian and I don't understand some clauses: can you translate it into French for me?",
+   "accepted": [
+    "TRAD"
+   ],
+   "pred": "TRAD",
+   "p": 0.896,
+   "ok": true,
+   "pred_rev": "TRAD",
+   "p_rev": 0.88,
+   "ok_rev": true,
+   "ms": 927
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 26,
+   "text": "For citizenship they're asking for a B1 Italian certificate: is it mandatory for me too, since I'm married to an Italian?",
+   "accepted": [
+    "LEG"
+   ],
+   "pred": "LEG",
+   "p": 0.795,
+   "ok": true,
+   "pred_rev": "LEG",
+   "p_rev": 0.744,
+   "ok_rev": true,
+   "ms": 930
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 27,
+   "text": "I'd like to register with the job centre but the website won't let me upload my documents.",
+   "accepted": [
+    "DIG",
+    "LAV"
+   ],
+   "pred": "DIG",
+   "p": 0.403,
+   "ok": true,
+   "pred_rev": "DIG",
+   "p_rev": 0.654,
+   "ok_rev": true,
+   "ms": 931
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 28,
+   "text": "During a job interview the recruiter made comments about my headscarf and I felt uncomfortable: how should I handle it?",
+   "accepted": [
+    "MED",
+    "LEG",
+    "LAV"
+   ],
+   "pred": "MED",
+   "p": 0.626,
+   "ok": true,
+   "pred_rev": "LAV",
+   "p_rev": 0.478,
+   "ok_rev": true,
+   "ms": 931
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 29,
+   "text": "I'm preparing a project for an association of migrant women and I'm looking for funding from a foundation.",
+   "accepted": [
+    "BAN"
+   ],
+   "pred": "BAN",
+   "p": 0.914,
+   "ok": true,
+   "pred_rev": "BAN",
+   "p_rev": 0.924,
+   "ok_rev": true,
+   "ms": 930
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 30,
+   "text": "Which documents should I bring to Thursday's appointment?",
+   "accepted": [
+    "FO"
+   ],
+   "pred": "FO",
+   "p": 0.916,
+   "ok": true,
+   "pred_rev": "FO",
+   "p_rev": 0.918,
+   "ok_rev": true,
+   "ms": 893
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 31,
+   "text": "The computer in the study room won't turn on.",
+   "accepted": [
+    "DIG"
+   ],
+   "pred": "DIG",
+   "p": 0.913,
+   "ok": true,
+   "pred_rev": "DIG",
+   "p_rev": 0.616,
+   "ok_rev": true,
+   "ms": 897
+  },
+  {
+   "domain": "sportello",
+   "lang": "en",
+   "i": 32,
+   "text": "I need academic articles on the refugee labour market for a conference.",
+   "accepted": [
+    "BIB"
+   ],
+   "pred": "BIB",
+   "p": 0.93,
+   "ok": true,
+   "pred_rev": "BIB",
+   "p_rev": 0.922,
+   "ok_rev": true,
+   "ms": 925
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 1,
+   "text": "Il pacco risulta consegnato ma io non ho ricevuto niente.",
+   "accepted": [
+    "ORD"
+   ],
+   "pred": "ORD",
+   "p": 0.877,
+   "ok": true,
+   "pred_rev": "ORD",
+   "p_rev": 0.92,
+   "ok_rev": true,
+   "ms": 934
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 2,
+   "text": "Le scarpe sono di una taglia troppo piccole, come le cambio?",
+   "accepted": [
+    "RES"
+   ],
+   "pred": "RES",
+   "p": 0.967,
+   "ok": true,
+   "pred_rev": "RES",
+   "p_rev": 0.961,
+   "ok_rev": true,
+   "ms": 935
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 3,
+   "text": "Mi è arrivata la fattura senza la partita IVA della mia ditta, potete correggerla?",
+   "accepted": [
+    "PAY"
+   ],
+   "pred": "PAY",
+   "p": 0.896,
+   "ok": true,
+   "pred_rev": "PAY",
+   "p_rev": 0.861,
+   "ok_rev": true,
+   "ms": 935
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 4,
+   "text": "L'app si chiude da sola ogni volta che apro il carrello.",
+   "accepted": [
+    "TEC"
+   ],
+   "pred": "TEC",
+   "p": 0.808,
+   "ok": true,
+   "pred_rev": "TEC",
+   "p_rev": 0.83,
+   "ok_rev": true,
+   "ms": 934
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 5,
+   "text": "Voglio cancellare il mio account e tutti i miei dati personali.",
+   "accepted": [
+    "ACC"
+   ],
+   "pred": "ACC",
+   "p": 0.983,
+   "ok": true,
+   "pred_rev": "ACC",
+   "p_rev": 0.983,
+   "ok_rev": true,
+   "ms": 929
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 6,
+   "text": "Questa lavatrice va bene per una famiglia di quattro persone? Che differenza c'è con il modello superiore?",
+   "accepted": [
+    "PRE"
+   ],
+   "pred": "PRE",
+   "p": 0.979,
+   "ok": true,
+   "pred_rev": "PRE",
+   "p_rev": 0.972,
+   "ok_rev": true,
+   "ms": 937
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 7,
+   "text": "Siamo un hotel e vorremmo acquistare 200 set di asciugamani con consegna programmata ogni trimestre.",
+   "accepted": [
+    "B2B"
+   ],
+   "pred": "B2B",
+   "p": 0.972,
+   "ok": true,
+   "pred_rev": "B2B",
+   "p_rev": 0.959,
+   "ok_rev": true,
+   "ms": 933
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 8,
+   "text": "Vedo un addebito sulla carta per un ordine che non ho mai fatto.",
+   "accepted": [
+    "SIC",
+    "PAY"
+   ],
+   "pred": "SIC",
+   "p": 0.663,
+   "ok": true,
+   "pred_rev": "SIC",
+   "p_rev": 0.622,
+   "ok_rev": true,
+   "ms": 930
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 9,
+   "text": "Ho ricevuto una email che sembra vostra e mi chiede di confermare la password, è vera?",
+   "accepted": [
+    "SIC"
+   ],
+   "pred": "SIC",
+   "p": 0.527,
+   "ok": true,
+   "pred_rev": "SIC",
+   "p_rev": 0.637,
+   "ok_rev": true,
+   "ms": 933
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 10,
+   "text": "Posso cambiare l'indirizzo di consegna di un ordine già spedito?",
+   "accepted": [
+    "ORD"
+   ],
+   "pred": "ORD",
+   "p": 0.896,
+   "ok": true,
+   "pred_rev": "ORD",
+   "p_rev": 0.951,
+   "ok_rev": true,
+   "ms": 934
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 11,
+   "text": "Ho restituito il prodotto tre settimane fa ma il rimborso non è ancora arrivato.",
+   "accepted": [
+    "RES",
+    "PAY"
+   ],
+   "pred": "RES",
+   "p": 0.978,
+   "ok": true,
+   "pred_rev": "RES",
+   "p_rev": 0.973,
+   "ok_rev": true,
+   "ms": 933
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 12,
+   "text": "Il pagamento con PayPal non va a buon fine, mi dà errore.",
+   "accepted": [
+    "PAY",
+    "TEC"
+   ],
+   "pred": "PAY",
+   "p": 0.707,
+   "ok": true,
+   "pred_rev": "PAY",
+   "p_rev": 0.566,
+   "ok_rev": true,
+   "ms": 928
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 13,
+   "text": "Non mi arriva più l'email per reimpostare la password.",
+   "accepted": [
+    "ACC",
+    "TEC"
+   ],
+   "pred": "ACC",
+   "p": 0.909,
+   "ok": true,
+   "pred_rev": "ACC",
+   "p_rev": 0.885,
+   "ok_rev": true,
+   "ms": 933
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 14,
+   "text": "Qualcuno ha cambiato l'email del mio account e ora non riesco più ad accedere.",
+   "accepted": [
+    "SIC",
+    "ACC"
+   ],
+   "pred": "ACC",
+   "p": 0.745,
+   "ok": true,
+   "pred_rev": "ACC",
+   "p_rev": 0.689,
+   "ok_rev": true,
+   "ms": 936
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 15,
+   "text": "Il televisore è arrivato con lo schermo rotto.",
+   "accepted": [
+    "RES",
+    "ORD"
+   ],
+   "pred": "RES",
+   "p": 0.955,
+   "ok": true,
+   "pred_rev": "RES",
+   "p_rev": 0.911,
+   "ok_rev": true,
+   "ms": 901
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 16,
+   "text": "Fate sconti per acquisti all'ingrosso per la nostra scuola?",
+   "accepted": [
+    "B2B"
+   ],
+   "pred": "B2B",
+   "p": 0.985,
+   "ok": true,
+   "pred_rev": "B2B",
+   "p_rev": 0.984,
+   "ok_rev": true,
+   "ms": 933
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 17,
+   "text": "Questo aspirapolvere funziona anche sui tappeti a pelo lungo?",
+   "accepted": [
+    "PRE"
+   ],
+   "pred": "PRE",
+   "p": 0.959,
+   "ok": true,
+   "pred_rev": "PRE",
+   "p_rev": 0.956,
+   "ok_rev": true,
+   "ms": 929
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 18,
+   "text": "Da ieri il sito non carica le immagini dei prodotti.",
+   "accepted": [
+    "TEC"
+   ],
+   "pred": "TEC",
+   "p": 0.874,
+   "ok": true,
+   "pred_rev": "TEC",
+   "p_rev": 0.848,
+   "ok_rev": true,
+   "ms": 899
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 19,
+   "text": "Posso pagare a rate un ordine da 1.500 euro?",
+   "accepted": [
+    "PAY",
+    "PRE"
+   ],
+   "pred": "PAY",
+   "p": 0.969,
+   "ok": true,
+   "pred_rev": "PAY",
+   "p_rev": 0.965,
+   "ok_rev": true,
+   "ms": 931
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "it",
+   "i": 20,
+   "text": "Il corriere ha lasciato il pacco al vicino senza avvisarmi, ed è arrivato aperto.",
+   "accepted": [
+    "ORD",
+    "RES"
+   ],
+   "pred": "ORD",
+   "p": 0.871,
+   "ok": true,
+   "pred_rev": "ORD",
+   "p_rev": 0.887,
+   "ok_rev": true,
+   "ms": 935
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 1,
+   "text": "The parcel shows as delivered but I haven't received anything.",
+   "accepted": [
+    "ORD"
+   ],
+   "pred": "ORD",
+   "p": 0.945,
+   "ok": true,
+   "pred_rev": "ORD",
+   "p_rev": 0.945,
+   "ok_rev": true,
+   "ms": 714
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 2,
+   "text": "The shoes are one size too small, how do I exchange them?",
+   "accepted": [
+    "RES"
+   ],
+   "pred": "RES",
+   "p": 0.976,
+   "ok": true,
+   "pred_rev": "RES",
+   "p_rev": 0.968,
+   "ok_rev": true,
+   "ms": 744
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 3,
+   "text": "My invoice arrived without my company's VAT number, can you correct it?",
+   "accepted": [
+    "PAY"
+   ],
+   "pred": "PAY",
+   "p": 0.872,
+   "ok": true,
+   "pred_rev": "PAY",
+   "p_rev": 0.861,
+   "ok_rev": true,
+   "ms": 745
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 4,
+   "text": "The app closes by itself every time I open the cart.",
+   "accepted": [
+    "TEC"
+   ],
+   "pred": "TEC",
+   "p": 0.952,
+   "ok": true,
+   "pred_rev": "TEC",
+   "p_rev": 0.93,
+   "ok_rev": true,
+   "ms": 714
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 5,
+   "text": "I want to delete my account and all my personal data.",
+   "accepted": [
+    "ACC"
+   ],
+   "pred": "ACC",
+   "p": 0.978,
+   "ok": true,
+   "pred_rev": "ACC",
+   "p_rev": 0.983,
+   "ok_rev": true,
+   "ms": 713
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 6,
+   "text": "Is this washing machine suitable for a family of four? What's the difference from the higher model?",
+   "accepted": [
+    "PRE"
+   ],
+   "pred": "PRE",
+   "p": 0.957,
+   "ok": true,
+   "pred_rev": "PRE",
+   "p_rev": 0.962,
+   "ok_rev": true,
+   "ms": 747
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 7,
+   "text": "We are a hotel and would like to buy 200 towel sets with a scheduled delivery every quarter.",
+   "accepted": [
+    "B2B"
+   ],
+   "pred": "B2B",
+   "p": 0.964,
+   "ok": true,
+   "pred_rev": "B2B",
+   "p_rev": 0.972,
+   "ok_rev": true,
+   "ms": 746
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 8,
+   "text": "I see a charge on my card for an order I never placed.",
+   "accepted": [
+    "SIC",
+    "PAY"
+   ],
+   "pred": "SIC",
+   "p": 0.789,
+   "ok": true,
+   "pred_rev": "SIC",
+   "p_rev": 0.651,
+   "ok_rev": true,
+   "ms": 742
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 9,
+   "text": "I received an email that looks like it's from you asking me to confirm my password, is it genuine?",
+   "accepted": [
+    "SIC"
+   ],
+   "pred": "ACC",
+   "p": 0.491,
+   "ok": false,
+   "pred_rev": "SIC",
+   "p_rev": 0.582,
+   "ok_rev": true,
+   "ms": 745
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 10,
+   "text": "Can I change the delivery address of an order that has already shipped?",
+   "accepted": [
+    "ORD"
+   ],
+   "pred": "ORD",
+   "p": 0.955,
+   "ok": true,
+   "pred_rev": "ORD",
+   "p_rev": 0.966,
+   "ok_rev": true,
+   "ms": 742
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 11,
+   "text": "I returned the product three weeks ago but the refund still hasn't arrived.",
+   "accepted": [
+    "RES",
+    "PAY"
+   ],
+   "pred": "RES",
+   "p": 0.96,
+   "ok": true,
+   "pred_rev": "RES",
+   "p_rev": 0.963,
+   "ok_rev": true,
+   "ms": 743
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 12,
+   "text": "Payment with PayPal fails, it gives me an error.",
+   "accepted": [
+    "PAY",
+    "TEC"
+   ],
+   "pred": "PAY",
+   "p": 0.86,
+   "ok": true,
+   "pred_rev": "PAY",
+   "p_rev": 0.798,
+   "ok_rev": true,
+   "ms": 716
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 13,
+   "text": "I no longer receive the password reset email.",
+   "accepted": [
+    "ACC",
+    "TEC"
+   ],
+   "pred": "ACC",
+   "p": 0.875,
+   "ok": true,
+   "pred_rev": "ACC",
+   "p_rev": 0.88,
+   "ok_rev": true,
+   "ms": 781
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 14,
+   "text": "Someone changed the email on my account and now I can't log in anymore.",
+   "accepted": [
+    "SIC",
+    "ACC"
+   ],
+   "pred": "ACC",
+   "p": 0.788,
+   "ok": true,
+   "pred_rev": "ACC",
+   "p_rev": 0.784,
+   "ok_rev": true,
+   "ms": 725
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 15,
+   "text": "The TV arrived with a broken screen.",
+   "accepted": [
+    "RES",
+    "ORD"
+   ],
+   "pred": "RES",
+   "p": 0.973,
+   "ok": true,
+   "pred_rev": "RES",
+   "p_rev": 0.971,
+   "ok_rev": true,
+   "ms": 695
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 16,
+   "text": "Do you offer bulk discounts for our school?",
+   "accepted": [
+    "B2B"
+   ],
+   "pred": "B2B",
+   "p": 0.977,
+   "ok": true,
+   "pred_rev": "B2B",
+   "p_rev": 0.983,
+   "ok_rev": true,
+   "ms": 695
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 17,
+   "text": "Does this vacuum cleaner also work on long-pile rugs?",
+   "accepted": [
+    "PRE"
+   ],
+   "pred": "PRE",
+   "p": 0.941,
+   "ok": true,
+   "pred_rev": "PRE",
+   "p_rev": 0.965,
+   "ok_rev": true,
+   "ms": 695
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 18,
+   "text": "Since yesterday the website hasn't been loading product images.",
+   "accepted": [
+    "TEC"
+   ],
+   "pred": "TEC",
+   "p": 0.926,
+   "ok": true,
+   "pred_rev": "TEC",
+   "p_rev": 0.896,
+   "ok_rev": true,
+   "ms": 696
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 19,
+   "text": "Can I pay for a 1,500 euro order in instalments?",
+   "accepted": [
+    "PAY",
+    "PRE"
+   ],
+   "pred": "PAY",
+   "p": 0.984,
+   "ok": true,
+   "pred_rev": "PAY",
+   "p_rev": 0.983,
+   "ok_rev": true,
+   "ms": 726
+  },
+  {
+   "domain": "ecommerce",
+   "lang": "en",
+   "i": 20,
+   "text": "The courier left the parcel with a neighbour without telling me, and it arrived open.",
+   "accepted": [
+    "ORD",
+    "RES"
+   ],
+   "pred": "ORD",
+   "p": 0.715,
+   "ok": true,
+   "pred_rev": "ORD",
+   "p_rev": 0.797,
+   "ok_rev": true,
+   "ms": 724
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 1,
+   "text": "Quanti giorni di ferie mi restano quest'anno?",
+   "accepted": [
+    "HR"
+   ],
+   "pred": "HR",
+   "p": 0.953,
+   "ok": true,
+   "pred_rev": "HR",
+   "p_rev": 0.974,
+   "ok_rev": true,
+   "ms": 879
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 2,
+   "text": "Il portatile non si collega alla VPN da casa.",
+   "accepted": [
+    "ITH"
+   ],
+   "pred": "ITH",
+   "p": 0.953,
+   "ok": true,
+   "pred_rev": "ITH",
+   "p_rev": 0.94,
+   "ok_rev": true,
+   "ms": 879
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 3,
+   "text": "Ho cliccato su un link in una email strana e ora il PC si comporta in modo anomalo.",
+   "accepted": [
+    "SEC",
+    "ITH"
+   ],
+   "pred": "ITH",
+   "p": 0.53,
+   "ok": true,
+   "pred_rev": "SEC",
+   "p_rev": 0.836,
+   "ok_rev": true,
+   "ms": 920
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 4,
+   "text": "Un cliente ci ha mandato il suo contratto quadro con una clausola di penale: qualcuno può rivederlo?",
+   "accepted": [
+    "LEGL"
+   ],
+   "pred": "LEGL",
+   "p": 0.887,
+   "ok": true,
+   "pred_rev": "LEGL",
+   "p_rev": 0.921,
+   "ok_rev": true,
+   "ms": 932
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 5,
+   "text": "Mi serve un nuovo fornitore per la stampa dei cataloghi: chi gestisce la selezione?",
+   "accepted": [
+    "ACQ"
+   ],
+   "pred": "ACQ",
+   "p": 0.881,
+   "ok": true,
+   "pred_rev": "ACQ",
+   "p_rev": 0.891,
+   "ok_rev": true,
+   "ms": 931
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 6,
+   "text": "Come mi faccio rimborsare il pranzo di lavoro con il cliente di ieri?",
+   "accepted": [
+    "AMM"
+   ],
+   "pred": "AMM",
+   "p": 0.915,
+   "ok": true,
+   "pred_rev": "AMM",
+   "p_rev": 0.922,
+   "ok_rev": true,
+   "ms": 929
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 7,
+   "text": "Il condizionatore della sala riunioni al terzo piano non funziona.",
+   "accepted": [
+    "FAC"
+   ],
+   "pred": "FAC",
+   "p": 0.962,
+   "ok": true,
+   "pred_rev": "FAC",
+   "p_rev": 0.956,
+   "ok_rev": true,
+   "ms": 924
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 8,
+   "text": "Dobbiamo preparare il comunicato stampa per il lancio del nuovo prodotto.",
+   "accepted": [
+    "COM"
+   ],
+   "pred": "COM",
+   "p": 0.983,
+   "ok": true,
+   "pred_rev": "COM",
+   "p_rev": 0.981,
+   "ok_rev": true,
+   "ms": 926
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 9,
+   "text": "Esiste un corso interno su Excel avanzato?",
+   "accepted": [
+    "FORM"
+   ],
+   "pred": "FORM",
+   "p": 0.921,
+   "ok": true,
+   "pred_rev": "FORM",
+   "p_rev": 0.898,
+   "ok_rev": true,
+   "ms": 894
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 10,
+   "text": "Nella busta paga di questo mese c'è una trattenuta che non capisco.",
+   "accepted": [
+    "HR",
+    "AMM"
+   ],
+   "pred": "HR",
+   "p": 0.937,
+   "ok": true,
+   "pred_rev": "HR",
+   "p_rev": 0.961,
+   "ok_rev": true,
+   "ms": 933
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 11,
+   "text": "Possiamo usare gli indirizzi email degli iscritti alla newsletter per una campagna con un partner?",
+   "accepted": [
+    "LEGL"
+   ],
+   "pred": "LEGL",
+   "p": 0.695,
+   "ok": true,
+   "pred_rev": "LEGL",
+   "p_rev": 0.707,
+   "ok_rev": true,
+   "ms": 931
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 12,
+   "text": "Vorrei prenotare la sala grande per una formazione di 30 persone giovedì.",
+   "accepted": [
+    "FAC"
+   ],
+   "pred": "FAC",
+   "p": 0.863,
+   "ok": true,
+   "pred_rev": "FAC",
+   "p_rev": 0.765,
+   "ok_rev": true,
+   "ms": 926
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 13,
+   "text": "Ho perso il badge d'ingresso.",
+   "accepted": [
+    "FAC",
+    "SEC"
+   ],
+   "pred": "FAC",
+   "p": 0.932,
+   "ok": true,
+   "pred_rev": "FAC",
+   "p_rev": 0.939,
+   "ok_rev": true,
+   "ms": 893
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 14,
+   "text": "Devo ordinare dieci monitor nuovi per il mio team.",
+   "accepted": [
+    "ACQ",
+    "ITH"
+   ],
+   "pred": "ACQ",
+   "p": 0.78,
+   "ok": true,
+   "pred_rev": "ACQ",
+   "p_rev": 0.883,
+   "ok_rev": true,
+   "ms": 929
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 15,
+   "text": "Un collega mi ha inviato per errore il file con gli stipendi di tutto il reparto.",
+   "accepted": [
+    "SEC",
+    "LEGL",
+    "HR"
+   ],
+   "pred": "HR",
+   "p": 0.501,
+   "ok": true,
+   "pred_rev": "HR",
+   "p_rev": 0.589,
+   "ok_rev": true,
+   "ms": 930
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 16,
+   "text": "Mi servono le linee guida del logo per una presentazione esterna.",
+   "accepted": [
+    "COM"
+   ],
+   "pred": "COM",
+   "p": 0.896,
+   "ok": true,
+   "pred_rev": "COM",
+   "p_rev": 0.91,
+   "ok_rev": true,
+   "ms": 928
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 17,
+   "text": "La nota spese della trasferta a Milano mi è stata rifiutata: perché?",
+   "accepted": [
+    "AMM"
+   ],
+   "pred": "AMM",
+   "p": 0.94,
+   "ok": true,
+   "pred_rev": "AMM",
+   "p_rev": 0.94,
+   "ok_rev": true,
+   "ms": 928
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 18,
+   "text": "Vorrei chiedere il congedo parentale da settembre.",
+   "accepted": [
+    "HR"
+   ],
+   "pred": "HR",
+   "p": 0.952,
+   "ok": true,
+   "pred_rev": "HR",
+   "p_rev": 0.967,
+   "ok_rev": true,
+   "ms": 926
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 19,
+   "text": "La ditta delle pulizie non si presenta da una settimana.",
+   "accepted": [
+    "FAC",
+    "ACQ"
+   ],
+   "pred": "FAC",
+   "p": 0.752,
+   "ok": true,
+   "pred_rev": "FAC",
+   "p_rev": 0.472,
+   "ok_rev": true,
+   "ms": 931
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 20,
+   "text": "Dove trovo il materiale del corso sulla sicurezza sul lavoro che ho seguito ieri?",
+   "accepted": [
+    "FORM"
+   ],
+   "pred": "FORM",
+   "p": 0.912,
+   "ok": true,
+   "pred_rev": "FORM",
+   "p_rev": 0.905,
+   "ok_rev": true,
+   "ms": 930
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 21,
+   "text": "Excel non si apre più dopo l'aggiornamento di Windows.",
+   "accepted": [
+    "ITH"
+   ],
+   "pred": "ITH",
+   "p": 0.945,
+   "ok": true,
+   "pred_rev": "ITH",
+   "p_rev": 0.927,
+   "ok_rev": true,
+   "ms": 930
+  },
+  {
+   "domain": "azienda",
+   "lang": "it",
+   "i": 22,
+   "text": "Un giornalista mi ha chiamato per un'intervista sull'azienda: cosa gli rispondo?",
+   "accepted": [
+    "COM"
+   ],
+   "pred": "COM",
+   "p": 0.941,
+   "ok": true,
+   "pred_rev": "COM",
+   "p_rev": 0.957,
+   "ok_rev": true,
+   "ms": 931
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 1,
+   "text": "How many days of holiday do I have left this year?",
+   "accepted": [
+    "HR"
+   ],
+   "pred": "HR",
+   "p": 0.967,
+   "ok": true,
+   "pred_rev": "HR",
+   "p_rev": 0.965,
+   "ok_rev": true,
+   "ms": 713
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 2,
+   "text": "My laptop won't connect to the VPN from home.",
+   "accepted": [
+    "ITH"
+   ],
+   "pred": "ITH",
+   "p": 0.955,
+   "ok": true,
+   "pred_rev": "ITH",
+   "p_rev": 0.953,
+   "ok_rev": true,
+   "ms": 711
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 3,
+   "text": "I clicked a link in a strange email and now my PC is behaving oddly.",
+   "accepted": [
+    "SEC",
+    "ITH"
+   ],
+   "pred": "ITH",
+   "p": 0.51,
+   "ok": true,
+   "pred_rev": "SEC",
+   "p_rev": 0.792,
+   "ok_rev": true,
+   "ms": 744
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 4,
+   "text": "A client sent us their framework agreement with a penalty clause: can someone review it?",
+   "accepted": [
+    "LEGL"
+   ],
+   "pred": "LEGL",
+   "p": 0.891,
+   "ok": true,
+   "pred_rev": "LEGL",
+   "p_rev": 0.868,
+   "ok_rev": true,
+   "ms": 746
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 5,
+   "text": "I need a new supplier for printing catalogues: who handles the selection?",
+   "accepted": [
+    "ACQ"
+   ],
+   "pred": "ACQ",
+   "p": 0.907,
+   "ok": true,
+   "pred_rev": "ACQ",
+   "p_rev": 0.913,
+   "ok_rev": true,
+   "ms": 737
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 6,
+   "text": "How do I get reimbursed for yesterday's business lunch with the client?",
+   "accepted": [
+    "AMM"
+   ],
+   "pred": "AMM",
+   "p": 0.957,
+   "ok": true,
+   "pred_rev": "AMM",
+   "p_rev": 0.968,
+   "ok_rev": true,
+   "ms": 738
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 7,
+   "text": "The air conditioning in the third-floor meeting room isn't working.",
+   "accepted": [
+    "FAC"
+   ],
+   "pred": "FAC",
+   "p": 0.976,
+   "ok": true,
+   "pred_rev": "FAC",
+   "p_rev": 0.976,
+   "ok_rev": true,
+   "ms": 744
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 8,
+   "text": "We need to prepare the press release for the new product launch.",
+   "accepted": [
+    "COM"
+   ],
+   "pred": "COM",
+   "p": 0.982,
+   "ok": true,
+   "pred_rev": "COM",
+   "p_rev": 0.981,
+   "ok_rev": true,
+   "ms": 745
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 9,
+   "text": "Is there an internal course on advanced Excel?",
+   "accepted": [
+    "FORM"
+   ],
+   "pred": "FORM",
+   "p": 0.868,
+   "ok": true,
+   "pred_rev": "FORM",
+   "p_rev": 0.879,
+   "ok_rev": true,
+   "ms": 709
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 10,
+   "text": "There's a deduction on this month's payslip that I don't understand.",
+   "accepted": [
+    "HR",
+    "AMM"
+   ],
+   "pred": "HR",
+   "p": 0.911,
+   "ok": true,
+   "pred_rev": "HR",
+   "p_rev": 0.928,
+   "ok_rev": true,
+   "ms": 741
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 11,
+   "text": "Can we use our newsletter subscribers' email addresses for a campaign with a partner?",
+   "accepted": [
+    "LEGL"
+   ],
+   "pred": "LEGL",
+   "p": 0.675,
+   "ok": true,
+   "pred_rev": "LEGL",
+   "p_rev": 0.697,
+   "ok_rev": true,
+   "ms": 745
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 12,
+   "text": "I'd like to book the large room for a 30-person training session on Thursday.",
+   "accepted": [
+    "FAC"
+   ],
+   "pred": "FAC",
+   "p": 0.651,
+   "ok": true,
+   "pred_rev": "FAC",
+   "p_rev": 0.764,
+   "ok_rev": true,
+   "ms": 747
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 13,
+   "text": "I've lost my entry badge.",
+   "accepted": [
+    "FAC",
+    "SEC"
+   ],
+   "pred": "FAC",
+   "p": 0.895,
+   "ok": true,
+   "pred_rev": "FAC",
+   "p_rev": 0.816,
+   "ok_rev": true,
+   "ms": 713
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 14,
+   "text": "I need to order ten new monitors for my team.",
+   "accepted": [
+    "ACQ",
+    "ITH"
+   ],
+   "pred": "ACQ",
+   "p": 0.688,
+   "ok": true,
+   "pred_rev": "ACQ",
+   "p_rev": 0.877,
+   "ok_rev": true,
+   "ms": 712
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 15,
+   "text": "A colleague accidentally sent me the file with the salaries of the whole department.",
+   "accepted": [
+    "SEC",
+    "LEGL",
+    "HR"
+   ],
+   "pred": "SEC",
+   "p": 0.373,
+   "ok": true,
+   "pred_rev": "HR",
+   "p_rev": 0.385,
+   "ok_rev": true,
+   "ms": 739
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 16,
+   "text": "I need the logo guidelines for an external presentation.",
+   "accepted": [
+    "COM"
+   ],
+   "pred": "COM",
+   "p": 0.903,
+   "ok": true,
+   "pred_rev": "COM",
+   "p_rev": 0.917,
+   "ok_rev": true,
+   "ms": 709
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 17,
+   "text": "My expense report for the Milan trip was rejected: why?",
+   "accepted": [
+    "AMM"
+   ],
+   "pred": "AMM",
+   "p": 0.934,
+   "ok": true,
+   "pred_rev": "AMM",
+   "p_rev": 0.944,
+   "ok_rev": true,
+   "ms": 712
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 18,
+   "text": "I'd like to request parental leave from September.",
+   "accepted": [
+    "HR"
+   ],
+   "pred": "HR",
+   "p": 0.98,
+   "ok": true,
+   "pred_rev": "HR",
+   "p_rev": 0.975,
+   "ok_rev": true,
+   "ms": 713
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 19,
+   "text": "The cleaning company hasn't shown up for a week.",
+   "accepted": [
+    "FAC",
+    "ACQ"
+   ],
+   "pred": "FAC",
+   "p": 0.809,
+   "ok": true,
+   "pred_rev": "FAC",
+   "p_rev": 0.757,
+   "ok_rev": true,
+   "ms": 712
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 20,
+   "text": "Where can I find the materials from the workplace safety course I attended yesterday?",
+   "accepted": [
+    "FORM"
+   ],
+   "pred": "FORM",
+   "p": 0.928,
+   "ok": true,
+   "pred_rev": "FORM",
+   "p_rev": 0.871,
+   "ok_rev": true,
+   "ms": 746
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 21,
+   "text": "Excel won't open anymore after the Windows update.",
+   "accepted": [
+    "ITH"
+   ],
+   "pred": "ITH",
+   "p": 0.958,
+   "ok": true,
+   "pred_rev": "ITH",
+   "p_rev": 0.956,
+   "ok_rev": true,
+   "ms": 712
+  },
+  {
+   "domain": "azienda",
+   "lang": "en",
+   "i": 22,
+   "text": "A journalist called me for an interview about the company: what should I tell them?",
+   "accepted": [
+    "COM"
+   ],
+   "pred": "COM",
+   "p": 0.851,
+   "ok": true,
+   "pred_rev": "COM",
+   "p_rev": 0.865,
+   "ok_rev": true,
+   "ms": 745
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 1,
+   "text": "Dove viene definita la funzione che calcola lo sconto?",
+   "accepted": [
+    "CODE"
+   ],
+   "pred": "CODE",
+   "p": 0.746,
+   "ok": true,
+   "pred_rev": "CODE",
+   "p_rev": 0.803,
+   "ok_rev": true,
+   "ms": 753
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 2,
+   "text": "Verifica che le modifiche di prima non abbiano rotto niente.",
+   "accepted": [
+    "TEST"
+   ],
+   "pred": "TEST",
+   "p": 0.447,
+   "ok": true,
+   "pred_rev": "TEST",
+   "p_rev": 0.476,
+   "ok_rev": true,
+   "ms": 747
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 3,
+   "text": "Crea un nuovo branch e fai il commit delle modifiche.",
+   "accepted": [
+    "GIT"
+   ],
+   "pred": "GIT",
+   "p": 0.935,
+   "ok": true,
+   "pred_rev": "GIT",
+   "p_rev": 0.95,
+   "ok_rev": true,
+   "ms": 746
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 4,
+   "text": "Quanti utenti si sono registrati la settimana scorsa?",
+   "accepted": [
+    "DB"
+   ],
+   "pred": "DB",
+   "p": 0.596,
+   "ok": true,
+   "pred_rev": "DB",
+   "p_rev": 0.626,
+   "ok_rev": true,
+   "ms": 712
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 5,
+   "text": "Pubblica la nuova versione in produzione.",
+   "accepted": [
+    "DEP"
+   ],
+   "pred": "DEP",
+   "p": 0.793,
+   "ok": true,
+   "pred_rev": "DEP",
+   "p_rev": 0.763,
+   "ok_rev": true,
+   "ms": 712
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 6,
+   "text": "Scrivi il README per il nuovo modulo.",
+   "accepted": [
+    "DOCS"
+   ],
+   "pred": "DOCS",
+   "p": 0.89,
+   "ok": true,
+   "pred_rev": "DOCS",
+   "p_rev": 0.901,
+   "ok_rev": true,
+   "ms": 708
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 7,
+   "text": "Qual è l'ultima versione di React e cosa cambia rispetto alla nostra?",
+   "accepted": [
+    "WEB"
+   ],
+   "pred": "WEB",
+   "p": 0.737,
+   "ok": true,
+   "pred_rev": "WEB",
+   "p_rev": 0.649,
+   "ok_rev": true,
+   "ms": 744
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 8,
+   "text": "Sistemalo.",
+   "accepted": [
+    "ASK"
+   ],
+   "pred": "ASK",
+   "p": 0.274,
+   "ok": true,
+   "pred_rev": "CODE",
+   "p_rev": 0.253,
+   "ok_rev": false,
+   "ms": 732
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 9,
+   "text": "Perché fallisce il test del login? Fammi vedere l'errore.",
+   "accepted": [
+    "TEST"
+   ],
+   "pred": "ASK",
+   "p": 0.336,
+   "ok": false,
+   "pred_rev": "TEST",
+   "p_rev": 0.362,
+   "ok_rev": true,
+   "ms": 750
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 10,
+   "text": "Apri una pull request verso main.",
+   "accepted": [
+    "GIT"
+   ],
+   "pred": "GIT",
+   "p": 0.907,
+   "ok": true,
+   "pred_rev": "GIT",
+   "p_rev": 0.916,
+   "ok_rev": true,
+   "ms": 714
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 11,
+   "text": "Controlla se nella tabella degli ordini ci sono righe duplicate.",
+   "accepted": [
+    "DB"
+   ],
+   "pred": "DB",
+   "p": 0.685,
+   "ok": true,
+   "pred_rev": "DB",
+   "p_rev": 0.72,
+   "ok_rev": true,
+   "ms": 746
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 12,
+   "text": "Il server di staging è giù, riavvialo.",
+   "accepted": [
+    "DEP"
+   ],
+   "pred": "DEP",
+   "p": 0.83,
+   "ok": true,
+   "pred_rev": "DEP",
+   "p_rev": 0.75,
+   "ok_rev": true,
+   "ms": 749
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 13,
+   "text": "Come si usa la nuova API dei pagamenti di Stripe?",
+   "accepted": [
+    "WEB"
+   ],
+   "pred": "WEB",
+   "p": 0.651,
+   "ok": true,
+   "pred_rev": "WEB",
+   "p_rev": 0.566,
+   "ok_rev": true,
+   "ms": 716
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 14,
+   "text": "Fai quella modifica di cui parlavamo.",
+   "accepted": [
+    "ASK"
+   ],
+   "pred": "GIT",
+   "p": 0.334,
+   "ok": false,
+   "pred_rev": "GIT",
+   "p_rev": 0.397,
+   "ok_rev": false,
+   "ms": 716
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 15,
+   "text": "Aggiungi i commenti di documentazione alle funzioni pubbliche del modulo.",
+   "accepted": [
+    "DOCS"
+   ],
+   "pred": "DOCS",
+   "p": 0.576,
+   "ok": true,
+   "pred_rev": "DOCS",
+   "p_rev": 0.518,
+   "ok_rev": true,
+   "ms": 715
+  },
+  {
+   "domain": "coding",
+   "lang": "it",
+   "i": 16,
+   "text": "Trova tutti i punti in cui usiamo ancora la vecchia libreria per le date.",
+   "accepted": [
+    "CODE"
+   ],
+   "pred": "CODE",
+   "p": 0.502,
+   "ok": true,
+   "pred_rev": "CODE",
+   "p_rev": 0.524,
+   "ok_rev": true,
+   "ms": 749
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 1,
+   "text": "Where is the function that calculates the discount defined?",
+   "accepted": [
+    "CODE"
+   ],
+   "pred": "CODE",
+   "p": 0.841,
+   "ok": true,
+   "pred_rev": "CODE",
+   "p_rev": 0.822,
+   "ok_rev": true,
+   "ms": 625
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 2,
+   "text": "Check that the earlier changes didn't break anything.",
+   "accepted": [
+    "TEST"
+   ],
+   "pred": "TEST",
+   "p": 0.686,
+   "ok": true,
+   "pred_rev": "TEST",
+   "p_rev": 0.769,
+   "ok_rev": true,
+   "ms": 625
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 3,
+   "text": "Create a new branch and commit the changes.",
+   "accepted": [
+    "GIT"
+   ],
+   "pred": "GIT",
+   "p": 0.894,
+   "ok": true,
+   "pred_rev": "GIT",
+   "p_rev": 0.907,
+   "ok_rev": true,
+   "ms": 624
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 4,
+   "text": "How many users signed up last week?",
+   "accepted": [
+    "DB"
+   ],
+   "pred": "DB",
+   "p": 0.409,
+   "ok": true,
+   "pred_rev": "DB",
+   "p_rev": 0.36,
+   "ok_rev": true,
+   "ms": 624
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 5,
+   "text": "Release the new version to production.",
+   "accepted": [
+    "DEP"
+   ],
+   "pred": "DEP",
+   "p": 0.793,
+   "ok": true,
+   "pred_rev": "DEP",
+   "p_rev": 0.761,
+   "ok_rev": true,
+   "ms": 625
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 6,
+   "text": "Write the README for the new module.",
+   "accepted": [
+    "DOCS"
+   ],
+   "pred": "DOCS",
+   "p": 0.821,
+   "ok": true,
+   "pred_rev": "DOCS",
+   "p_rev": 0.815,
+   "ok_rev": true,
+   "ms": 624
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 7,
+   "text": "What's the latest version of React and what changed compared to ours?",
+   "accepted": [
+    "WEB"
+   ],
+   "pred": "WEB",
+   "p": 0.692,
+   "ok": true,
+   "pred_rev": "WEB",
+   "p_rev": 0.639,
+   "ok_rev": true,
+   "ms": 658
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 8,
+   "text": "Fix it.",
+   "accepted": [
+    "ASK"
+   ],
+   "pred": "ASK",
+   "p": 0.43,
+   "ok": true,
+   "pred_rev": "ASK",
+   "p_rev": 0.361,
+   "ok_rev": true,
+   "ms": 674
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 9,
+   "text": "Why is the login test failing? Show me the error.",
+   "accepted": [
+    "TEST"
+   ],
+   "pred": "TEST",
+   "p": 0.727,
+   "ok": true,
+   "pred_rev": "TEST",
+   "p_rev": 0.696,
+   "ok_rev": true,
+   "ms": 626
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 10,
+   "text": "Open a pull request against main.",
+   "accepted": [
+    "GIT"
+   ],
+   "pred": "GIT",
+   "p": 0.88,
+   "ok": true,
+   "pred_rev": "GIT",
+   "p_rev": 0.887,
+   "ok_rev": true,
+   "ms": 626
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 11,
+   "text": "Check whether there are duplicate rows in the orders table.",
+   "accepted": [
+    "DB"
+   ],
+   "pred": "DB",
+   "p": 0.779,
+   "ok": true,
+   "pred_rev": "DB",
+   "p_rev": 0.795,
+   "ok_rev": true,
+   "ms": 626
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 12,
+   "text": "The staging server is down, restart it.",
+   "accepted": [
+    "DEP"
+   ],
+   "pred": "DEP",
+   "p": 0.652,
+   "ok": true,
+   "pred_rev": "DEP",
+   "p_rev": 0.532,
+   "ok_rev": true,
+   "ms": 624
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 13,
+   "text": "How do you use Stripe's new payments API?",
+   "accepted": [
+    "WEB"
+   ],
+   "pred": "WEB",
+   "p": 0.76,
+   "ok": true,
+   "pred_rev": "WEB",
+   "p_rev": 0.737,
+   "ok_rev": true,
+   "ms": 624
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 14,
+   "text": "Make that change we were talking about.",
+   "accepted": [
+    "ASK"
+   ],
+   "pred": "ASK",
+   "p": 0.513,
+   "ok": true,
+   "pred_rev": "ASK",
+   "p_rev": 0.517,
+   "ok_rev": true,
+   "ms": 626
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 15,
+   "text": "Add documentation comments to the module's public functions.",
+   "accepted": [
+    "DOCS"
+   ],
+   "pred": "DOCS",
+   "p": 0.623,
+   "ok": true,
+   "pred_rev": "DOCS",
+   "p_rev": 0.59,
+   "ok_rev": true,
+   "ms": 626
+  },
+  {
+   "domain": "coding",
+   "lang": "en",
+   "i": 16,
+   "text": "Find all the places where we still use the old date library.",
+   "accepted": [
+    "CODE"
+   ],
+   "pred": "WEB",
+   "p": 0.508,
+   "ok": false,
+   "pred_rev": "WEB",
+   "p_rev": 0.572,
+   "ok_rev": false,
+   "ms": 660
+  }
+ ],
+ "escalation": [
+  {
+   "lang": "it",
+   "i": 1,
+   "first": "A che ora apre la biblioteca sabato?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.048,
+   "ok_noul": true,
+   "p_choice": 0.156,
+   "ok_choice": true,
+   "p_risk": 0.044,
+   "ok_risk": true,
+   "score": 0.27,
+   "ms": 565
+  },
+  {
+   "lang": "it",
+   "i": 2,
+   "first": "Come rinnovo un libro in prestito?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.038,
+   "ok_noul": true,
+   "p_choice": 0.111,
+   "ok_choice": true,
+   "p_risk": 0.024,
+   "ok_risk": true,
+   "score": 0.17,
+   "ms": 564
+  },
+  {
+   "lang": "it",
+   "i": 3,
+   "first": "Qual è la password del wifi?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.102,
+   "ok_noul": true,
+   "p_choice": 0.166,
+   "ok_choice": true,
+   "p_risk": 0.312,
+   "ok_risk": true,
+   "score": 0.4,
+   "ms": 567
+  },
+  {
+   "lang": "it",
+   "i": 4,
+   "first": "Come faccio la tessera?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.226,
+   "ok_noul": true,
+   "p_choice": 0.24,
+   "ok_choice": true,
+   "p_risk": 0.06,
+   "ok_risk": true,
+   "score": 0.45,
+   "ms": 582
+  },
+  {
+   "lang": "it",
+   "i": 5,
+   "first": "Si può stampare in biblioteca?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.039,
+   "ok_noul": true,
+   "p_choice": 0.077,
+   "ok_choice": true,
+   "p_risk": 0.042,
+   "ok_risk": true,
+   "score": 0.23,
+   "ms": 566
+  },
+  {
+   "lang": "it",
+   "i": 6,
+   "first": "Quanti libri posso prendere in prestito?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.143,
+   "ok_noul": true,
+   "p_choice": 0.173,
+   "ok_choice": true,
+   "p_risk": 0.028,
+   "ok_risk": true,
+   "score": 0.54,
+   "ms": 561
+  },
+  {
+   "lang": "it",
+   "i": 7,
+   "first": "Avete anche ebook?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.039,
+   "ok_noul": true,
+   "p_choice": 0.122,
+   "ok_choice": true,
+   "p_risk": 0.078,
+   "ok_risk": true,
+   "score": 0.15,
+   "ms": 564
+  },
+  {
+   "lang": "it",
+   "i": 8,
+   "first": "La sala studio è aperta anche la domenica?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.119,
+   "ok_noul": true,
+   "p_choice": 0.161,
+   "ok_choice": true,
+   "p_risk": 0.048,
+   "ok_risk": true,
+   "score": 0.28,
+   "ms": 566
+  },
+  {
+   "lang": "it",
+   "i": 9,
+   "first": "Posso restituire i libri quando siete chiusi?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.064,
+   "ok_noul": true,
+   "p_choice": 0.09,
+   "ok_choice": true,
+   "p_risk": 0.082,
+   "ok_risk": true,
+   "score": 0.23,
+   "ms": 569
+  },
+  {
+   "lang": "it",
+   "i": 10,
+   "first": "Il libro che voglio è già in prestito, posso prenotarlo?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.053,
+   "ok_noul": true,
+   "p_choice": 0.08,
+   "ok_choice": true,
+   "p_risk": 0.024,
+   "ok_risk": true,
+   "score": 0.17,
+   "ms": 567
+  },
+  {
+   "lang": "it",
+   "i": 11,
+   "first": "Ci sono letture per bambini questo mese?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.064,
+   "ok_noul": true,
+   "p_choice": 0.207,
+   "ok_choice": true,
+   "p_risk": 0.052,
+   "ok_risk": true,
+   "score": 0.26,
+   "ms": 560
+  },
+  {
+   "lang": "it",
+   "i": 12,
+   "first": "Uffa, non trovo il pulsante per rinnovare!",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.023,
+   "ok_noul": true,
+   "p_choice": 0.043,
+   "ok_choice": true,
+   "p_risk": 0.014,
+   "ok_risk": true,
+   "score": 0.19,
+   "ms": 563
+  },
+  {
+   "lang": "it",
+   "i": 13,
+   "first": "C'è un parcheggio vicino alla biblioteca?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.06,
+   "ok_noul": true,
+   "p_choice": 0.154,
+   "ok_choice": true,
+   "p_risk": 0.052,
+   "ok_risk": true,
+   "score": 0.27,
+   "ms": 566
+  },
+  {
+   "lang": "it",
+   "i": 14,
+   "first": "Accettate libri in donazione?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.098,
+   "ok_noul": true,
+   "p_choice": 0.287,
+   "ok_choice": true,
+   "p_risk": 0.06,
+   "ok_risk": true,
+   "score": 0.21,
+   "ms": 565
+  },
+  {
+   "lang": "it",
+   "i": 15,
+   "first": "Ho restituito un libro con due giorni di ritardo, devo pagare una multa?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.091,
+   "ok_noul": true,
+   "p_choice": 0.08,
+   "ok_choice": true,
+   "p_risk": 0.023,
+   "ok_risk": true,
+   "score": 0.28,
+   "ms": 571
+  },
+  {
+   "lang": "it",
+   "i": 16,
+   "first": "L'ingresso è accessibile in carrozzina?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.059,
+   "ok_noul": true,
+   "p_choice": 0.053,
+   "ok_choice": true,
+   "p_risk": 0.116,
+   "ok_risk": true,
+   "score": 0.24,
+   "ms": 569
+  },
+  {
+   "lang": "it",
+   "i": 17,
+   "first": "Si possono consultare le tesi di laurea?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.069,
+   "ok_noul": true,
+   "p_choice": 0.184,
+   "ok_choice": true,
+   "p_risk": 0.03,
+   "ok_risk": true,
+   "score": 0.21,
+   "ms": 559
+  },
+  {
+   "lang": "it",
+   "i": 18,
+   "first": "ciao!",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.151,
+   "ok_noul": true,
+   "p_choice": 0.135,
+   "ok_choice": true,
+   "p_risk": 0.035,
+   "ok_risk": true,
+   "score": 0.17,
+   "ms": 562
+  },
+  {
+   "lang": "it",
+   "i": 19,
+   "first": "Ho dimenticato la password del catalogo online.",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.032,
+   "ok_noul": true,
+   "p_choice": 0.088,
+   "ok_choice": true,
+   "p_risk": 0.078,
+   "ok_risk": true,
+   "score": 0.09,
+   "ms": 566
+  },
+  {
+   "lang": "it",
+   "i": 20,
+   "first": "Posso portare il mio cane in biblioteca?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.158,
+   "ok_noul": true,
+   "p_choice": 0.119,
+   "ok_choice": true,
+   "p_risk": 0.23,
+   "ok_risk": true,
+   "score": 0.35,
+   "ms": 561
+  },
+  {
+   "lang": "it",
+   "i": 21,
+   "first": "Voglio parlare con una persona, non con un bot.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.875,
+   "ok_noul": true,
+   "p_choice": 0.98,
+   "ok_choice": true,
+   "p_risk": 0.119,
+   "ok_risk": true,
+   "score": 1.32,
+   "ms": 498
+  },
+  {
+   "lang": "it",
+   "i": 22,
+   "first": "Come rinnovo un prestito?",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.89,
+   "ok_noul": true,
+   "p_choice": 0.954,
+   "ok_choice": true,
+   "p_risk": 0.083,
+   "ok_risk": true,
+   "score": 1.65,
+   "ms": 584
+  },
+  {
+   "lang": "it",
+   "i": 23,
+   "first": "Mi chiedete 45 euro per un libro che ho restituito il mese scorso, ho anche la ricevuta.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.725,
+   "ok_noul": true,
+   "p_choice": 0.814,
+   "ok_choice": true,
+   "p_risk": 0.059,
+   "ok_risk": true,
+   "score": 1.3,
+   "ms": 582
+  },
+  {
+   "lang": "it",
+   "i": 24,
+   "first": "In sala studio un uomo continua a fissarmi e mi ha seguita fino al bagno, ho paura.",
+   "escalate": true,
+   "urgency": 2,
+   "risk": true,
+   "p_noul": 0.754,
+   "ok_noul": true,
+   "p_choice": 0.944,
+   "ok_choice": true,
+   "p_risk": 0.547,
+   "ok_risk": true,
+   "score": 1.68,
+   "ms": 560
+  },
+  {
+   "lang": "it",
+   "i": 25,
+   "first": "Un signore è svenuto vicino agli scaffali del secondo piano!",
+   "escalate": true,
+   "urgency": 2,
+   "risk": true,
+   "p_noul": 0.717,
+   "ok_noul": true,
+   "p_choice": 0.926,
+   "ok_choice": true,
+   "p_risk": 0.845,
+   "ok_risk": true,
+   "score": 1.87,
+   "ms": 500
+  },
+  {
+   "lang": "it",
+   "i": 26,
+   "first": "Ho perso la tessera e ho visto che qualcuno ha preso in prestito dei libri a mio nome.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.642,
+   "ok_noul": true,
+   "p_choice": 0.67,
+   "ok_choice": true,
+   "p_risk": 0.104,
+   "ok_risk": true,
+   "score": 1.47,
+   "ms": 561
+  },
+  {
+   "lang": "it",
+   "i": 27,
+   "first": "Sono ipovedente e mi servono testi in formato audio per un esame.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.754,
+   "ok_noul": true,
+   "p_choice": 0.833,
+   "ok_choice": true,
+   "p_risk": 0.134,
+   "ok_risk": true,
+   "score": 1.2,
+   "ms": 565
+  },
+  {
+   "lang": "it",
+   "i": 28,
+   "first": "Voglio fare un reclamo formale: oggi un bibliotecario mi ha trattato in modo maleducato davanti a tutti.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.745,
+   "ok_noul": true,
+   "p_choice": 0.884,
+   "ok_choice": true,
+   "p_risk": 0.063,
+   "ok_risk": true,
+   "score": 1.27,
+   "ms": 564
+  },
+  {
+   "lang": "it",
+   "i": 29,
+   "first": "Mi avete detto che il sabato siete aperti e ho trovato chiuso, ho fatto 40 km per niente.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.832,
+   "ok_noul": true,
+   "p_choice": 0.865,
+   "ok_choice": true,
+   "p_risk": 0.256,
+   "ok_risk": true,
+   "score": 1.55,
+   "ms": 580
+  },
+  {
+   "lang": "it",
+   "i": 30,
+   "first": "Sto facendo una ricerca sui manoscritti medievali del fondo antico e avrei bisogno di consultarli.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.749,
+   "ok_noul": true,
+   "p_choice": 0.901,
+   "ok_choice": true,
+   "p_risk": 0.034,
+   "ok_risk": true,
+   "score": 0.85,
+   "ms": 580
+  },
+  {
+   "lang": "it",
+   "i": 31,
+   "first": "Se entro una settimana non mi mandate tutti i dati che avete su di me, faccio ricorso al Garante della privacy.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.37,
+   "ok_noul": false,
+   "p_choice": 0.724,
+   "ok_choice": true,
+   "p_risk": 0.092,
+   "ok_risk": true,
+   "score": 0.93,
+   "ms": 560
+  },
+  {
+   "lang": "it",
+   "i": 32,
+   "first": "Non trovo più mio figlio di 6 anni, era nella sala ragazzi un minuto fa!",
+   "escalate": true,
+   "urgency": 2,
+   "risk": true,
+   "p_noul": 0.733,
+   "ok_noul": true,
+   "p_choice": 0.925,
+   "ok_choice": true,
+   "p_risk": 0.619,
+   "ok_risk": true,
+   "score": 1.73,
+   "ms": 562
+  },
+  {
+   "lang": "it",
+   "i": 33,
+   "first": "Sono un insegnante e vorrei organizzare una visita per tre classi con un laboratorio.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.858,
+   "ok_noul": true,
+   "p_choice": 0.894,
+   "ok_choice": true,
+   "p_risk": 0.505,
+   "ok_risk": false,
+   "score": 1.51,
+   "ms": 581
+  },
+  {
+   "lang": "it",
+   "i": 34,
+   "first": "Ho pagato online l'iscrizione al corso di scrittura ma mi è stata addebitata due volte.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.58,
+   "ok_noul": true,
+   "p_choice": 0.817,
+   "ok_choice": true,
+   "p_risk": 0.057,
+   "ok_risk": true,
+   "score": 1.27,
+   "ms": 561
+  },
+  {
+   "lang": "it",
+   "i": 35,
+   "first": "Il libro che ho prenotato risulta 'in transito' da un mese.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.875,
+   "ok_noul": true,
+   "p_choice": 0.932,
+   "ok_choice": true,
+   "p_risk": 0.057,
+   "ok_risk": true,
+   "score": 1.49,
+   "ms": 577
+  },
+  {
+   "lang": "it",
+   "i": 36,
+   "first": "Il libro era già rovinato quando l'ho preso, ma ora mi dite che devo ripagarlo.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.637,
+   "ok_noul": true,
+   "p_choice": 0.769,
+   "ok_choice": true,
+   "p_risk": 0.051,
+   "ok_risk": true,
+   "score": 1.3,
+   "ms": 562
+  },
+  {
+   "lang": "it",
+   "i": 37,
+   "first": "Non ho un posto dove dormire stasera, posso restare in biblioteca dopo la chiusura?",
+   "escalate": true,
+   "urgency": 2,
+   "risk": true,
+   "p_noul": 0.6,
+   "ok_noul": true,
+   "p_choice": 0.743,
+   "ok_choice": true,
+   "p_risk": 0.384,
+   "ok_risk": false,
+   "score": 1.35,
+   "ms": 518
+  },
+  {
+   "lang": "it",
+   "i": 38,
+   "first": "Mio padre è morto e ha lasciato una collezione di tremila libri antichi, alcuni del Settecento: vi interessano?",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.879,
+   "ok_noul": true,
+   "p_choice": 0.93,
+   "ok_choice": true,
+   "p_risk": 0.14,
+   "ok_risk": true,
+   "score": 1.15,
+   "ms": 584
+  },
+  {
+   "lang": "it",
+   "i": 39,
+   "first": "La mia tessera risulta bloccata e non so perché.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.656,
+   "ok_noul": true,
+   "p_choice": 0.705,
+   "ok_choice": true,
+   "p_risk": 0.034,
+   "ok_risk": true,
+   "score": 1.05,
+   "ms": 566
+  },
+  {
+   "lang": "it",
+   "i": 40,
+   "first": "Questo bot non mi serve a niente. C'è qualcuno in carne e ossa che posso contattare?",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.841,
+   "ok_noul": true,
+   "p_choice": 0.963,
+   "ok_choice": true,
+   "p_risk": 0.082,
+   "ok_risk": true,
+   "score": 1.19,
+   "ms": 560
+  },
+  {
+   "lang": "en",
+   "i": 1,
+   "first": "What time does the library open on Saturday?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.046,
+   "ok_noul": true,
+   "p_choice": 0.072,
+   "ok_choice": true,
+   "p_risk": 0.024,
+   "ok_risk": true,
+   "score": 0.09,
+   "ms": 478
+  },
+  {
+   "lang": "en",
+   "i": 2,
+   "first": "How do I renew a book I've borrowed?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.05,
+   "ok_noul": true,
+   "p_choice": 0.084,
+   "ok_choice": true,
+   "p_risk": 0.018,
+   "ok_risk": true,
+   "score": 0.07,
+   "ms": 492
+  },
+  {
+   "lang": "en",
+   "i": 3,
+   "first": "What's the wifi password?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.108,
+   "ok_noul": true,
+   "p_choice": 0.24,
+   "ok_choice": true,
+   "p_risk": 0.059,
+   "ok_risk": true,
+   "score": 0.24,
+   "ms": 488
+  },
+  {
+   "lang": "en",
+   "i": 4,
+   "first": "How do I get a library card?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.356,
+   "ok_noul": true,
+   "p_choice": 0.266,
+   "ok_choice": true,
+   "p_risk": 0.082,
+   "ok_risk": true,
+   "score": 0.42,
+   "ms": 490
+  },
+  {
+   "lang": "en",
+   "i": 5,
+   "first": "Can I print at the library?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.084,
+   "ok_noul": true,
+   "p_choice": 0.087,
+   "ok_choice": true,
+   "p_risk": 0.022,
+   "ok_risk": true,
+   "score": 0.15,
+   "ms": 422
+  },
+  {
+   "lang": "en",
+   "i": 6,
+   "first": "How many books can I borrow?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.312,
+   "ok_noul": true,
+   "p_choice": 0.241,
+   "ok_choice": true,
+   "p_risk": 0.033,
+   "ok_risk": true,
+   "score": 0.57,
+   "ms": 420
+  },
+  {
+   "lang": "en",
+   "i": 7,
+   "first": "Do you have ebooks too?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.073,
+   "ok_noul": true,
+   "p_choice": 0.068,
+   "ok_choice": true,
+   "p_risk": 0.027,
+   "ok_risk": true,
+   "score": 0.1,
+   "ms": 489
+  },
+  {
+   "lang": "en",
+   "i": 8,
+   "first": "Is the study room open on Sundays too?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.111,
+   "ok_noul": true,
+   "p_choice": 0.142,
+   "ok_choice": true,
+   "p_risk": 0.024,
+   "ok_risk": true,
+   "score": 0.22,
+   "ms": 485
+  },
+  {
+   "lang": "en",
+   "i": 9,
+   "first": "Can I return books when you're closed?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.069,
+   "ok_noul": true,
+   "p_choice": 0.051,
+   "ok_choice": true,
+   "p_risk": 0.032,
+   "ok_risk": true,
+   "score": 0.1,
+   "ms": 486
+  },
+  {
+   "lang": "en",
+   "i": 10,
+   "first": "The book I want is already on loan, can I reserve it?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.072,
+   "ok_noul": true,
+   "p_choice": 0.186,
+   "ok_choice": true,
+   "p_risk": 0.023,
+   "ok_risk": true,
+   "score": 0.12,
+   "ms": 489
+  },
+  {
+   "lang": "en",
+   "i": 11,
+   "first": "Are there any story times for children this month?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.099,
+   "ok_noul": true,
+   "p_choice": 0.133,
+   "ok_choice": true,
+   "p_risk": 0.047,
+   "ok_risk": true,
+   "score": 0.2,
+   "ms": 487
+  },
+  {
+   "lang": "en",
+   "i": 12,
+   "first": "Ugh, I can't find the renew button!",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.041,
+   "ok_noul": true,
+   "p_choice": 0.059,
+   "ok_choice": true,
+   "p_risk": 0.013,
+   "ok_risk": true,
+   "score": 0.08,
+   "ms": 490
+  },
+  {
+   "lang": "en",
+   "i": 13,
+   "first": "Is there parking near the library?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.06,
+   "ok_noul": true,
+   "p_choice": 0.128,
+   "ok_choice": true,
+   "p_risk": 0.024,
+   "ok_risk": true,
+   "score": 0.14,
+   "ms": 486
+  },
+  {
+   "lang": "en",
+   "i": 14,
+   "first": "Do you accept donated books?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.139,
+   "ok_noul": true,
+   "p_choice": 0.139,
+   "ok_choice": true,
+   "p_risk": 0.036,
+   "ok_risk": true,
+   "score": 0.16,
+   "ms": 491
+  },
+  {
+   "lang": "en",
+   "i": 15,
+   "first": "I returned a book two days late, do I have to pay a fine?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.115,
+   "ok_noul": true,
+   "p_choice": 0.073,
+   "ok_choice": true,
+   "p_risk": 0.016,
+   "ok_risk": true,
+   "score": 0.18,
+   "ms": 489
+  },
+  {
+   "lang": "en",
+   "i": 16,
+   "first": "Is the entrance wheelchair accessible?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.08,
+   "ok_noul": true,
+   "p_choice": 0.071,
+   "ok_choice": true,
+   "p_risk": 0.091,
+   "ok_risk": true,
+   "score": 0.22,
+   "ms": 424
+  },
+  {
+   "lang": "en",
+   "i": 17,
+   "first": "Can I look at graduation theses?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.094,
+   "ok_noul": true,
+   "p_choice": 0.139,
+   "ok_choice": true,
+   "p_risk": 0.034,
+   "ok_risk": true,
+   "score": 0.14,
+   "ms": 484
+  },
+  {
+   "lang": "en",
+   "i": 18,
+   "first": "hi!",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.116,
+   "ok_noul": true,
+   "p_choice": 0.197,
+   "ok_choice": true,
+   "p_risk": 0.021,
+   "ok_risk": true,
+   "score": 0.22,
+   "ms": 421
+  },
+  {
+   "lang": "en",
+   "i": 19,
+   "first": "I forgot my password for the online catalogue.",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.036,
+   "ok_noul": true,
+   "p_choice": 0.096,
+   "ok_choice": true,
+   "p_risk": 0.018,
+   "ok_risk": true,
+   "score": 0.04,
+   "ms": 483
+  },
+  {
+   "lang": "en",
+   "i": 20,
+   "first": "Can I bring my dog to the library?",
+   "escalate": false,
+   "urgency": 0,
+   "risk": false,
+   "p_noul": 0.119,
+   "ok_noul": true,
+   "p_choice": 0.074,
+   "ok_choice": true,
+   "p_risk": 0.088,
+   "ok_risk": true,
+   "score": 0.17,
+   "ms": 423
+  },
+  {
+   "lang": "en",
+   "i": 21,
+   "first": "I want to talk to a person, not a bot.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.877,
+   "ok_noul": true,
+   "p_choice": 0.964,
+   "ok_choice": true,
+   "p_risk": 0.084,
+   "ok_risk": true,
+   "score": 1.18,
+   "ms": 419
+  },
+  {
+   "lang": "en",
+   "i": 22,
+   "first": "How do I renew a loan?",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.881,
+   "ok_noul": true,
+   "p_choice": 0.927,
+   "ok_choice": true,
+   "p_risk": 0.061,
+   "ok_risk": true,
+   "score": 1.64,
+   "ms": 501
+  },
+  {
+   "lang": "en",
+   "i": 23,
+   "first": "You're charging me 45 euros for a book I returned last month, I even have the receipt.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.712,
+   "ok_noul": true,
+   "p_choice": 0.795,
+   "ok_choice": true,
+   "p_risk": 0.029,
+   "ok_risk": true,
+   "score": 1.25,
+   "ms": 490
+  },
+  {
+   "lang": "en",
+   "i": 24,
+   "first": "In the study room a man keeps staring at me and followed me to the bathroom, I'm scared.",
+   "escalate": true,
+   "urgency": 2,
+   "risk": true,
+   "p_noul": 0.798,
+   "ok_noul": true,
+   "p_choice": 0.908,
+   "ok_choice": true,
+   "p_risk": 0.643,
+   "ok_risk": true,
+   "score": 1.47,
+   "ms": 416
+  },
+  {
+   "lang": "en",
+   "i": 25,
+   "first": "A man has fainted near the shelves on the second floor!",
+   "escalate": true,
+   "urgency": 2,
+   "risk": true,
+   "p_noul": 0.803,
+   "ok_noul": true,
+   "p_choice": 0.974,
+   "ok_choice": true,
+   "p_risk": 0.816,
+   "ok_risk": true,
+   "score": 1.89,
+   "ms": 417
+  },
+  {
+   "lang": "en",
+   "i": 26,
+   "first": "I lost my card and I've seen that someone has borrowed books in my name.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.714,
+   "ok_noul": true,
+   "p_choice": 0.758,
+   "ok_choice": true,
+   "p_risk": 0.15,
+   "ok_risk": true,
+   "score": 1.51,
+   "ms": 421
+  },
+  {
+   "lang": "en",
+   "i": 27,
+   "first": "I'm visually impaired and I need texts in audio format for an exam.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.788,
+   "ok_noul": true,
+   "p_choice": 0.806,
+   "ok_choice": true,
+   "p_risk": 0.252,
+   "ok_risk": true,
+   "score": 1.26,
+   "ms": 494
+  },
+  {
+   "lang": "en",
+   "i": 28,
+   "first": "I want to make a formal complaint: today a librarian treated me rudely in front of everyone.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.827,
+   "ok_noul": true,
+   "p_choice": 0.894,
+   "ok_choice": true,
+   "p_risk": 0.07,
+   "ok_risk": true,
+   "score": 1.31,
+   "ms": 421
+  },
+  {
+   "lang": "en",
+   "i": 29,
+   "first": "You told me you're open on Saturdays and I found it closed, I drove 40 km for nothing.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.84,
+   "ok_noul": true,
+   "p_choice": 0.864,
+   "ok_choice": true,
+   "p_risk": 0.069,
+   "ok_risk": true,
+   "score": 1.74,
+   "ms": 490
+  },
+  {
+   "lang": "en",
+   "i": 30,
+   "first": "I'm researching the medieval manuscripts in the rare books collection and I'd need to consult them.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.815,
+   "ok_noul": true,
+   "p_choice": 0.844,
+   "ok_choice": true,
+   "p_risk": 0.038,
+   "ok_risk": true,
+   "score": 1.03,
+   "ms": 489
+  },
+  {
+   "lang": "en",
+   "i": 31,
+   "first": "If you don't send me all the data you hold about me within a week, I'll file a complaint with the data protection authority.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.646,
+   "ok_noul": true,
+   "p_choice": 0.808,
+   "ok_choice": true,
+   "p_risk": 0.081,
+   "ok_risk": true,
+   "score": 1.19,
+   "ms": 425
+  },
+  {
+   "lang": "en",
+   "i": 32,
+   "first": "I can't find my 6-year-old son, he was in the children's room a minute ago!",
+   "escalate": true,
+   "urgency": 2,
+   "risk": true,
+   "p_noul": 0.787,
+   "ok_noul": true,
+   "p_choice": 0.938,
+   "ok_choice": true,
+   "p_risk": 0.509,
+   "ok_risk": true,
+   "score": 1.71,
+   "ms": 421
+  },
+  {
+   "lang": "en",
+   "i": 33,
+   "first": "I'm a teacher and I'd like to organise a visit for three classes with a workshop.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.774,
+   "ok_noul": true,
+   "p_choice": 0.841,
+   "ok_choice": true,
+   "p_risk": 0.373,
+   "ok_risk": true,
+   "score": 1.28,
+   "ms": 490
+  },
+  {
+   "lang": "en",
+   "i": 34,
+   "first": "I paid online for the writing course but I was charged twice.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.699,
+   "ok_noul": true,
+   "p_choice": 0.839,
+   "ok_choice": true,
+   "p_risk": 0.032,
+   "ok_risk": true,
+   "score": 1.11,
+   "ms": 419
+  },
+  {
+   "lang": "en",
+   "i": 35,
+   "first": "The book I reserved has been 'in transit' for a month.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.898,
+   "ok_noul": true,
+   "p_choice": 0.929,
+   "ok_choice": true,
+   "p_risk": 0.037,
+   "ok_risk": true,
+   "score": 1.64,
+   "ms": 491
+  },
+  {
+   "lang": "en",
+   "i": 36,
+   "first": "The book was already damaged when I borrowed it, but now you're telling me I have to pay for it.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.685,
+   "ok_noul": true,
+   "p_choice": 0.75,
+   "ok_choice": true,
+   "p_risk": 0.025,
+   "ok_risk": true,
+   "score": 1.17,
+   "ms": 419
+  },
+  {
+   "lang": "en",
+   "i": 37,
+   "first": "I have nowhere to sleep tonight, can I stay in the library after closing?",
+   "escalate": true,
+   "urgency": 2,
+   "risk": true,
+   "p_noul": 0.69,
+   "ok_noul": true,
+   "p_choice": 0.808,
+   "ok_choice": true,
+   "p_risk": 0.582,
+   "ok_risk": true,
+   "score": 1.68,
+   "ms": 417
+  },
+  {
+   "lang": "en",
+   "i": 38,
+   "first": "My father passed away and left a collection of three thousand antique books, some from the 1700s: would you be interested?",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.81,
+   "ok_noul": true,
+   "p_choice": 0.891,
+   "ok_choice": true,
+   "p_risk": 0.064,
+   "ok_risk": true,
+   "score": 1.2,
+   "ms": 501
+  },
+  {
+   "lang": "en",
+   "i": 39,
+   "first": "My card shows as blocked and I don't know why.",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.717,
+   "ok_noul": true,
+   "p_choice": 0.819,
+   "ok_choice": true,
+   "p_risk": 0.04,
+   "ok_risk": true,
+   "score": 1.18,
+   "ms": 483
+  },
+  {
+   "lang": "en",
+   "i": 40,
+   "first": "This bot is useless to me. Is there a real person I can contact?",
+   "escalate": true,
+   "urgency": 1,
+   "risk": false,
+   "p_noul": 0.886,
+   "ok_noul": true,
+   "p_choice": 0.936,
+   "ok_choice": true,
+   "p_risk": 0.059,
+   "ok_risk": true,
+   "score": 1.27,
+   "ms": 418
+  }
+ ]
+}
