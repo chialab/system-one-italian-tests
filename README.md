@@ -1,6 +1,6 @@
 # System One Italian tests
 
-These tests check whether a local "System One" decision model can handle two jobs in Italian, with English for comparison:
+These tests check whether a "System One" decision model, local or hosted, can handle two jobs in Italian, with English for comparison:
 
 - routing a user request to the right agent, team or tool;
 - deciding when a FAQ chatbot should hand the conversation to a human.
@@ -16,16 +16,20 @@ A System One model answers typed questions about a piece of text (`choice`, `nou
 - **Kev-4B** is almost as accurate and about 4 times faster, but its probabilities are flatter and it missed more safety signals.
   - *Flatter* means Kev spreads its probability across the options even when it picks the right one. The chosen agent gets 0.82 on average, against 0.98 for Winnow. Kev is often right but rarely sure, so a 0.8 threshold would reject 89 of its 231 correct answers; use about 0.5 instead.
   - It flagged 8 of 11 emergencies against Winnow's 10. It missed a suicidal hint and a 9-year-old left alone at closing time, both of which Winnow caught.
+- **GPT-6 Luna** (OpenAI Decisions API, hosted) is as accurate as Winnow and the only model that flagged all 11 emergencies. It is also the only one whose urgency `score` separates "nobody needed" from "somebody needed" everywhere. It is a paid cloud API: your text leaves the machine. Its timings depend on the network and are to be re-evaluated in the future.
+  - Its probabilities sit between Winnow's and Kev's (0.92 on average for the chosen agent). A 0.8 threshold keeps 199 of 240 decisions with no errors.
+  - Its errors lean towards `ask_user` on vague coding requests, a cautious way to be wrong.
 - **Laya** is very fast but not usable for Italian out of the box. Its authors say so themselves: they present the shipped checkpoints "as a fast base to specialise, not as a zero-shot decision engine". They recommend [fine-tuning on your own labels](https://github.com/NandhaKishorM/laya#fine-tune-for-better-accuracy). On their own typed-decisions benchmark fine-tuning raises accuracy from 0.36 to 0.77. These tests use Laya without fine-tuning.
 
 Each tested model has its own folder under `results/`, with a README (verdicts, detailed results, configuration, timings, how to reproduce) and the raw reports.
 
-All models were run on the same MacBook Pro (M3 Pro, 36 GB), one at a time, with no other model server running.
+All local models were run on the same MacBook Pro (M3 Pro, 36 GB), one at a time, with no other model server running. GPT-6 Luna runs at OpenAI and was called from the same laptop over the internet, so its latency depends on the network: it is not reported and is to be re-evaluated in the future.
 
 | Model | Architecture | Routing: clean IT · clean EN · messy IT | Needs human? | Safety risk | Urgency `score` | Routing latency (IT / EN) | Report |
 |---|---|---|---|---|---|---|---|
 | [Winnow-12B](https://huggingface.co/EldanRing/Winnow-12B) Q8_0 | 12B decoder LLM, option-letter logits | 90/90 · 90/90 · 59/60 | 108/108 | 10 of 11 emergencies | ❌ not usable | 3.5 s / 2.7 s | [results/winnow-12b-q8_0](results/winnow-12b-q8_0/README.md) |
 | [Kev-4B](https://huggingface.co/jaredpalmer/kev-4b) | 4B decoder LLM (Qwen3.5) + LoRA + pointer head, MLX | 88/90 · 88/90 · 55/60 | 105/108 (missed a suicidal hint) | 8 of 11 | ⚠️ clean cases only | 0.93 s / 0.74 s | [results/kev-4b](results/kev-4b/README.md) |
+| [GPT-6 Luna](https://developers.openai.com/api/docs/guides/decisions) `gpt-6-luna` | Hosted (OpenAI Decisions API, beta), not disclosed | 90/90 · 88/90 · 56/60 | 108/108 | 11 of 11 | ⚠️ none vs some, not useful vs urgent | – (depends on the network, to be re-evaluated) | [results/gpt-6-luna](results/gpt-6-luna/README.md) |
 | [Laya](https://github.com/NandhaKishorM/laya) 0.3.22 | 0.3–0.4B encoder (cross-encoder) | 47/90 · 69/90 · 22/60 | 54/108 (≈ chance) | 0 of 11 | ❌ not usable | 57 ms / 105 ms | [results/laya-0.3.22](results/laya-0.3.22/README.md) |
 
 Routing latency is the median of one suite request with two `choice` questions over 8–9 options.
@@ -36,6 +40,7 @@ Routing latency is the median of one suite request with two `choice` questions o
 |---|---|---|
 | Winnow-12B | 238 accepted, 1 wrong | 233 accepted, 0 wrong |
 | Kev-4B | 212 accepted, 2 wrong | 142 accepted, 0 wrong |
+| GPT-6 Luna | 232 accepted, 4 wrong | 199 accepted, 0 wrong |
 | Laya 0.3.22 | 167 accepted, 55 wrong | 112 accepted, 33 wrong |
 
 ## Test suites
@@ -48,6 +53,7 @@ Routing latency is the median of one suite request with two `choice` questions o
 | `pilot_12_cases.py`, `pilot_latency.py` | The pilot run (12 cases, 5 agents) and the single-question latency measurement. |
 | `run_all.sh` | Runs everything above for one model and writes the reports into `results/<tag>/`. |
 | `token_count.py` | IT vs EN token counts of the base suite, via the server's `/tokenize`. |
+| `openai_decisions_proxy.py` | Local proxy that serves `/v1/systemone` on top of the [OpenAI Decisions API](https://developers.openai.com/api/docs/guides/decisions), so the same runners work with `gpt-6-luna`. |
 
 Routing requests are asked twice, once with the options in their normal order and once reversed, to measure position bias. Escalation cases are short conversations between a user and a library bot that only answers with preset FAQ replies.
 
@@ -84,6 +90,21 @@ The client uses only the Python 3 standard library and sends one request at a ti
 python3 suite_run.py --data suite_data_hard --langs it --url <url> --model <model> --tag <tag>
 ```
 
+To test the OpenAI Decisions API, start the local proxy with your key in a terminal you leave open:
+
+```bash
+export OPENAI_API_KEY=sk-...
+python3 openai_decisions_proxy.py 2>&1 | tee proxy.log
+```
+
+Then, from another terminal, point `run_all.sh` at it:
+
+```bash
+./run_all.sh http://127.0.0.1:8092/v1/systemone gpt-6-luna gpt-6-luna
+```
+
+The proxy logs any refused question as `REFUSAL`; the runners count it as probability 0.
+
 When adding a model, also add a `README.md` in its folder and a row to [Results by model](#results-by-model). For comparable timings, run one model server at a time.
 
 ## Caveats
@@ -92,7 +113,8 @@ When adding a model, also add a `README.md` in its folder and a row to [Results 
 - **Small samples.** n = 60–90 per suite and language, from a single deterministic run with no confidence intervals.
 - **Ambiguous cases accept several agents.** Where a case accepts more than one agent, any of them counts as correct.
 - **What these tests do not cover:** long documents (Winnow-class models are mostly trained on short inputs), 20+ options, and multi-turn agent loops.
-- **Timings depend on the machine.** Each model README states the hardware its timings were measured on.
+- **Timings depend on the machine.** Each model README states the hardware its timings were measured on. For hosted models they also depend on the network and the API load.
+- **Hosted models can change.** `gpt-6-luna` was tested on 2026-10-08, while the Decisions API was in public beta; OpenAI can update the model behind the same name.
 
 ## Layout
 
@@ -104,8 +126,10 @@ pilot_12_cases.py      pilot run
 pilot_latency.py       single-question latency
 token_count.py         IT vs EN token counts
 run_all.sh             all suites for one model
+openai_decisions_proxy.py  /v1/systemone on top of the OpenAI Decisions API
 results/               one folder per model: README.md + raw reports
   winnow-12b-q8_0/     Winnow-12B Q8_0
   kev-4b/              Kev-4B (MLX, bfloat16)
   laya-0.3.22/         Laya 0.3.22 (router: english + multilingual)
+  gpt-6-luna/          GPT-6 Luna (OpenAI Decisions API, via proxy)
 ```
