@@ -1,4 +1,5 @@
 import json
+import os
 import sys
 import time
 import urllib.request
@@ -6,6 +7,8 @@ import urllib.request
 URL = sys.argv[1] if len(sys.argv) > 1 else 'http://127.0.0.1:8091/v1/systemone'
 OUT = sys.argv[2] if len(sys.argv) > 2 else 'routing_results.json'
 MODEL = sys.argv[3] if len(sys.argv) > 3 else 'Winnow-12B'
+# Hosted servers such as api.typesafe.ai need a bearer token; local servers ignore it
+HEADERS = {'Content-Type': 'application/json'} | ({'Authorization': f"Bearer {os.environ['TYPESAFE_API_KEY']}"} if os.environ.get('TYPESAFE_API_KEY') else {})
 
 AG = ['MED', 'TRAD', 'BIB', 'BAN', 'FO']
 EXP = [['TRAD'], ['MED'], ['BIB'], ['BAN'], ['FO'], ['FO'], ['MED', 'TRAD'], ['BAN', 'TRAD'], ['BAN', 'BIB'], ['BAN'], ['FO'], ['TRAD']]
@@ -86,7 +89,7 @@ L = {
 
 
 def post(body):
-	req = urllib.request.Request(URL, data=json.dumps(body).encode(), headers={'Content-Type': 'application/json'})
+	req = urllib.request.Request(URL, data=json.dumps(body).encode(), headers=HEADERS)
 	t0 = time.perf_counter()
 	with urllib.request.urlopen(req, timeout=600) as r:
 		out = json.load(r)

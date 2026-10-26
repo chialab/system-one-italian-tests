@@ -12,21 +12,24 @@ A System One model answers typed questions about a piece of text (`choice`, `nou
 
 **TL;DR**
 
-- **Winnow-12B** is the most accurate and the most confident. It is also the slowest: 2–4 s on this laptop.
+- **Jev 1.14** (TypeSafe, hosted), the reference model for this API format, matches Winnow on routing (239/240) and is the most stable when the options are reversed (3 flips out of 240). It flagged all 11 emergencies. It is a paid cloud API: your text leaves the machine.
+  - Its "needs a human?" margins are narrower: some real escalations score only 0.76–0.85, and it raised one false alarm in English. A 0.5 threshold works here, but calibrate it on real conversations.
+- **Winnow-12B** is as accurate as Jev and the most confident. It is also the slowest: 2–4 s on this laptop.
 - **Kev-4B** is almost as accurate and about 4 times faster, but its probabilities are flatter and it missed more safety signals.
   - *Flatter* means Kev spreads its probability across the options even when it picks the right one. The chosen agent gets 0.82 on average, against 0.98 for Winnow. Kev is often right but rarely sure, so a 0.8 threshold would reject 89 of its 231 correct answers; use about 0.5 instead.
   - It flagged 8 of 11 emergencies against Winnow's 10. It missed a suicidal hint and a 9-year-old left alone at closing time, both of which Winnow caught.
-- **GPT-6 Luna** (OpenAI Decisions API, hosted) is as accurate as Winnow and the only model that flagged all 11 emergencies. It is also the only one whose urgency `score` separates "nobody needed" from "somebody needed" everywhere. It is a paid cloud API: your text leaves the machine. Its timings depend on the network and are to be re-evaluated in the future.
+- **GPT-6 Luna** (OpenAI Decisions API, hosted) is almost as accurate and, like Jev, flagged all 11 emergencies. Jev and Luna are the only models whose urgency `score` separates "nobody needed" from "somebody needed" everywhere; neither tells "useful" from "urgent". It is a paid cloud API: your text leaves the machine. Its timings depend on the network and are to be re-evaluated in the future.
   - Its probabilities sit between Winnow's and Kev's (0.92 on average for the chosen agent). A 0.8 threshold keeps 199 of 240 decisions with no errors.
   - Its errors lean towards `ask_user` on vague coding requests, a cautious way to be wrong.
 - **Laya** is very fast but not usable for Italian out of the box. Its authors say so themselves: they present the shipped checkpoints "as a fast base to specialise, not as a zero-shot decision engine". They recommend [fine-tuning on your own labels](https://github.com/NandhaKishorM/laya#fine-tune-for-better-accuracy). On their own typed-decisions benchmark fine-tuning raises accuracy from 0.36 to 0.77. These tests use Laya without fine-tuning.
 
 Each tested model has its own folder under `results/`, with a README (verdicts, detailed results, configuration, timings, how to reproduce) and the raw reports.
 
-All local models were run on the same MacBook Pro (M3 Pro, 36 GB), one at a time, with no other model server running. GPT-6 Luna runs at OpenAI and was called from the same laptop over the internet, so its latency depends on the network: it is not reported and is to be re-evaluated in the future.
+All local models were run on the same MacBook Pro (M3 Pro, 36 GB), one at a time, with no other model server running. The hosted models (Jev at TypeSafe, GPT-6 Luna at OpenAI) were called from the same laptop over the internet, so their latency depends on the network: it is not reported and is to be re-evaluated in the future.
 
 | Model | Architecture | Routing: clean IT · clean EN · messy IT | Needs human? | Safety risk | Urgency `score` | Routing latency (IT / EN) | Report |
 |---|---|---|---|---|---|---|---|
+| [Jev 1.14](https://docs.typesafe.ai/models.md) `jev-1.14.0` | Hosted (TypeSafe API), not disclosed | 90/90 · 90/90 · 59/60 | 107/108 (1 false alarm) | 11 of 11 | ⚠️ none vs some, not useful vs urgent | – (depends on the network, to be re-evaluated) | [results/jev-1.14.0](results/jev-1.14.0/README.md) |
 | [Winnow-12B](https://huggingface.co/EldanRing/Winnow-12B) Q8_0 | 12B decoder LLM, option-letter logits | 90/90 · 90/90 · 59/60 | 108/108 | 10 of 11 emergencies | ❌ not usable | 3.5 s / 2.7 s | [results/winnow-12b-q8_0](results/winnow-12b-q8_0/README.md) |
 | [Kev-4B](https://huggingface.co/jaredpalmer/kev-4b) | 4B decoder LLM (Qwen3.5) + LoRA + pointer head, MLX | 88/90 · 88/90 · 55/60 | 105/108 (missed a suicidal hint) | 8 of 11 | ⚠️ clean cases only | 0.93 s / 0.74 s | [results/kev-4b](results/kev-4b/README.md) |
 | [GPT-6 Luna](https://developers.openai.com/api/docs/guides/decisions) `gpt-6-luna` | Hosted (OpenAI Decisions API, beta), not disclosed | 90/90 · 88/90 · 56/60 | 108/108 | 11 of 11 | ⚠️ none vs some, not useful vs urgent | – (depends on the network, to be re-evaluated) | [results/gpt-6-luna](results/gpt-6-luna/README.md) |
@@ -38,6 +41,7 @@ Routing latency is the median of one suite request with two `choice` questions o
 
 | Model | Accept p ≥ 0.5 | Accept p ≥ 0.8 |
 |---|---|---|
+| Jev 1.14 | 239 accepted, 1 wrong | 216 accepted, 0 wrong |
 | Winnow-12B | 238 accepted, 1 wrong | 233 accepted, 0 wrong |
 | Kev-4B | 212 accepted, 2 wrong | 142 accepted, 0 wrong |
 | GPT-6 Luna | 232 accepted, 4 wrong | 199 accepted, 0 wrong |
@@ -90,6 +94,16 @@ The client uses only the Python 3 standard library and sends one request at a ti
 python3 suite_run.py --data suite_data_hard --langs it --url <url> --model <model> --tag <tag>
 ```
 
+For a hosted server that needs a key, such as Jev at `https://api.typesafe.ai/v1/systemone`, put the key in a `.env` file at the root of this repo (it is gitignored). `run_all.sh` loads it and the runners send it as a bearer token:
+
+```
+TYPESAFE_API_KEY=...
+```
+
+```bash
+./run_all.sh https://api.typesafe.ai/v1/systemone jev-1.14.0 jev-1.14.0
+```
+
 To test the OpenAI Decisions API, start the local proxy with your key in a terminal you leave open:
 
 ```bash
@@ -114,7 +128,7 @@ When adding a model, also add a `README.md` in its folder and a row to [Results 
 - **Ambiguous cases accept several agents.** Where a case accepts more than one agent, any of them counts as correct.
 - **What these tests do not cover:** long documents (Winnow-class models are mostly trained on short inputs), 20+ options, and multi-turn agent loops.
 - **Timings depend on the machine.** Each model README states the hardware its timings were measured on. For hosted models they also depend on the network and the API load.
-- **Hosted models can change.** `gpt-6-luna` was tested on 2026-10-08, while the Decisions API was in public beta; OpenAI can update the model behind the same name.
+- **Hosted models can change.** `gpt-6-luna` was tested on 2026-10-08, while the Decisions API was in public beta; OpenAI can update the model behind the same name. `jev-1.14.0` was tested on 2026-10-26, pinned by version rather than through the `jev-latest` alias.
 
 ## Layout
 
@@ -132,4 +146,5 @@ results/               one folder per model: README.md + raw reports
   kev-4b/              Kev-4B (MLX, bfloat16)
   laya-0.3.22/         Laya 0.3.22 (router: english + multilingual)
   gpt-6-luna/          GPT-6 Luna (OpenAI Decisions API, via proxy)
+  jev-1.14.0/          Jev 1.14 (TypeSafe API)
 ```

@@ -1,10 +1,13 @@
 import argparse
 import importlib
 import json
+import os
 import time
 import urllib.request
 from pathlib import Path
 
+# Hosted servers such as api.typesafe.ai need a bearer token; local servers ignore it
+HEADERS = {'Content-Type': 'application/json'} | ({'Authorization': f"Bearer {os.environ['TYPESAFE_API_KEY']}"} if os.environ.get('TYPESAFE_API_KEY') else {})
 LABELS = {
 	'it': {'request': "Richiesta", 'context': "Contesto", 'conversation': "Conversazione", 'user': "Utente", 'bot': "Bot"},
 	'en': {'request': "Request", 'context': "Context", 'conversation': "Conversation", 'user': "User", 'bot': "Bot"}
@@ -12,7 +15,7 @@ LABELS = {
 
 
 def post(url, body):
-	req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={'Content-Type': 'application/json'})
+	req = urllib.request.Request(url, data=json.dumps(body).encode(), headers=HEADERS)
 	t0 = time.perf_counter()
 	with urllib.request.urlopen(req, timeout=600) as r:
 		out = json.load(r)

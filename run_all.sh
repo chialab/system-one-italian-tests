@@ -6,6 +6,8 @@ MODEL=$2
 TAG=$3
 DIR=results/$TAG
 cd "$(dirname "$0")"
+# Optional .env (gitignored) for hosted servers, e.g. TYPESAFE_API_KEY=...
+if [ -f .env ]; then set -a; . ./.env; set +a; fi
 mkdir -p "$DIR"
 python3 suite_run.py --url "$URL" --model "$MODEL" --tag "$TAG" --data suite_data --langs it,en 2>&1 | tee "$DIR/suite_data_it-en.log"
 python3 suite_run.py --url "$URL" --model "$MODEL" --tag "$TAG" --data suite_data_hard --langs it 2>&1 | tee "$DIR/suite_data_hard_it.log"

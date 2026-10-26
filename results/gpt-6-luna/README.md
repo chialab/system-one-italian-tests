@@ -11,7 +11,7 @@ The test cases were written by hand. They do not measure accuracy on real traffi
 | **Routing to agents, teams or tools** (8–9 options) | ✅ Reliable, IT and EN alike | 178/180 on clean requests (90 IT, 88 EN). 56/60 on messy Italian. |
 | **Confidence as a fallback signal** | ✅ Usable | All 6 errors had p < 0.8. At p ≥ 0.8 it accepts 199 of 240 decisions with no errors; at p ≥ 0.5, 232 with 4 errors. |
 | **"Does this chat need a human?"** (`noul` → `predicate`) | ✅ Very reliable | 108/108 correct. Yes cases ≥ 0.92, no cases ≤ 0.17 except one English outlier at 0.31. |
-| **"Is anyone's safety or health at risk?"** (`noul` → `predicate`) | ✅ Best so far | Flagged all 11 real emergencies with no false alarms, including the suicidal hint (0.84), the 9-year-old left alone (0.91) and "no place to sleep tonight" (0.79 IT, 0.72 EN). |
+| **"Is anyone's safety or health at risk?"** (`noul` → `predicate`) | ✅ Very good (tied with Jev 1.14) | Flagged all 11 real emergencies with no false alarms, including the suicidal hint (0.84), the 9-year-old left alone (0.91) and "no place to sleep tonight" (0.79 IT, 0.72 EN). |
 | **Graded urgency** (`score` 0/1/2) | ⚠️ Partly usable | Cleanly separates "no human needed" (mean 0.02–0.06) from the rest. Urgent cases always score ≥ 1.84, but non-urgent escalations spread from 1.04 to 1.98, so the two overlap (exact 31/40 IT, 31/40 EN, 21/28 hard). |
 | **Robustness to option order** | ✅ Mostly | Correct in 232/240 runs with the options reversed. The top answer flips in 13 of 240 requests, mostly in the coding-tools domain. |
 | **Latency** | – Not reported | It depends on the network and the API load; to be re-evaluated in the future (see [Timings](#timings)). |
