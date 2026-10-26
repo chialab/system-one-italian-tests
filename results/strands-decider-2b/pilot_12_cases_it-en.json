@@ -1,0 +1,955 @@
+{
+ "summary": {
+  "it": {
+   "route_long": 12,
+   "route_long_rev": 12,
+   "order_flips": 0,
+   "route_short": 12,
+   "noul_top": 12,
+   "score_round_ok": 6,
+   "median_ms": 3993
+  },
+  "en": {
+   "route_long": 12,
+   "route_long_rev": 12,
+   "order_flips": 0,
+   "route_short": 12,
+   "noul_top": 11,
+   "score_round_ok": 6,
+   "median_ms": 3544
+  }
+ },
+ "results": {
+  "it": [
+   {
+    "i": 1,
+    "exp": [
+     "TRAD"
+    ],
+    "ms": 4212,
+    "route_long": {
+     "top": "TRAD",
+     "p": 0.912,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 0.945,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.843,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.361,
+     "TRAD": 0.806,
+     "BIB": 0.179,
+     "BAN": 0.129,
+     "FO": 0.584
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD",
+     "FO"
+    ],
+    "score": 0.88,
+    "score_exp": 1
+   },
+   {
+    "i": 2,
+    "exp": [
+     "MED"
+    ],
+    "ms": 4014,
+    "route_long": {
+     "top": "MED",
+     "p": 0.766,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "MED",
+     "p": 0.867,
+     "ok": true
+    },
+    "route_short": {
+     "top": "MED",
+     "p": 0.537,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.561,
+     "TRAD": 0.42,
+     "BIB": 0.133,
+     "BAN": 0.122,
+     "FO": 0.467
+    },
+    "noul_top": {
+     "top": "MED",
+     "ok": true
+    },
+    "noul_yes": [
+     "MED"
+    ],
+    "score": 0.92,
+    "score_exp": 1
+   },
+   {
+    "i": 3,
+    "exp": [
+     "BIB"
+    ],
+    "ms": 3977,
+    "route_long": {
+     "top": "BIB",
+     "p": 0.976,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BIB",
+     "p": 0.974,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BIB",
+     "p": 0.92,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.22,
+     "TRAD": 0.086,
+     "BIB": 0.527,
+     "BAN": 0.15,
+     "FO": 0.261
+    },
+    "noul_top": {
+     "top": "BIB",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB"
+    ],
+    "score": 1.01,
+    "score_exp": 1
+   },
+   {
+    "i": 4,
+    "exp": [
+     "BAN"
+    ],
+    "ms": 3997,
+    "route_long": {
+     "top": "BAN",
+     "p": 0.942,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 0.93,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.965,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.107,
+     "TRAD": 0.179,
+     "BIB": 0.282,
+     "BAN": 0.795,
+     "FO": 0.461
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "BAN"
+    ],
+    "score": 0.91,
+    "score_exp": 1
+   },
+   {
+    "i": 5,
+    "exp": [
+     "FO"
+    ],
+    "ms": 3993,
+    "route_long": {
+     "top": "FO",
+     "p": 0.96,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 0.961,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.911,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.075,
+     "TRAD": 0.168,
+     "BIB": 0.147,
+     "BAN": 0.074,
+     "FO": 0.575
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "FO"
+    ],
+    "score": 0.79,
+    "score_exp": 0
+   },
+   {
+    "i": 6,
+    "exp": [
+     "FO"
+    ],
+    "ms": 3965,
+    "route_long": {
+     "top": "FO",
+     "p": 0.926,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 0.959,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.779,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.202,
+     "TRAD": 0.264,
+     "BIB": 0.156,
+     "BAN": 0.121,
+     "FO": 0.511
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "FO"
+    ],
+    "score": 0.87,
+    "score_exp": 0
+   },
+   {
+    "i": 7,
+    "exp": [
+     "MED",
+     "TRAD"
+    ],
+    "ms": 4019,
+    "route_long": {
+     "top": "MED",
+     "p": 0.697,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "MED",
+     "p": 0.523,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.62,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.791,
+     "TRAD": 0.773,
+     "BIB": 0.141,
+     "BAN": 0.156,
+     "FO": 0.491
+    },
+    "noul_top": {
+     "top": "MED",
+     "ok": true
+    },
+    "noul_yes": [
+     "MED",
+     "TRAD"
+    ],
+    "score": 1.02,
+    "score_exp": 2
+   },
+   {
+    "i": 8,
+    "exp": [
+     "BAN",
+     "TRAD"
+    ],
+    "ms": 3969,
+    "route_long": {
+     "top": "BAN",
+     "p": 0.805,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 0.858,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.561,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.309,
+     "TRAD": 0.708,
+     "BIB": 0.198,
+     "BAN": 0.72,
+     "FO": 0.426
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD",
+     "BAN"
+    ],
+    "score": 1.01,
+    "score_exp": 2
+   },
+   {
+    "i": 9,
+    "exp": [
+     "BAN",
+     "BIB"
+    ],
+    "ms": 3986,
+    "route_long": {
+     "top": "BIB",
+     "p": 0.729,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BIB",
+     "p": 0.58,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.456,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.389,
+     "TRAD": 0.093,
+     "BIB": 0.745,
+     "BAN": 0.631,
+     "FO": 0.477
+    },
+    "noul_top": {
+     "top": "BIB",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB",
+     "BAN"
+    ],
+    "score": 0.96,
+    "score_exp": 2
+   },
+   {
+    "i": 10,
+    "exp": [
+     "BAN"
+    ],
+    "ms": 3993,
+    "route_long": {
+     "top": "BAN",
+     "p": 0.899,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 0.892,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.65,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.195,
+     "TRAD": 0.66,
+     "BIB": 0.168,
+     "BAN": 0.661,
+     "FO": 0.377
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD",
+     "BAN"
+    ],
+    "score": 0.97,
+    "score_exp": 1
+   },
+   {
+    "i": 11,
+    "exp": [
+     "FO"
+    ],
+    "ms": 3970,
+    "route_long": {
+     "top": "FO",
+     "p": 0.894,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 0.879,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.53,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.47,
+     "TRAD": 0.116,
+     "BIB": 0.329,
+     "BAN": 0.28,
+     "FO": 0.776
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "FO"
+    ],
+    "score": 0.81,
+    "score_exp": 0
+   },
+   {
+    "i": 12,
+    "exp": [
+     "TRAD"
+    ],
+    "ms": 4004,
+    "route_long": {
+     "top": "TRAD",
+     "p": 0.825,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 0.874,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.884,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.465,
+     "TRAD": 0.854,
+     "BIB": 0.22,
+     "BAN": 0.163,
+     "FO": 0.504
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD",
+     "FO"
+    ],
+    "score": 0.83,
+    "score_exp": 1
+   }
+  ],
+  "en": [
+   {
+    "i": 1,
+    "exp": [
+     "TRAD"
+    ],
+    "ms": 3544,
+    "route_long": {
+     "top": "TRAD",
+     "p": 0.961,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 0.965,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.94,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.342,
+     "TRAD": 0.695,
+     "BIB": 0.168,
+     "BAN": 0.137,
+     "FO": 0.443
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD"
+    ],
+    "score": 0.96,
+    "score_exp": 1
+   },
+   {
+    "i": 2,
+    "exp": [
+     "MED"
+    ],
+    "ms": 3619,
+    "route_long": {
+     "top": "MED",
+     "p": 0.937,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "MED",
+     "p": 0.958,
+     "ok": true
+    },
+    "route_short": {
+     "top": "MED",
+     "p": 0.819,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.777,
+     "TRAD": 0.529,
+     "BIB": 0.103,
+     "BAN": 0.306,
+     "FO": 0.519
+    },
+    "noul_top": {
+     "top": "MED",
+     "ok": true
+    },
+    "noul_yes": [
+     "MED",
+     "TRAD",
+     "FO"
+    ],
+    "score": 1.01,
+    "score_exp": 1
+   },
+   {
+    "i": 3,
+    "exp": [
+     "BIB"
+    ],
+    "ms": 3806,
+    "route_long": {
+     "top": "BIB",
+     "p": 0.988,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BIB",
+     "p": 0.987,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BIB",
+     "p": 0.948,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.25,
+     "TRAD": 0.107,
+     "BIB": 0.522,
+     "BAN": 0.111,
+     "FO": 0.2
+    },
+    "noul_top": {
+     "top": "BIB",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB"
+    ],
+    "score": 1.02,
+    "score_exp": 1
+   },
+   {
+    "i": 4,
+    "exp": [
+     "BAN"
+    ],
+    "ms": 4021,
+    "route_long": {
+     "top": "BAN",
+     "p": 0.958,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 0.967,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.986,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.231,
+     "TRAD": 0.12,
+     "BIB": 0.158,
+     "BAN": 0.812,
+     "FO": 0.48
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "BAN"
+    ],
+    "score": 0.92,
+    "score_exp": 1
+   },
+   {
+    "i": 5,
+    "exp": [
+     "FO"
+    ],
+    "ms": 3767,
+    "route_long": {
+     "top": "FO",
+     "p": 0.967,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 0.971,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.96,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.118,
+     "TRAD": 0.182,
+     "BIB": 0.092,
+     "BAN": 0.09,
+     "FO": 0.358
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [],
+    "score": 0.78,
+    "score_exp": 0
+   },
+   {
+    "i": 6,
+    "exp": [
+     "FO"
+    ],
+    "ms": 3546,
+    "route_long": {
+     "top": "FO",
+     "p": 0.977,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 0.98,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.662,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.137,
+     "TRAD": 0.102,
+     "BIB": 0.094,
+     "BAN": 0.087,
+     "FO": 0.159
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [],
+    "score": 0.87,
+    "score_exp": 0
+   },
+   {
+    "i": 7,
+    "exp": [
+     "MED",
+     "TRAD"
+    ],
+    "ms": 3472,
+    "route_long": {
+     "top": "TRAD",
+     "p": 0.595,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 0.741,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.9,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.726,
+     "TRAD": 0.905,
+     "BIB": 0.127,
+     "BAN": 0.147,
+     "FO": 0.583
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": true
+    },
+    "noul_yes": [
+     "MED",
+     "TRAD",
+     "FO"
+    ],
+    "score": 1.07,
+    "score_exp": 2
+   },
+   {
+    "i": 8,
+    "exp": [
+     "BAN",
+     "TRAD"
+    ],
+    "ms": 3501,
+    "route_long": {
+     "top": "BAN",
+     "p": 0.802,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 0.848,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.502,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.337,
+     "TRAD": 0.68,
+     "BIB": 0.354,
+     "BAN": 0.57,
+     "FO": 0.45
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD",
+     "BAN"
+    ],
+    "score": 0.94,
+    "score_exp": 2
+   },
+   {
+    "i": 9,
+    "exp": [
+     "BAN",
+     "BIB"
+    ],
+    "ms": 3522,
+    "route_long": {
+     "top": "BIB",
+     "p": 0.845,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BIB",
+     "p": 0.703,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.614,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.239,
+     "TRAD": 0.101,
+     "BIB": 0.732,
+     "BAN": 0.594,
+     "FO": 0.346
+    },
+    "noul_top": {
+     "top": "BIB",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB",
+     "BAN"
+    ],
+    "score": 1.01,
+    "score_exp": 2
+   },
+   {
+    "i": 10,
+    "exp": [
+     "BAN"
+    ],
+    "ms": 3478,
+    "route_long": {
+     "top": "BAN",
+     "p": 0.935,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 0.932,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.89,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.324,
+     "TRAD": 0.701,
+     "BIB": 0.13,
+     "BAN": 0.686,
+     "FO": 0.361
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": false
+    },
+    "noul_yes": [
+     "TRAD",
+     "BAN"
+    ],
+    "score": 0.93,
+    "score_exp": 1
+   },
+   {
+    "i": 11,
+    "exp": [
+     "FO"
+    ],
+    "ms": 3445,
+    "route_long": {
+     "top": "FO",
+     "p": 0.94,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 0.929,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.851,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.361,
+     "TRAD": 0.113,
+     "BIB": 0.196,
+     "BAN": 0.115,
+     "FO": 0.709
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "FO"
+    ],
+    "score": 0.84,
+    "score_exp": 0
+   },
+   {
+    "i": 12,
+    "exp": [
+     "TRAD"
+    ],
+    "ms": 3482,
+    "route_long": {
+     "top": "TRAD",
+     "p": 0.919,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 0.929,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.89,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.47,
+     "TRAD": 0.855,
+     "BIB": 0.182,
+     "BAN": 0.122,
+     "FO": 0.407
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD"
+    ],
+    "score": 0.88,
+    "score_exp": 1
+   }
+  ]
+ }
+}

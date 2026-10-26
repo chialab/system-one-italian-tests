@@ -1,0 +1,44 @@
+it 1 TRAD 0.912 ok 4212ms
+it 2 MED 0.766 ok 4014ms
+it 3 BIB 0.976 ok 3977ms
+it 4 BAN 0.942 ok 3997ms
+it 5 FO 0.96 ok 3993ms
+it 6 FO 0.926 ok 3965ms
+it 7 MED 0.697 ok 4019ms
+it 8 BAN 0.805 ok 3969ms
+it 9 BIB 0.729 ok 3986ms
+it 10 BAN 0.899 ok 3993ms
+it 11 FO 0.894 ok 3970ms
+it 12 TRAD 0.825 ok 4004ms
+en 1 TRAD 0.961 ok 3544ms
+en 2 MED 0.937 ok 3619ms
+en 3 BIB 0.988 ok 3806ms
+en 4 BAN 0.958 ok 4021ms
+en 5 FO 0.967 ok 3767ms
+en 6 FO 0.977 ok 3546ms
+en 7 TRAD 0.595 ok 3472ms
+en 8 BAN 0.802 ok 3501ms
+en 9 BIB 0.845 ok 3522ms
+en 10 BAN 0.935 ok 3478ms
+en 11 FO 0.94 ok 3445ms
+en 12 TRAD 0.919 ok 3482ms
+{
+ "it": {
+  "route_long": 12,
+  "route_long_rev": 12,
+  "order_flips": 0,
+  "route_short": 12,
+  "noul_top": 12,
+  "score_round_ok": 6,
+  "median_ms": 3993
+ },
+ "en": {
+  "route_long": 12,
+  "route_long_rev": 12,
+  "order_flips": 0,
+  "route_short": 12,
+  "noul_top": 11,
+  "score_round_ok": 6,
+  "median_ms": 3544
+ }
+}
