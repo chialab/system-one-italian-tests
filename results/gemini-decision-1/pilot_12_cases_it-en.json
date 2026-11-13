@@ -1,0 +1,961 @@
+{
+ "summary": {
+  "it": {
+   "route_long": 12,
+   "route_long_rev": 12,
+   "order_flips": 0,
+   "route_short": 12,
+   "noul_top": 12,
+   "score_round_ok": 7,
+   "median_ms": 766
+  },
+  "en": {
+   "route_long": 12,
+   "route_long_rev": 12,
+   "order_flips": 0,
+   "route_short": 12,
+   "noul_top": 11,
+   "score_round_ok": 6,
+   "median_ms": 591
+  }
+ },
+ "results": {
+  "it": [
+   {
+    "i": 1,
+    "exp": [
+     "TRAD"
+    ],
+    "ms": 893,
+    "route_long": {
+     "top": "TRAD",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.991,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.147,
+     "TRAD": 0.937,
+     "BIB": 0.037,
+     "BAN": 0.022,
+     "FO": 0.419
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD"
+    ],
+    "score": 0.93,
+    "score_exp": 1
+   },
+   {
+    "i": 2,
+    "exp": [
+     "MED"
+    ],
+    "ms": 701,
+    "route_long": {
+     "top": "MED",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "MED",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "MED",
+     "p": 0.978,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.912,
+     "TRAD": 0.634,
+     "BIB": 0.01,
+     "BAN": 0.01,
+     "FO": 0.219
+    },
+    "noul_top": {
+     "top": "MED",
+     "ok": true
+    },
+    "noul_yes": [
+     "MED",
+     "TRAD"
+    ],
+    "score": 1.15,
+    "score_exp": 1
+   },
+   {
+    "i": 3,
+    "exp": [
+     "BIB"
+    ],
+    "ms": 766,
+    "route_long": {
+     "top": "BIB",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BIB",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BIB",
+     "p": 0.968,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.128,
+     "TRAD": 0.03,
+     "BIB": 0.864,
+     "BAN": 0.012,
+     "FO": 0.397
+    },
+    "noul_top": {
+     "top": "BIB",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB"
+    ],
+    "score": 1.05,
+    "score_exp": 1
+   },
+   {
+    "i": 4,
+    "exp": [
+     "BAN"
+    ],
+    "ms": 656,
+    "route_long": {
+     "top": "BAN",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.957,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.043,
+     "TRAD": 0.022,
+     "BIB": 0.219,
+     "BAN": 0.971,
+     "FO": 0.871
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "BAN",
+     "FO"
+    ],
+    "score": 0.9,
+    "score_exp": 1
+   },
+   {
+    "i": 5,
+    "exp": [
+     "FO"
+    ],
+    "ms": 839,
+    "route_long": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.997,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.068,
+     "TRAD": 0.043,
+     "BIB": 0.14,
+     "BAN": 0.025,
+     "FO": 0.952
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "FO"
+    ],
+    "score": 0.56,
+    "score_exp": 0
+   },
+   {
+    "i": 6,
+    "exp": [
+     "FO"
+    ],
+    "ms": 464,
+    "route_long": {
+     "top": "FO",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.979,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.329,
+     "TRAD": 0.12,
+     "BIB": 0.615,
+     "BAN": 0.258,
+     "FO": 0.895
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB",
+     "FO"
+    ],
+    "score": 0.37,
+    "score_exp": 0
+   },
+   {
+    "i": 7,
+    "exp": [
+     "MED",
+     "TRAD"
+    ],
+    "ms": 823,
+    "route_long": {
+     "top": "TRAD",
+     "p": 0.51,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 0.51,
+     "ok": true
+    },
+    "route_short": {
+     "top": "MED",
+     "p": 0.591,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.951,
+     "TRAD": 0.737,
+     "BIB": 0.11,
+     "BAN": 0.018,
+     "FO": 0.842
+    },
+    "noul_top": {
+     "top": "MED",
+     "ok": true
+    },
+    "noul_yes": [
+     "MED",
+     "TRAD",
+     "FO"
+    ],
+    "score": 1.05,
+    "score_exp": 2
+   },
+   {
+    "i": 8,
+    "exp": [
+     "BAN",
+     "TRAD"
+    ],
+    "ms": 1543,
+    "route_long": {
+     "top": "BAN",
+     "p": 0.563,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 0.563,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.734,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.126,
+     "TRAD": 0.61,
+     "BIB": 0.108,
+     "BAN": 0.867,
+     "FO": 0.302
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD",
+     "BAN"
+    ],
+    "score": 1.36,
+    "score_exp": 2
+   },
+   {
+    "i": 9,
+    "exp": [
+     "BAN",
+     "BIB"
+    ],
+    "ms": 565,
+    "route_long": {
+     "top": "BIB",
+     "p": 0.953,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BIB",
+     "p": 0.953,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BIB",
+     "p": 0.944,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.011,
+     "TRAD": 0.096,
+     "BIB": 0.383,
+     "BAN": 0.4,
+     "FO": 0.312
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [],
+    "score": 1.21,
+    "score_exp": 2
+   },
+   {
+    "i": 10,
+    "exp": [
+     "BAN"
+    ],
+    "ms": 1024,
+    "route_long": {
+     "top": "BAN",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.947,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.06,
+     "TRAD": 0.046,
+     "BIB": 0.101,
+     "BAN": 0.925,
+     "FO": 0.808
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "BAN",
+     "FO"
+    ],
+    "score": 0.92,
+    "score_exp": 1
+   },
+   {
+    "i": 11,
+    "exp": [
+     "FO"
+    ],
+    "ms": 507,
+    "route_long": {
+     "top": "FO",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.831,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.107,
+     "TRAD": 0.098,
+     "BIB": 0.704,
+     "BAN": 0.05,
+     "FO": 0.837
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB",
+     "FO"
+    ],
+    "score": 0.74,
+    "score_exp": 0
+   },
+   {
+    "i": 12,
+    "exp": [
+     "TRAD"
+    ],
+    "ms": 510,
+    "route_long": {
+     "top": "TRAD",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.83,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.112,
+     "TRAD": 0.933,
+     "BIB": 0.076,
+     "BAN": 0.01,
+     "FO": 0.51
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD",
+     "FO"
+    ],
+    "score": 0.57,
+    "score_exp": 1
+   }
+  ],
+  "en": [
+   {
+    "i": 1,
+    "exp": [
+     "TRAD"
+    ],
+    "ms": 677,
+    "route_long": {
+     "top": "TRAD",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.984,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.089,
+     "TRAD": 0.9,
+     "BIB": 0.045,
+     "BAN": 0.028,
+     "FO": 0.457
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD"
+    ],
+    "score": 0.92,
+    "score_exp": 1
+   },
+   {
+    "i": 2,
+    "exp": [
+     "MED"
+    ],
+    "ms": 533,
+    "route_long": {
+     "top": "MED",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "MED",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "MED",
+     "p": 0.928,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.899,
+     "TRAD": 0.808,
+     "BIB": 0.01,
+     "BAN": 0.01,
+     "FO": 0.476
+    },
+    "noul_top": {
+     "top": "MED",
+     "ok": true
+    },
+    "noul_yes": [
+     "MED",
+     "TRAD"
+    ],
+    "score": 1.01,
+    "score_exp": 1
+   },
+   {
+    "i": 3,
+    "exp": [
+     "BIB"
+    ],
+    "ms": 461,
+    "route_long": {
+     "top": "BIB",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BIB",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BIB",
+     "p": 0.979,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.235,
+     "TRAD": 0.055,
+     "BIB": 0.896,
+     "BAN": 0.023,
+     "FO": 0.468
+    },
+    "noul_top": {
+     "top": "BIB",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB"
+    ],
+    "score": 0.93,
+    "score_exp": 1
+   },
+   {
+    "i": 4,
+    "exp": [
+     "BAN"
+    ],
+    "ms": 472,
+    "route_long": {
+     "top": "BAN",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.984,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.081,
+     "TRAD": 0.094,
+     "BIB": 0.432,
+     "BAN": 0.956,
+     "FO": 0.768
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "BAN",
+     "FO"
+    ],
+    "score": 0.99,
+    "score_exp": 1
+   },
+   {
+    "i": 5,
+    "exp": [
+     "FO"
+    ],
+    "ms": 581,
+    "route_long": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.997,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.081,
+     "TRAD": 0.055,
+     "BIB": 0.12,
+     "BAN": 0.025,
+     "FO": 0.756
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "FO"
+    ],
+    "score": 0.6,
+    "score_exp": 0
+   },
+   {
+    "i": 6,
+    "exp": [
+     "FO"
+    ],
+    "ms": 932,
+    "route_long": {
+     "top": "FO",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 0.999,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.971,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.252,
+     "TRAD": 0.252,
+     "BIB": 0.42,
+     "BAN": 0.291,
+     "FO": 0.833
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "FO"
+    ],
+    "score": 0.35,
+    "score_exp": 0
+   },
+   {
+    "i": 7,
+    "exp": [
+     "MED",
+     "TRAD"
+    ],
+    "ms": 524,
+    "route_long": {
+     "top": "TRAD",
+     "p": 0.548,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 0.548,
+     "ok": true
+    },
+    "route_short": {
+     "top": "MED",
+     "p": 0.418,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.756,
+     "TRAD": 0.885,
+     "BIB": 0.049,
+     "BAN": 0.02,
+     "FO": 0.892
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": false
+    },
+    "noul_yes": [
+     "MED",
+     "TRAD",
+     "FO"
+    ],
+    "score": 0.92,
+    "score_exp": 2
+   },
+   {
+    "i": 8,
+    "exp": [
+     "BAN",
+     "TRAD"
+    ],
+    "ms": 884,
+    "route_long": {
+     "top": "TRAD",
+     "p": 0.585,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 0.585,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.51,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.159,
+     "TRAD": 0.445,
+     "BIB": 0.068,
+     "BAN": 0.759,
+     "FO": 0.513
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "BAN",
+     "FO"
+    ],
+    "score": 1.05,
+    "score_exp": 2
+   },
+   {
+    "i": 9,
+    "exp": [
+     "BAN",
+     "BIB"
+    ],
+    "ms": 579,
+    "route_long": {
+     "top": "BIB",
+     "p": 0.955,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BIB",
+     "p": 0.955,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BIB",
+     "p": 0.731,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.109,
+     "TRAD": 0.108,
+     "BIB": 0.805,
+     "BAN": 0.691,
+     "FO": 0.438
+    },
+    "noul_top": {
+     "top": "BIB",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB",
+     "BAN"
+    ],
+    "score": 1.19,
+    "score_exp": 2
+   },
+   {
+    "i": 10,
+    "exp": [
+     "BAN"
+    ],
+    "ms": 838,
+    "route_long": {
+     "top": "BAN",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "BAN",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "BAN",
+     "p": 0.937,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.182,
+     "TRAD": 0.093,
+     "BIB": 0.62,
+     "BAN": 0.928,
+     "FO": 0.74
+    },
+    "noul_top": {
+     "top": "BAN",
+     "ok": true
+    },
+    "noul_yes": [
+     "BIB",
+     "BAN",
+     "FO"
+    ],
+    "score": 0.91,
+    "score_exp": 1
+   },
+   {
+    "i": 11,
+    "exp": [
+     "FO"
+    ],
+    "ms": 591,
+    "route_long": {
+     "top": "FO",
+     "p": 0.998,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "FO",
+     "p": 0.998,
+     "ok": true
+    },
+    "route_short": {
+     "top": "FO",
+     "p": 0.86,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.131,
+     "TRAD": 0.169,
+     "BIB": 0.286,
+     "BAN": 0.067,
+     "FO": 0.809
+    },
+    "noul_top": {
+     "top": "FO",
+     "ok": true
+    },
+    "noul_yes": [
+     "FO"
+    ],
+    "score": 0.75,
+    "score_exp": 0
+   },
+   {
+    "i": 12,
+    "exp": [
+     "TRAD"
+    ],
+    "ms": 797,
+    "route_long": {
+     "top": "TRAD",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_long_rev": {
+     "top": "TRAD",
+     "p": 1.0,
+     "ok": true
+    },
+    "route_short": {
+     "top": "TRAD",
+     "p": 0.934,
+     "ok": true
+    },
+    "noul": {
+     "MED": 0.277,
+     "TRAD": 0.98,
+     "BIB": 0.025,
+     "BAN": 0.01,
+     "FO": 0.408
+    },
+    "noul_top": {
+     "top": "TRAD",
+     "ok": true
+    },
+    "noul_yes": [
+     "TRAD"
+    ],
+    "score": 0.5,
+    "score_exp": 1
+   }
+  ]
+ }
+}

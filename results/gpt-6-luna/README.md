@@ -87,7 +87,7 @@ Each request is asked twice, once with the options in their normal order and onc
 | Model | `gpt-6-luna`, the only model available on the Decisions API. Hosted by OpenAI; size and architecture not disclosed. |
 | API | `POST https://api.openai.com/v1/decisions`, public beta. Run on 2026-10-08. |
 | How it decides | Typed questions return probabilities, not generated text: `predicate` returns `probability`; `choice` and `score` return a distribution over the options, plus `confidence`. |
-| Proxy | [`openai_decisions_proxy.py`](../../openai_decisions_proxy.py) serves `/v1/systemone` on `127.0.0.1:8092` and forwards each request to OpenAI. `noul` → `predicate`, `choice` criteria → `choices` (`value` + `description`), `score` criteria → `levels` (`label`), `state` → `input` text (`Key: value` blocks). Refusals would count as probability 0 and are logged as `REFUSAL`; 429/5xx are retried with backoff. Neither happened in this run. |
+| Proxy | [`decisions_proxy.py`](../../decisions_proxy.py) (`--provider openai`, named `openai_decisions_proxy.py` at the time of this run) serves `/v1/systemone` on `127.0.0.1:8092` and forwards each request to OpenAI. `noul` → `predicate`, `choice` criteria → `choices` (`value` + `description`), `score` criteria → `levels` (`label`), `state` → `input` text (`Key: value` blocks). Refusals would count as probability 0 and are logged as `REFUSAL`; 429/5xx are retried with backoff. Neither happened in this run. |
 | Request model name | `gpt-6-luna` (the proxy uses its own `--model` anyway) |
 | Pricing | $0.10 per 1M input tokens, no output-token charges. The whole run costs a few cents. |
 | Machine | Client on the MacBook Pro (Apple M3 Pro, 36 GB), over the internet. The model runs at OpenAI. |
@@ -99,7 +99,7 @@ Start the proxy with your API key, in a terminal you leave open:
 
 ```bash
 export OPENAI_API_KEY=sk-...
-python3 openai_decisions_proxy.py 2>&1 | tee proxy.log
+python3 decisions_proxy.py --provider openai 2>&1 | tee proxy.log
 ```
 
 Then, from another terminal at the root of this repo:

@@ -1,0 +1,375 @@
+route sportello it  1 TRAD  1.00 ok | rev TRAD  ok 542ms
+route sportello it  2 MED   0.99 ok | rev MED   ok 484ms
+route sportello it  3 BIB   1.00 ok | rev BIB   ok 523ms
+route sportello it  4 BAN   1.00 ok | rev BAN   ok 524ms
+route sportello it  5 FO    1.00 ok | rev FO    ok 312ms
+route sportello it  6 FO    1.00 ok | rev FO    ok 1785ms
+route sportello it  7 LEG   0.45 ok | rev LEG   ok 603ms
+route sportello it  8 BAN   0.60 ok | rev BAN   ok 1348ms
+route sportello it  9 BIB   0.91 ok | rev BIB   ok 929ms
+route sportello it 10 BAN   0.98 ok | rev BAN   ok 418ms
+route sportello it 11 FO    1.00 ok | rev FO    ok 1502ms
+route sportello it 12 TRAD  1.00 ok | rev TRAD  ok 467ms
+route sportello it 13 LEG   0.99 ok | rev LEG   ok 534ms
+route sportello it 14 LAV   1.00 ok | rev LAV   ok 774ms
+route sportello it 15 DIG   1.00 ok | rev DIG   ok 553ms
+route sportello it 16 LEG   0.99 ok | rev LEG   ok 1636ms
+route sportello it 17 TRAD  1.00 ok | rev TRAD  ok 1537ms
+route sportello it 18 LEG   0.98 ok | rev LEG   ok 1795ms
+route sportello it 19 LAV   1.00 ok | rev LAV   ok 1557ms
+route sportello it 20 DIG   0.99 ok | rev DIG   ok 536ms
+route sportello it 21 MED   1.00 ok | rev MED   ok 495ms
+route sportello it 22 BIB   1.00 ok | rev BIB   ok 680ms
+route sportello it 23 BAN   1.00 ok | rev BAN   ok 576ms
+route sportello it 24 FO    1.00 ok | rev FO    ok 471ms
+route sportello it 25 TRAD  0.99 ok | rev TRAD  ok 4033ms
+route sportello it 26 LEG   0.96 ok | rev LEG   ok 598ms
+route sportello it 27 DIG   0.58 ok | rev DIG   ok 451ms
+route sportello it 28 LAV   0.56 ok | rev LAV   ok 1573ms
+route sportello it 29 BAN   1.00 ok | rev BAN   ok 526ms
+route sportello it 30 FO    1.00 ok | rev FO    ok 522ms
+route sportello it 31 DIG   1.00 ok | rev DIG   ok 527ms
+route sportello it 32 BIB   1.00 ok | rev BIB   ok 566ms
+route sportello en  1 TRAD  1.00 ok | rev TRAD  ok 490ms
+route sportello en  2 MED   0.99 ok | rev MED   ok 513ms
+route sportello en  3 BIB   1.00 ok | rev BIB   ok 525ms
+route sportello en  4 BAN   1.00 ok | rev BAN   ok 2518ms
+route sportello en  5 FO    0.99 ok | rev FO    ok 628ms
+route sportello en  6 FO    0.99 ok | rev FO    ok 523ms
+route sportello en  7 LEG   0.41 ok | rev LEG   ok 524ms
+route sportello en  8 TRAD  0.83 ok | rev TRAD  ok 848ms
+route sportello en  9 BIB   0.90 ok | rev BIB   ok 1650ms
+route sportello en 10 BAN   0.98 ok | rev BAN   ok 555ms
+route sportello en 11 FO    0.99 ok | rev FO    ok 617ms
+route sportello en 12 TRAD  1.00 ok | rev TRAD  ok 523ms
+route sportello en 13 LEG   0.99 ok | rev LEG   ok 525ms
+route sportello en 14 LAV   1.00 ok | rev LAV   ok 524ms
+route sportello en 15 DIG   1.00 ok | rev DIG   ok 341ms
+route sportello en 16 LEG   0.99 ok | rev LEG   ok 474ms
+route sportello en 17 TRAD  1.00 ok | rev TRAD  ok 3724ms
+route sportello en 18 LEG   1.00 ok | rev LEG   ok 792ms
+route sportello en 19 LAV   1.00 ok | rev LAV   ok 459ms
+route sportello en 20 DIG   1.00 ok | rev DIG   ok 603ms
+route sportello en 21 MED   1.00 ok | rev MED   ok 1492ms
+route sportello en 22 BIB   1.00 ok | rev BIB   ok 502ms
+route sportello en 23 BAN   1.00 ok | rev BAN   ok 325ms
+route sportello en 24 FO    1.00 ok | rev FO    ok 487ms
+route sportello en 25 TRAD  0.99 ok | rev TRAD  ok 842ms
+route sportello en 26 LEG   0.98 ok | rev LEG   ok 1026ms
+route sportello en 27 DIG   0.69 ok | rev DIG   ok 519ms
+route sportello en 28 LAV   0.43 ok | rev LAV   ok 470ms
+route sportello en 29 BAN   1.00 ok | rev BAN   ok 878ms
+route sportello en 30 FO    1.00 ok | rev FO    ok 1743ms
+route sportello en 31 DIG   1.00 ok | rev DIG   ok 1998ms
+route sportello en 32 BIB   1.00 ok | rev BIB   ok 478ms
+route ecommerce it  1 ORD   0.97 ok | rev ORD   ok 814ms
+route ecommerce it  2 RES   1.00 ok | rev RES   ok 416ms
+route ecommerce it  3 PAY   0.99 ok | rev PAY   ok 1013ms
+route ecommerce it  4 TEC   1.00 ok | rev TEC   ok 739ms
+route ecommerce it  5 ACC   1.00 ok | rev ACC   ok 729ms
+route ecommerce it  6 PRE   1.00 ok | rev PRE   ok 789ms
+route ecommerce it  7 B2B   1.00 ok | rev B2B   ok 405ms
+route ecommerce it  8 SIC   0.97 ok | rev SIC   ok 498ms
+route ecommerce it  9 SIC   0.97 ok | rev SIC   ok 4034ms
+route ecommerce it 10 ORD   1.00 ok | rev ORD   ok 1249ms
+route ecommerce it 11 RES   1.00 ok | rev RES   ok 469ms
+route ecommerce it 12 PAY   0.94 ok | rev PAY   ok 841ms
+route ecommerce it 13 ACC   0.98 ok | rev ACC   ok 1454ms
+route ecommerce it 14 SIC   0.66 ok | rev SIC   ok 851ms
+route ecommerce it 15 RES   0.99 ok | rev RES   ok 641ms
+route ecommerce it 16 B2B   1.00 ok | rev B2B   ok 1673ms
+route ecommerce it 17 PRE   1.00 ok | rev PRE   ok 1882ms
+route ecommerce it 18 TEC   1.00 ok | rev TEC   ok 539ms
+route ecommerce it 19 PAY   1.00 ok | rev PAY   ok 507ms
+route ecommerce it 20 ORD   0.73 ok | rev ORD   ok 416ms
+route ecommerce en  1 ORD   0.99 ok | rev ORD   ok 526ms
+route ecommerce en  2 RES   1.00 ok | rev RES   ok 631ms
+route ecommerce en  3 PAY   0.99 ok | rev PAY   ok 526ms
+route ecommerce en  4 TEC   1.00 ok | rev TEC   ok 829ms
+route ecommerce en  5 ACC   1.00 ok | rev ACC   ok 741ms
+route ecommerce en  6 PRE   1.00 ok | rev PRE   ok 524ms
+route ecommerce en  7 B2B   1.00 ok | rev B2B   ok 437ms
+route ecommerce en  8 SIC   0.95 ok | rev SIC   ok 1666ms
+route ecommerce en  9 SIC   0.94 ok | rev SIC   ok 519ms
+route ecommerce en 10 ORD   1.00 ok | rev ORD   ok 524ms
+route ecommerce en 11 RES   1.00 ok | rev RES   ok 437ms
+route ecommerce en 12 PAY   0.87 ok | rev PAY   ok 2708ms
+route ecommerce en 13 ACC   0.91 ok | rev ACC   ok 540ms
+route ecommerce en 14 SIC   0.55 ok | rev SIC   ok 761ms
+route ecommerce en 15 RES   0.99 ok | rev RES   ok 2369ms
+route ecommerce en 16 B2B   1.00 ok | rev B2B   ok 1573ms
+route ecommerce en 17 PRE   1.00 ok | rev PRE   ok 524ms
+route ecommerce en 18 TEC   1.00 ok | rev TEC   ok 3448ms
+route ecommerce en 19 PAY   1.00 ok | rev PAY   ok 1907ms
+route ecommerce en 20 ORD   0.54 ok | rev ORD   ok 786ms
+route azienda it  1 HR    1.00 ok | rev HR    ok 531ms
+route azienda it  2 ITH   0.99 ok | rev ITH   ok 1729ms
+route azienda it  3 SEC   0.90 ok | rev SEC   ok 511ms
+route azienda it  4 LEGL  1.00 ok | rev LEGL  ok 831ms
+route azienda it  5 ACQ   0.99 ok | rev ACQ   ok 592ms
+route azienda it  6 AMM   0.99 ok | rev AMM   ok 520ms
+route azienda it  7 FAC   1.00 ok | rev FAC   ok 713ms
+route azienda it  8 COM   1.00 ok | rev COM   ok 490ms
+route azienda it  9 FORM  1.00 ok | rev FORM  ok 273ms
+route azienda it 10 HR    0.99 ok | rev HR    ok 401ms
+route azienda it 11 LEGL  0.98 ok | rev LEGL  ok 4569ms
+route azienda it 12 FAC   0.96 ok | rev FAC   ok 519ms
+route azienda it 13 FAC   1.00 ok | rev FAC   ok 438ms
+route azienda it 14 ACQ   0.93 ok | rev ACQ   ok 615ms
+route azienda it 15 HR    0.48 ok | rev HR    ok 410ms
+route azienda it 16 COM   1.00 ok | rev COM   ok 638ms
+route azienda it 17 AMM   1.00 ok | rev AMM   ok 615ms
+route azienda it 18 HR    1.00 ok | rev HR    ok 541ms
+route azienda it 19 FAC   0.96 ok | rev FAC   ok 286ms
+route azienda it 20 FORM  1.00 ok | rev FORM  ok 656ms
+route azienda it 21 ITH   1.00 ok | rev ITH   ok 344ms
+route azienda it 22 COM   1.00 ok | rev COM   ok 537ms
+route azienda en  1 HR    1.00 ok | rev HR    ok 592ms
+route azienda en  2 ITH   1.00 ok | rev ITH   ok 501ms
+route azienda en  3 SEC   0.85 ok | rev SEC   ok 645ms
+route azienda en  4 LEGL  1.00 ok | rev LEGL  ok 524ms
+route azienda en  5 ACQ   0.97 ok | rev ACQ   ok 1611ms
+route azienda en  6 AMM   1.00 ok | rev AMM   ok 486ms
+route azienda en  7 FAC   1.00 ok | rev FAC   ok 526ms
+route azienda en  8 COM   1.00 ok | rev COM   ok 1048ms
+route azienda en  9 FORM  0.99 ok | rev FORM  ok 2096ms
+route azienda en 10 HR    0.98 ok | rev HR    ok 434ms
+route azienda en 11 LEGL  0.93 ok | rev LEGL  ok 973ms
+route azienda en 12 FAC   0.99 ok | rev FAC   ok 691ms
+route azienda en 13 FAC   1.00 ok | rev FAC   ok 410ms
+route azienda en 14 ACQ   0.85 ok | rev ACQ   ok 351ms
+route azienda en 15 HR    0.48 ok | rev HR    ok 426ms
+route azienda en 16 COM   1.00 ok | rev COM   ok 1477ms
+route azienda en 17 AMM   1.00 ok | rev AMM   ok 2774ms
+route azienda en 18 HR    1.00 ok | rev HR    ok 1462ms
+route azienda en 19 FAC   0.80 ok | rev FAC   ok 958ms
+route azienda en 20 FORM  1.00 ok | rev FORM  ok 925ms
+route azienda en 21 ITH   1.00 ok | rev ITH   ok 541ms
+route azienda en 22 COM   1.00 ok | rev COM   ok 846ms
+route coding it  1 CODE  0.99 ok | rev CODE  ok 2987ms
+route coding it  2 TEST  0.97 ok | rev TEST  ok 1523ms
+route coding it  3 GIT   0.98 ok | rev GIT   ok 435ms
+route coding it  4 DB    0.91 ok | rev DB    ok 614ms
+route coding it  5 DEP   0.90 ok | rev DEP   ok 249ms
+route coding it  6 DOCS  0.58 ok | rev DOCS  ok 678ms
+route coding it  7 CODE  0.50 KO | rev CODE  KO 515ms
+route coding it  8 ASK   0.95 ok | rev ASK   ok 757ms
+route coding it  9 TEST  0.98 ok | rev TEST  ok 421ms
+route coding it 10 GIT   0.95 ok | rev GIT   ok 527ms
+route coding it 11 DB    0.96 ok | rev DB    ok 521ms
+route coding it 12 DEP   0.97 ok | rev DEP   ok 602ms
+route coding it 13 WEB   0.93 ok | rev WEB   ok 455ms
+route coding it 14 ASK   0.97 ok | rev ASK   ok 516ms
+route coding it 15 DOCS  0.47 ok | rev DOCS  ok 418ms
+route coding it 16 CODE  0.96 ok | rev CODE  ok 631ms
+route coding en  1 CODE  0.99 ok | rev CODE  ok 524ms
+route coding en  2 TEST  0.93 ok | rev TEST  ok 525ms
+route coding en  3 GIT   0.96 ok | rev GIT   ok 1595ms
+route coding en  4 DB    0.75 ok | rev DB    ok 3530ms
+route coding en  5 DEP   0.65 ok | rev DEP   ok 545ms
+route coding en  6 DOCS  0.49 ok | rev DOCS  ok 519ms
+route coding en  7 CODE  0.53 KO | rev CODE  KO 494ms
+route coding en  8 ASK   0.82 ok | rev ASK   ok 343ms
+route coding en  9 TEST  0.96 ok | rev TEST  ok 552ms
+route coding en 10 GIT   0.89 ok | rev GIT   ok 808ms
+route coding en 11 DB    0.99 ok | rev DB    ok 524ms
+route coding en 12 DEP   0.95 ok | rev DEP   ok 524ms
+route coding en 13 WEB   0.86 ok | rev WEB   ok 549ms
+route coding en 14 ASK   0.96 ok | rev ASK   ok 499ms
+route coding en 15 CODE  0.55 KO | rev CODE  KO 765ms
+route coding en 16 CODE  0.96 ok | rev CODE  ok 478ms
+esc it  1 exp=N noul 0.01 | choice 0.14 | risk 0.01 (exp False) | urg 0.05 (exp 0) 329ms
+esc it  2 exp=N noul 0.01 | choice 0.06 | risk 0.01 (exp False) | urg 0.07 (exp 0) 394ms
+esc it  3 exp=N noul 0.01 | choice 0.06 | risk 0.01 (exp False) | urg 0.07 (exp 0) 1411ms
+esc it  4 exp=N noul 0.04 | choice 0.13 | risk 0.01 (exp False) | urg 0.16 (exp 0) 643ms
+esc it  5 exp=N noul 0.01 | choice 0.12 | risk 0.01 (exp False) | urg 0.09 (exp 0) 1305ms
+esc it  6 exp=N noul 0.03 | choice 0.09 | risk 0.01 (exp False) | urg 0.14 (exp 0) 307ms
+esc it  7 exp=N noul 0.01 | choice 0.07 | risk 0.01 (exp False) | urg 0.14 (exp 0) 363ms
+esc it  8 exp=N noul 0.04 | choice 0.13 | risk 0.01 (exp False) | urg 0.12 (exp 0) 1346ms
+esc it  9 exp=N noul 0.01 | choice 0.10 | risk 0.01 (exp False) | urg 0.08 (exp 0) 287ms
+esc it 10 exp=N noul 0.01 | choice 0.11 | risk 0.01 (exp False) | urg 0.08 (exp 0) 325ms
+esc it 11 exp=N noul 0.04 | choice 0.15 | risk 0.01 (exp False) | urg 0.11 (exp 0) 265ms
+esc it 12 exp=N noul 0.02 | choice 0.07 | risk 0.01 (exp False) | urg 0.06 (exp 0) 1549ms
+esc it 13 exp=N noul 0.02 | choice 0.10 | risk 0.01 (exp False) | urg 0.10 (exp 0) 376ms
+esc it 14 exp=N noul 0.05 | choice 0.17 | risk 0.01 (exp False) | urg 0.15 (exp 0) 351ms
+esc it 15 exp=N noul 0.02 | choice 0.05 | risk 0.01 (exp False) | urg 0.10 (exp 0) 295ms
+esc it 16 exp=N noul 0.02 | choice 0.11 | risk 0.01 (exp False) | urg 0.09 (exp 0) 272ms
+esc it 17 exp=N noul 0.01 | choice 0.15 | risk 0.01 (exp False) | urg 0.21 (exp 0) 669ms
+esc it 18 exp=N noul 0.02 | choice 0.18 | risk 0.01 (exp False) | urg 0.13 (exp 0) 353ms
+esc it 19 exp=N noul 0.01 | choice 0.07 | risk 0.01 (exp False) | urg 0.05 (exp 0) 1782ms
+esc it 20 exp=N noul 0.03 | choice 0.15 | risk 0.01 (exp False) | urg 0.12 (exp 0) 1436ms
+esc it 21 exp=Y noul 0.97 | choice 1.00 | risk 0.01 (exp False) | urg 1.51 (exp 1) 606ms
+esc it 22 exp=Y noul 0.98 | choice 1.00 | risk 0.01 (exp False) | urg 1.82 (exp 1) 517ms
+esc it 23 exp=Y noul 0.97 | choice 0.99 | risk 0.01 (exp False) | urg 1.76 (exp 1) 775ms
+esc it 24 exp=Y noul 0.99 | choice 1.00 | risk 0.98 (exp True) | urg 1.99 (exp 2) 438ms
+esc it 25 exp=Y noul 0.99 | choice 1.00 | risk 0.99 (exp True) | urg 1.99 (exp 2) 579ms
+esc it 26 exp=Y noul 0.99 | choice 0.99 | risk 0.01 (exp False) | urg 1.76 (exp 1) 472ms
+esc it 27 exp=Y noul 0.99 | choice 1.00 | risk 0.01 (exp False) | urg 1.71 (exp 1) 396ms
+esc it 28 exp=Y noul 0.99 | choice 1.00 | risk 0.01 (exp False) | urg 1.58 (exp 1) 317ms
+esc it 29 exp=Y noul 0.97 | choice 0.99 | risk 0.01 (exp False) | urg 1.77 (exp 1) 686ms
+esc it 30 exp=Y noul 0.97 | choice 1.00 | risk 0.01 (exp False) | urg 1.49 (exp 1) 437ms
+esc it 31 exp=Y noul 0.98 | choice 1.00 | risk 0.01 (exp False) | urg 1.69 (exp 1) 446ms
+esc it 32 exp=Y noul 0.99 | choice 1.00 | risk 0.97 (exp True) | urg 1.99 (exp 2) 289ms
+esc it 33 exp=Y noul 0.98 | choice 1.00 | risk 0.01 (exp False) | urg 1.67 (exp 1) 370ms
+esc it 34 exp=Y noul 0.97 | choice 0.99 | risk 0.01 (exp False) | urg 1.54 (exp 1) 416ms
+esc it 35 exp=Y noul 0.99 | choice 1.00 | risk 0.01 (exp False) | urg 1.85 (exp 1) 368ms
+esc it 36 exp=Y noul 0.97 | choice 1.00 | risk 0.01 (exp False) | urg 1.66 (exp 1) 423ms
+esc it 37 exp=Y noul 0.98 | choice 1.00 | risk 0.69 (exp True) | urg 1.81 (exp 2) 287ms
+esc it 38 exp=Y noul 0.97 | choice 0.99 | risk 0.01 (exp False) | urg 1.63 (exp 1) 1395ms
+esc it 39 exp=Y noul 0.93 | choice 0.98 | risk 0.01 (exp False) | urg 1.38 (exp 1) 1488ms
+esc it 40 exp=Y noul 0.99 | choice 0.99 | risk 0.01 (exp False) | urg 1.60 (exp 1) 337ms
+esc en  1 exp=N noul 0.02 | choice 0.10 | risk 0.01 (exp False) | urg 0.11 (exp 0) 2327ms
+esc en  2 exp=N noul 0.02 | choice 0.10 | risk 0.01 (exp False) | urg 0.18 (exp 0) 375ms
+esc en  3 exp=N noul 0.01 | choice 0.06 | risk 0.01 (exp False) | urg 0.12 (exp 0) 314ms
+esc en  4 exp=N noul 0.02 | choice 0.08 | risk 0.01 (exp False) | urg 0.23 (exp 0) 347ms
+esc en  5 exp=N noul 0.02 | choice 0.11 | risk 0.01 (exp False) | urg 0.13 (exp 0) 499ms
+esc en  6 exp=N noul 0.06 | choice 0.08 | risk 0.01 (exp False) | urg 0.21 (exp 0) 425ms
+esc en  7 exp=N noul 0.01 | choice 0.08 | risk 0.01 (exp False) | urg 0.10 (exp 0) 1473ms
+esc en  8 exp=N noul 0.04 | choice 0.13 | risk 0.01 (exp False) | urg 0.20 (exp 0) 401ms
+esc en  9 exp=N noul 0.02 | choice 0.14 | risk 0.01 (exp False) | urg 0.13 (exp 0) 376ms
+esc en 10 exp=N noul 0.01 | choice 0.08 | risk 0.01 (exp False) | urg 0.07 (exp 0) 354ms
+esc en 11 exp=N noul 0.02 | choice 0.10 | risk 0.01 (exp False) | urg 0.18 (exp 0) 318ms
+esc en 12 exp=N noul 0.01 | choice 0.06 | risk 0.01 (exp False) | urg 0.04 (exp 0) 952ms
+esc en 13 exp=N noul 0.02 | choice 0.12 | risk 0.01 (exp False) | urg 0.14 (exp 0) 379ms
+esc en 14 exp=N noul 0.04 | choice 0.17 | risk 0.01 (exp False) | urg 0.15 (exp 0) 404ms
+esc en 15 exp=N noul 0.02 | choice 0.07 | risk 0.01 (exp False) | urg 0.13 (exp 0) 361ms
+esc en 16 exp=N noul 0.02 | choice 0.13 | risk 0.01 (exp False) | urg 0.21 (exp 0) 1467ms
+esc en 17 exp=N noul 0.01 | choice 0.16 | risk 0.01 (exp False) | urg 0.13 (exp 0) 401ms
+esc en 18 exp=N noul 0.02 | choice 0.21 | risk 0.01 (exp False) | urg 0.24 (exp 0) 289ms
+esc en 19 exp=N noul 0.01 | choice 0.07 | risk 0.01 (exp False) | urg 0.08 (exp 0) 716ms
+esc en 20 exp=N noul 0.01 | choice 0.12 | risk 0.01 (exp False) | urg 0.13 (exp 0) 325ms
+esc en 21 exp=Y noul 0.97 | choice 1.00 | risk 0.01 (exp False) | urg 1.65 (exp 1) 551ms
+esc en 22 exp=Y noul 0.99 | choice 1.00 | risk 0.01 (exp False) | urg 1.79 (exp 1) 457ms
+esc en 23 exp=Y noul 0.96 | choice 1.00 | risk 0.01 (exp False) | urg 1.67 (exp 1) 269ms
+esc en 24 exp=Y noul 0.99 | choice 1.00 | risk 0.94 (exp True) | urg 1.98 (exp 2) 353ms
+esc en 25 exp=Y noul 0.99 | choice 1.00 | risk 0.99 (exp True) | urg 1.99 (exp 2) 414ms
+esc en 26 exp=Y noul 0.97 | choice 1.00 | risk 0.01 (exp False) | urg 1.82 (exp 1) 854ms
+esc en 27 exp=Y noul 0.99 | choice 1.00 | risk 0.01 (exp False) | urg 1.70 (exp 1) 339ms
+esc en 28 exp=Y noul 0.99 | choice 1.00 | risk 0.01 (exp False) | urg 1.67 (exp 1) 700ms
+esc en 29 exp=Y noul 0.97 | choice 1.00 | risk 0.01 (exp False) | urg 1.71 (exp 1) 380ms
+esc en 30 exp=Y noul 0.97 | choice 1.00 | risk 0.01 (exp False) | urg 1.48 (exp 1) 758ms
+esc en 31 exp=Y noul 0.97 | choice 0.99 | risk 0.01 (exp False) | urg 1.67 (exp 1) 408ms
+esc en 32 exp=Y noul 0.99 | choice 1.00 | risk 0.92 (exp True) | urg 1.99 (exp 2) 842ms
+esc en 33 exp=Y noul 0.98 | choice 1.00 | risk 0.01 (exp False) | urg 1.63 (exp 1) 343ms
+esc en 34 exp=Y noul 0.97 | choice 0.97 | risk 0.01 (exp False) | urg 1.61 (exp 1) 357ms
+esc en 35 exp=Y noul 0.99 | choice 1.00 | risk 0.01 (exp False) | urg 1.74 (exp 1) 444ms
+esc en 36 exp=Y noul 0.96 | choice 0.99 | risk 0.01 (exp False) | urg 1.65 (exp 1) 339ms
+esc en 37 exp=Y noul 0.98 | choice 1.00 | risk 0.74 (exp True) | urg 1.69 (exp 2) 765ms
+esc en 38 exp=Y noul 0.96 | choice 1.00 | risk 0.01 (exp False) | urg 1.58 (exp 1) 807ms
+esc en 39 exp=Y noul 0.94 | choice 0.99 | risk 0.01 (exp False) | urg 1.34 (exp 1) 273ms
+esc en 40 exp=Y noul 0.98 | choice 1.00 | risk 0.01 (exp False) | urg 1.64 (exp 1) 257ms
+SUMMARY
+{
+ "routing": {
+  "sportello/it": {
+   "n": 32,
+   "ok": 32,
+   "ok_rev": 32,
+   "flips": 0,
+   "median_ms": 566
+  },
+  "sportello/en": {
+   "n": 32,
+   "ok": 32,
+   "ok_rev": 32,
+   "flips": 0,
+   "median_ms": 525
+  },
+  "ecommerce/it": {
+   "n": 20,
+   "ok": 20,
+   "ok_rev": 20,
+   "flips": 0,
+   "median_ms": 789
+  },
+  "ecommerce/en": {
+   "n": 20,
+   "ok": 20,
+   "ok_rev": 20,
+   "flips": 0,
+   "median_ms": 741
+  },
+  "azienda/it": {
+   "n": 22,
+   "ok": 22,
+   "ok_rev": 22,
+   "flips": 0,
+   "median_ms": 537
+  },
+  "azienda/en": {
+   "n": 22,
+   "ok": 22,
+   "ok_rev": 22,
+   "flips": 0,
+   "median_ms": 691
+  },
+  "coding/it": {
+   "n": 16,
+   "ok": 15,
+   "ok_rev": 15,
+   "flips": 0,
+   "median_ms": 527
+  },
+  "coding/en": {
+   "n": 16,
+   "ok": 14,
+   "ok_rev": 14,
+   "flips": 0,
+   "median_ms": 525
+  },
+  "ALL/it": {
+   "n": 90,
+   "ok": 89,
+   "ok_rev": 89,
+   "flips": 0,
+   "mean_p_right": 0.941,
+   "mean_p_wrong": 0.502
+  },
+  "ALL/en": {
+   "n": 90,
+   "ok": 88,
+   "ok_rev": 88,
+   "flips": 0,
+   "mean_p_right": 0.93,
+   "mean_p_wrong": 0.54
+  }
+ },
+ "escalation": {
+  "it": {
+   "n_scored": 40,
+   "n_borderline": 0,
+   "noul_ok": 40,
+   "noul_missed": 0,
+   "noul_false_alarm": 0,
+   "noul_auroc": 1.0,
+   "choice_ok": 40,
+   "choice_missed": 0,
+   "choice_false_alarm": 0,
+   "choice_auroc": 1.0,
+   "risk_ok": 40,
+   "risk_n": 40,
+   "risk_missed": 0,
+   "risk_false_alarm": 0,
+   "urgency_exact": 26,
+   "median_ms": 423
+  },
+  "en": {
+   "n_scored": 40,
+   "n_borderline": 0,
+   "noul_ok": 40,
+   "noul_missed": 0,
+   "noul_false_alarm": 0,
+   "noul_auroc": 1.0,
+   "choice_ok": 40,
+   "choice_missed": 0,
+   "choice_false_alarm": 0,
+   "choice_auroc": 1.0,
+   "risk_ok": 40,
+   "risk_n": 40,
+   "risk_missed": 0,
+   "risk_false_alarm": 0,
+   "urgency_exact": 26,
+   "median_ms": 401
+  }
+ }
+}
